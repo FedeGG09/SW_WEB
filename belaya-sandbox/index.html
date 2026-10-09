@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NERATHIS | Belaya Isolated Lab</title>
+</head>
+<body>
+  <canvas id="renderCanvas" aria-label="Visor 3D de Belaya"></canvas>
+  <aside id="hud">
+    <h1>NERATHIS · BELAYA LAB</h1>
+    <p>Laboratorio aislado. No escribe en el juego principal.</p>
+    <div id="status">Inicializando Babylon.js...</div>
+    <p><b>WASD</b> mueve el marcador azul · <b>E</b> habla con Belaya al acercarte · <b>ratón</b> orbita · <b>rueda</b> acerca</p>
+    <div class="actions">
+      <button id="approach" disabled>ACERCAR MARCADOR</button>
+      <button id="idle" disabled>PROBAR PAUSE1</button>
+      <button id="talk" disabled>PROBAR TALK</button>
+      <button id="reset" disabled>REINICIAR</button>
+    </div>
+    <pre id="diagnostics">Esperando modelo...</pre>
+  </aside>
+  <p id="interactionPrompt" aria-live="polite"></p>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
