@@ -1,0 +1,7 @@
+node_modules/
+dist/
+public/**/*.glb
+public/**/*.gltf
+public/**/*.bin
+public/**/*.wav
+public/**/*.lip
