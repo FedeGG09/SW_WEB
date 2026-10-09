@@ -10,6 +10,7 @@ import { applyJediEnclaveMaterials, applyJediEnclaveHdOverrides, type AcademyHdO
 import { EbonHawkPartyAdapter, type EboHit, type EboNav, type EboPoint } from './EbonHawkPartyAdapter';
 import { TacticalPauseController } from '../../party/TacticalPauseController';
 import { AcademyNpcPopulation, type AcademyNpcRuntimeRecord } from '../../world/AcademyNpcPopulation';
+import { BelayaDialogueV1, BELAYA_SOURCE_NPC_ID } from './BelayaDialogueV1';
 
 const BASE = '/_lab/kotor/worlds/jedi_enclave/';
 const DANM13 = BASE + 'jedi_enclave_danm13_kotor1.glb';
@@ -516,6 +517,7 @@ export async function startAcademyPrologueCandidateLab(canvas = document.getElem
   const tacticalPause = new TacticalPauseController(); const unbindPause = adapter.bindTacticalPause(tacticalPause);
   let currentSector = 'danm13', doorTransitions = 0, lastCommandResult = 'NONE', lastDoorResult = 'NONE';
   let lastNpcInteraction = 'NONE';
+  const belayaDialogue = new BelayaDialogueV1();
   const npcPopulationMode = new URLSearchParams(window.location.search).get('npcPopulation') === '1';
   const npcManifestName = npcPopulationMode
     ? 'w238_0a2d_npc_population_manifest.json'
@@ -547,7 +549,10 @@ export async function startAcademyPrologueCandidateLab(canvas = document.getElem
     loader,
     records: npcRecords,
     resolveSpawn: resolveNpcSpawn,
-    onInteraction: (instance) => { lastNpcInteraction = `TRIGGERED:${instance.record.stableNpcId}:${instance.record.conversationResRef ?? 'NO_DLG'}`; },
+    onInteraction: (instance) => {
+      lastNpcInteraction = `TRIGGERED:${instance.record.stableNpcId}:${instance.record.conversationResRef ?? 'NO_DLG'}`;
+      if (instance.record.stableNpcId === BELAYA_SOURCE_NPC_ID) belayaDialogue.open(instance);
+    },
   });
   setLoadPhase('NPC_POPULATION_LOADING');
   let npcPopulation = await createNpcPopulation();
@@ -658,7 +663,7 @@ export async function startAcademyPrologueCandidateLab(canvas = document.getElem
   const onKeyDown = (event: KeyboardEvent) => {
     const key = event.key.toLowerCase();
     if (key === 'q' && !event.repeat) { event.preventDefault(); requestSaber(adapter.controlledActorId === 'NARA' ? 'NARA' : 'AREN', saberRuntime[adapter.controlledActorId === 'NARA' ? 'NARA' : 'AREN'].target < 0.5); }
-    if (key === 'e') { if (npcPopulation.triggerNearest(adapter.interactionOrigin(), 2.8) || showcasePopulation.triggerNearest(adapter.interactionOrigin(), 2.8)) return; transition(); }
+    if (key === 'e') { if (belayaDialogue.isOpen) return; if (npcPopulation.triggerNearest(adapter.interactionOrigin(), 2.8) || showcasePopulation.triggerNearest(adapter.interactionOrigin(), 2.8)) return; transition(); }
     if (key === 'p') tacticalPause.toggle();
     if (key === 'f6') { event.preventDefault(); locator.hidden = !locator.hidden; }
     if (key === 'f1') { event.preventDefault(); help.hidden = !help.hidden; }
@@ -708,7 +713,7 @@ export async function startAcademyPrologueCandidateLab(canvas = document.getElem
     const weapon: any = (window as any).__academyPrologueCandidate?.weapons?.nara;
     return { actor: nara.id, activeAnimation: nara.activeAnimation, requestedClip: nara.requestedClip, requestedSemantic: nara.requestedSemantic, armed: nara.armed, groups, bones, weapon: weapon ? { attached: Boolean(weapon.parent), authoredAnimationActive: Boolean(weapon.authoredAnimationActive), armPose: weapon.armPoseDebug ?? null, socket: weapon.socket ?? null } : null, owner: 'EbonHawkPartyAdapter.Follower' };
   };
-  const state = () => { const hit: any = (adapter as any).currentHit, nara = adapter.followers.find(follower => follower.id === 'Nara'); return { status: 'READY', route: 'ACADEMY_PROLOGUE_V1', hdDantooine: hdEnabled, hdOverlay: hdOverlay ? { mode: hdOverlay.mode, applied: hdOverlay.applied.length, skipped: hdOverlay.skipped.length } : null, npcPopulationMode, npcManifest: npcManifestName, npcSourceTotal: spawnClassification.records.length, npcSourceActive: npcRecords.length, npcSourceWithheld: sourceNpcWithheld.length, npcShowcaseEnabled: showcaseEnabled, npcShowcaseTarget: showcaseRecords.length, npcShowcaseLoaded: showcasePopulation.actors.length, npcShowcaseVisibleAtSpawn: showcasePopulation.actors.filter(actor => actor.record.sourceRoom === 'm13aa_04a').length, npcShowcaseAdjacent: showcasePopulation.actors.filter(actor => actor.record.sourceRoom !== 'm13aa_04a').length, npcLifecycle, sector: currentSector, logicalSector: currentSector, actorSector: hit?.room?.startsWith('m14aa_') ? 'danm14aa' : 'danm13', cameraSector: currentSector, renderSector: currentSector, sectorModules: ['danm13', 'danm14aa'], party: [{ id: 'AREN_NATIVE_JKA_V1', role: 'PARTY', position: adapter.player.position.asArray(), room: hit?.room ?? null }, { id: 'NARA_NATIVE_JKA_V1', role: 'PARTY', position: nara?.root.position.asArray() ?? null, room: nara?.hit.room ?? null }], jolee: 'ACADEMY_STORY_NPC_SEPARATE_OVERLAY', npcPopulation: npcPopulation.state(), ambientPopulation: showcasePopulation.state(), interaction: { lastNpcInteraction }, actorCount: 2 + npcPopulation.actors.length + showcasePopulation.actors.length, partyActorCount: 2, followerCount: nara ? 1 : 0, saberCount: Number(Boolean(arenWeapon)) + Number(Boolean(naraWeapon)), saber: { aren: saberRuntime.AREN, nara: saberRuntime.NARA, controlled: adapter.controlledActorId }, naraAnimation: { active: nara?.activeAnimation ?? null, armed: Boolean((nara as any)?.armed), owner: 'EbonHawkPartyAdapter.Follower', audit: naraAnimationAudit() }, ambientVisualAudit: ambientVisualAudit(), navigation: { runtimePartyAdapter: 'EbonHawkPartyAdapter', movementAuthority: 'PLAYER_CONTROLLER_WOK_RESOLVER_PTH_FOLLOWER', pthNodes: nav.pth.length, wokFaces: nav.rooms.reduce((sum, room) => sum + room.faces.length, 0), sourceTransition, doorTransitions, currentRoom, visFallbacks, tacticalPause: tacticalPause.snapshot(), tactical: adapter.tacticalExecutorSnapshot() }, errors }; };
+  const state = () => { const hit: any = (adapter as any).currentHit, nara = adapter.followers.find(follower => follower.id === 'Nara'); return { status: 'READY', route: 'ACADEMY_PROLOGUE_V1', hdDantooine: hdEnabled, hdOverlay: hdOverlay ? { mode: hdOverlay.mode, applied: hdOverlay.applied.length, skipped: hdOverlay.skipped.length } : null, npcPopulationMode, npcManifest: npcManifestName, npcSourceTotal: spawnClassification.records.length, npcSourceActive: npcRecords.length, npcSourceWithheld: sourceNpcWithheld.length, npcShowcaseEnabled: showcaseEnabled, npcShowcaseTarget: showcaseRecords.length, npcShowcaseLoaded: showcasePopulation.actors.length, npcShowcaseVisibleAtSpawn: showcasePopulation.actors.filter(actor => actor.record.sourceRoom === 'm13aa_04a').length, npcShowcaseAdjacent: showcasePopulation.actors.filter(actor => actor.record.sourceRoom !== 'm13aa_04a').length, npcLifecycle, sector: currentSector, logicalSector: currentSector, actorSector: hit?.room?.startsWith('m14aa_') ? 'danm14aa' : 'danm13', cameraSector: currentSector, renderSector: currentSector, sectorModules: ['danm13', 'danm14aa'], party: [{ id: 'AREN_NATIVE_JKA_V1', role: 'PARTY', position: adapter.player.position.asArray(), room: hit?.room ?? null }, { id: 'NARA_NATIVE_JKA_V1', role: 'PARTY', position: nara?.root.position.asArray() ?? null, room: nara?.hit.room ?? null }], jolee: 'ACADEMY_STORY_NPC_SEPARATE_OVERLAY', npcPopulation: npcPopulation.state(), ambientPopulation: showcasePopulation.state(), interaction: { lastNpcInteraction, belayaDialogue: belayaDialogue.snapshot() }, actorCount: 2 + npcPopulation.actors.length + showcasePopulation.actors.length, partyActorCount: 2, followerCount: nara ? 1 : 0, saberCount: Number(Boolean(arenWeapon)) + Number(Boolean(naraWeapon)), saber: { aren: saberRuntime.AREN, nara: saberRuntime.NARA, controlled: adapter.controlledActorId }, naraAnimation: { active: nara?.activeAnimation ?? null, armed: Boolean((nara as any)?.armed), owner: 'EbonHawkPartyAdapter.Follower', audit: naraAnimationAudit() }, ambientVisualAudit: ambientVisualAudit(), navigation: { runtimePartyAdapter: 'EbonHawkPartyAdapter', movementAuthority: 'PLAYER_CONTROLLER_WOK_RESOLVER_PTH_FOLLOWER', pthNodes: nav.pth.length, wokFaces: nav.rooms.reduce((sum, room) => sum + room.faces.length, 0), sourceTransition, doorTransitions, currentRoom, visFallbacks, tacticalPause: tacticalPause.snapshot(), tactical: adapter.tacticalExecutorSnapshot() }, errors }; };
   (window as any).__academyPrologueCandidateState = state;
   setLoadPhase('READY');
   (window as any).__academyPrologueCandidate = { state, adapter, transition, tacticalPause, npcPopulation, showcasePopulation, toggleShowcase, requestSaber, saberRuntime, weapons: { aren: arenWeapon, nara: naraWeapon }, ambientVisualAudit, naraAnimationAudit, orientShowcaseCamera };
