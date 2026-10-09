@@ -1,0 +1,67 @@
+{
+  "milestone": "W237.2E",
+  "finalGate": "PASS",
+  "leader": "AREN_NATIVE_JKA_V1",
+  "weapon": "JKA_NATIVE_TRAINING_SINGLE_SABER_V1",
+  "comboAsset": "public/_lab/jka/characters/aren/aren_native_jka_v1_combo_v3.glb",
+  "comboAssetSha256": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+  "assetGate": "PASS",
+  "staticAnimationTargetAudit": "PASS: 13 groups, 159 unique channels over the 53 joints, zero foreign targets and duplicate target/property pairs",
+  "stateMachineGate": "PASS_DETERMINISTIC_ONLY",
+  "inputGate": "PASS_RUNTIME",
+  "visualGate": "PASS_USER_APPROVED_NATIVE_GRIP_AND_RUNTIME_COMBO_SEQUENCE",
+  "damageGate": "PASS_TWO_DISTINCT_PHYSICAL_SWINGS",
+  "dedupGate": "PASS_PER_ATTACK_INSTANCE",
+  "regressionGate": "PASS",
+  "comboWindow": { "open": 0.75, "close": 1.0, "unit": "normalized Attack 1 progress", "sourceFrames": [6, 8], "sourceFrameCount": 8 },
+  "activeSwingGroups": {
+    "attack1Start": "JKA_ATTACK_START",
+    "attack1": "JKA_ATTACK",
+    "transition": "JKA_COMBO_TRANSITION_B_TO_TL",
+    "attack2": "JKA_COMBO_ATTACK_TL_TO_BR",
+    "attack2Return": "JKA_COMBO_RETURN_BR_TO_READY"
+  },
+  "runtimeReviewUrl": "http://127.0.0.1:5185/?jediAcademyLab=1&party=1&leader=aren-native-jka-v1&nara=jan&jolee=npc&jkaWeapon=native&jkaCombo=1",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "normalGameReadyTatooine": "READY tatooineSpaceport",
+  "protectedHashes": {
+    "arenNativeRosh": { "sha256": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58", "unchanged": true },
+    "naraNativeJan": { "sha256": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a", "unchanged": true },
+    "goldenRoshControl": { "sha256": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca", "unchanged": true },
+    "nativeSaber": { "sha256": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677", "unchanged": true },
+    "originalAren": { "sha256": "79073f978c889e268e77800dbf7a2d609ec40a2bb314100447ce458f8d8a7ba4", "unchanged": true },
+    "jolee": { "sha256": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f", "unchanged": true },
+    "academyWorld": { "sha256": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c", "unchanged": true }
+  },
+  "saberTraceControllerChanged": false,
+  "nativeGrip": {
+    "translationM": [0.04, 0, 0],
+    "rotationEulerDeg": [0, 5, 80],
+    "profileRuntimeMatch": true,
+    "scope": "AREN_NATIVE_JKA_V1 only"
+  },
+  "physicalCombo": {
+    "attack1DamageEvents": 1,
+    "attack2DamageEvents": 1,
+    "distinctAttackInstanceIds": true,
+    "readyDamageEvents": 0,
+    "startDamageEvents": 0,
+    "missDamageEvents": 0,
+    "finalDummyHp": 80,
+    "lowFpsSweep": "PASS"
+  },
+  "partySmoke": {
+    "gate": "PASS_SHORT_ROUTE",
+    "targetRoomsReached": 3,
+    "totalDistanceM": 139.96,
+    "walkDistanceM": 36.94,
+    "legacyHelperPass": false,
+    "legacyHelperFailureReason": "walk distance below unrelated 50 m quota; all target-room segments passed",
+    "naraTeleports": 0,
+    "stuck": 0,
+    "visFallbacks": 0,
+    "wokRejects": 0
+  },
+  "readyForW2372FParry": "YES"
+}

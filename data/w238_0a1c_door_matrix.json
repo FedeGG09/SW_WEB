@@ -1,0 +1,16 @@
+{
+  "schema": "W238_0A1C_DOOR_MATRIX_V1",
+  "source": {
+    "forward": { "module": "danm13", "door": "dan13_door03", "destinationModule": "danm14aa", "destinationWaypoint": "from13", "position": [82.17449951171875, 127.64099884033203, 5.074999809265137], "transitionDestin": 7470 },
+    "reverse": { "module": "danm14aa", "door": "man14aa_door03", "destinationModule": "danm13", "destinationWaypoint": "from14a", "position": [108.5250015258789, 93.9749984741211, 1.5], "transitionDestin": 39043 }
+  },
+  "runtime": {
+    "forward": { "pass": true, "input": "E", "arrivalModule": "danm14aa", "arrivalRoom": "m14aa_01c", "arrivalFace": 4, "result": "FORWARD_DANM14AA_FROM13" },
+    "reverse": { "pass": true, "input": "E", "arrivalModule": "danm13", "arrivalRoom": "m13aa_12a", "arrivalFace": 4, "result": "RETURN_DANM13_FROM14A" },
+    "outOfRange": { "pass": true, "result": "OUT_OF_RANGE", "transitionCountChanged": false },
+    "roundTrips": 10,
+    "finalObservedTransitionCount": 11,
+    "directCrossSectorMove": "REJECTED_SOURCE_DOOR_REQUIRED"
+  },
+  "gate": "PASS_SOURCE_BACKED_CANDIDATE_RUNTIME"
+}

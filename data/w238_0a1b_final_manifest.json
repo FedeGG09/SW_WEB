@@ -1,0 +1,82 @@
+{
+  "milestone": "W238.0A.1B",
+  "status": "PARTIAL",
+  "canonicalRepo": "E:/NerathisWeb",
+  "candidateWorld": "ACADEMY_PROLOGUE_V1",
+  "candidateAsset": {
+    "path": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm14aa_kotor1_candidate_v2.glb",
+    "sha256": "6a804c12471ae85d16d3dab2b39ad9e288e7bf04eaa2803c30fefca906a750d9",
+    "bytes": 10836932,
+    "rooms": 9,
+    "meshes": 727,
+    "triangles": 41709,
+    "materials": 727
+  },
+  "gates": {
+    "vanillaSourceAudit": "PASS",
+    "vanillaMaterialBasecolor": "PASS",
+    "vanillaVisualFidelity": "PARTIAL",
+    "navigation": "PARTIAL",
+    "doorTransition": "PARTIAL_SOURCE_BACKED_RUNTIME",
+    "academyRuntime": "PARTIAL",
+    "hdAudit": "AUDIT_ONLY",
+    "final": "PARTIAL"
+  },
+  "protectedHashes": {
+    "AREN_BASE": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1.glb",
+      "sha256": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58"
+    },
+    "AREN_COMBO": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_combo_v3.glb",
+      "sha256": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc"
+    },
+    "AREN_DEFENSE_V1": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v1.glb",
+      "sha256": "26145739f58c11402b97987bfbf235b4f8118f98373e945eb197f1fe78deb66b"
+    },
+    "AREN_DEFENSE_V2": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v2.glb",
+      "sha256": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3"
+    },
+    "NARA_ORIGINAL": {
+      "path": "public/_lab/jka/characters/nara/nara_native_jka_v1.glb",
+      "sha256": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a"
+    },
+    "NARA_COMBAT": {
+      "path": "public/_lab/jka/characters/nara/nara_native_jka_v1_combat_v1.glb",
+      "sha256": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148"
+    },
+    "NATIVE_SABER": {
+      "path": "public/_lab/jka/weapons/saber/jka_native_single_saber_v1.glb",
+      "sha256": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677"
+    },
+    "JOLEE": {
+      "path": "public/_lab/kotor/characters/jolee/jolee_bindo_kotor1.glb",
+      "sha256": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f"
+    },
+    "DANM13": {
+      "path": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb",
+      "sha256": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+    },
+    "DANM14AA_CANDIDATE_V1": {
+      "path": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm14aa_kotor1_candidate.glb",
+      "sha256": "47a423e7219304bde0ce699ccf9f1d9397566a584a2546c05204504648acf771"
+    },
+    "DANM14AA_CANDIDATE_V2": {
+      "path": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm14aa_kotor1_candidate_v2.glb",
+      "sha256": "6a804c12471ae85d16d3dab2b39ad9e288e7bf04eaa2803c30fefca906a750d9"
+    }
+  },
+  "boundaries": {
+    "npcPopulation": "NOT_STARTED",
+    "dialogue": "NOT_STARTED",
+    "combat": "UNCHANGED",
+    "defaultRoute": "UNCHANGED",
+    "academyDefaultPromotion": "NO"
+  },
+  "blockers": [
+    "Full playable-camera source-fidelity comparison remains open for white exterior/backside surfaces and lightmap appearance.",
+    "Full production WOK/PTH room traversal and door controller remain open; candidate route uses WOK face projection and source-backed proximity transition."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "W238_0A1C_NAVIGATION_MATRIX_V1",
+  "route": "?academyCandidate=1",
+  "sectors": {
+    "danm13": { "rooms": 21, "sourceWokFaces": 739, "sourcePthNodes": 120, "sourceVisRooms": 21, "runtimeWokFaces": 5054 },
+    "danm14aa": { "rooms": 9, "sourceWokFaces": 846, "sourcePthNodes": 85, "sourceVisRooms": 9, "runtimeWokFaces": 5054 }
+  },
+  "crossSectorPolicy": "SOURCE_DOOR_REQUIRED",
+  "crossSectorDirectMove": { "result": "REJECTED", "reason": "TARGET_NOT_WALKABLE_IN_DANM13_FOR_DANM14AA_POINT", "reportedStatus": "SOURCE_DOOR_REQUIRED:dan13_door03" },
+  "danm13Player": { "input": "WASD", "startRoom": "m13aa_04a", "afterMoveRoom": "m13aa_04a", "faceChanged": true, "wokGrounded": true, "wokRejects": 0 },
+  "danm13Pth": { "pass": true, "targetRoom": "m13aa_12a", "distanceM": 98.25, "roomTransitions": 4, "edgeRejectDelta": 0, "stuck": 0, "teleports": 0, "rooms": ["m13aa_04a", "m13aa_02g", "m13aa_02f", "m13aa_02a", "m13aa_12a"] },
+  "danm14Player": { "input": "WASD", "room": "m14aa_01c", "face": 7, "wokGrounded": true, "wokRejects": 0 },
+  "naraFollower": { "finalRoom": "m13aa_12a", "roomLag": 0, "maxSeparationM": 2.8629, "stuck": 0, "recoveryTeleports": 0, "repathCount": 0, "visFallbacks": 0 },
+  "vis": { "fallbacks": 0, "sectorSelection": "logical_actor_room_and_render_sector" },
+  "gate": "PASS_SAMPLED"
+}

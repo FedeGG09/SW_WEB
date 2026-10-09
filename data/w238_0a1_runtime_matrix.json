@@ -1,0 +1,47 @@
+{
+  "schema": "W238_0A1_RUNTIME_MATRIX_V1",
+  "route": "http://127.0.0.1:5173/?academyCandidate=1",
+  "mode": "DEV_OPT_IN_CANDIDATE",
+  "normalGameFresh": {
+    "url": "http://127.0.0.1:5173/?world=tatooine",
+    "status": "PASS_READY_tatooineSpaceport",
+    "devCandidateUi": "ABSENT"
+  },
+  "matrix": {
+    "R0_candidate_route_load": "PASS_BROWSER_AX",
+    "R1_danm13_render": "VERIFIED_BROWSER_SCREENSHOT",
+    "R2_danm14aa_render": "VERIFIED_BROWSER_SCREENSHOT_PARTIAL_MATERIALS",
+    "R3_all_rooms": "PASS_SOURCE_9_9_AND_EXPORT_9_9",
+    "R4_aren_native": "PASS_BROWSER_TELEMETRY",
+    "R5_nara_native": "PASS_BROWSER_TELEMETRY",
+    "R6_aren_grounding": "PARTIAL_PREVIEW_POSITION_ONLY",
+    "R7_nara_grounding": "PARTIAL_PREVIEW_POSITION_ONLY",
+    "R8_aren_locomotion": "PARTIAL_DIRECT_PREVIEW_NO_WOK_COLLISION",
+    "R9_nara_follow": "PARTIAL_DIRECT_PREVIEW_NO_WOK_COLLISION",
+    "R10_danm13_wok": "PARTIAL_SIDECAR_CERTIFIED_EXISTING_RUNTIME_NOT_BOUND_TO_CANDIDATE",
+    "R11_danm14aa_wok": "PARTIAL_SIDECAR_LOADED",
+    "R12_pth": "PARTIAL_SIDECAR_LOADED",
+    "R13_vis": "PASS_SIDECAR_LOADED",
+    "R14_door_approach": "OPEN",
+    "R15_source_transition": "PASS_SOURCE_BACKED_CANDIDATE_CONTROL",
+    "R16_no_dev_hostile": "PASS",
+    "R17_no_combat_hud": "PASS_MINIMAL_CANDIDATE_UI",
+    "R18_no_synthetic_geometry": "PASS",
+    "R19_animation_ownership": "PASS_READY_GROUP_ONLY",
+    "R20_console_errors": "PASS_OBSERVED_EMPTY_ERROR_BUFFER",
+    "R21_reload_cleanup": "OPEN"
+  },
+  "party": {
+    "actors": [
+      "AREN_NATIVE_JKA_V1",
+      "NARA_NATIVE_JKA_V1"
+    ],
+    "count": 2,
+    "jolee": "NOT_LOADED_BY_CANDIDATE_ROUTE"
+  },
+  "browserEvidence": {
+    "interiorScreenshot": "browser-session:academyCandidate=1/danm13",
+    "courtyardScreenshot": "browser-session:academyCandidate=1/danm14aa",
+    "visualReview": "PARTIAL_OPEN"
+  }
+}

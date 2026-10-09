@@ -1,0 +1,87 @@
+{
+  "schema": "W238_0A1B_RUNTIME_MATRIX_V1",
+  "route": "?academyCandidate=1",
+  "runtimeIdentity": {
+    "devOptIn": true,
+    "party": [
+      "AREN_NATIVE_JKA_V1",
+      "NARA_NATIVE_JKA_V1"
+    ],
+    "jolee": "NOT_LOADED",
+    "hostile": "NOT_LOADED",
+    "candidateAsset": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm14aa_kotor1_candidate_v2.glb",
+    "candidateSha256": "6a804c12471ae85d16d3dab2b39ad9e288e7bf04eaa2803c30fefca906a750d9"
+  },
+  "visual": {
+    "danm13": "OPEN_WHITE_EXTERIOR_SOURCE_CAMERA_AUDIT",
+    "danm14aa": "PASS_BROWSER_BASECOLOR_TEXTURES",
+    "blackBackground": "EXPECTED_DEV_INSPECTION_CANVAS",
+    "actors": "PASS_VISIBLE_CANDIDATE_TELEMETRY"
+  },
+  "navigation": {
+    "danm13WokProjection": "PASS_IMPLEMENTED",
+    "danm14aaWokProjection": "PASS_IMPLEMENTED",
+    "partyFollow": "PASS_IMPLEMENTED_SAME_WOK_PROJECTION",
+    "pthTraversal": "OPEN",
+    "visSelection": "PASS_SIDECAR_SELECTED_SECTOR",
+    "doorInteraction": "PASS_SOURCE_BACKED_CANDIDATE_INTERACTION",
+    "routeCertification": "PARTIAL",
+    "browserEvidence": {
+      "danm13": {
+        "room": "m13aa_13a",
+        "start": [
+          82.17,
+          5.07,
+          -127.64
+        ],
+        "afterMove": [
+          82.17,
+          5,
+          -130.53
+        ],
+        "naraAfterFollow": [
+          82.9,
+          5,
+          -129.9
+        ],
+        "wokRejects": 0,
+        "stuck": 0
+      },
+      "danm14aa": {
+        "room": "m14aa_01c",
+        "start": [
+          408.53,
+          1.5,
+          -93.97
+        ],
+        "afterMove": [
+          408.53,
+          1.21,
+          -96.83
+        ],
+        "naraAfterFollow": [
+          409.26,
+          1.33,
+          -96.2
+        ],
+        "wokRejects": 0,
+        "stuck": 0
+      },
+      "twoWaySourceDoor": "PASS_BROWSER_FORWARD_AND_RECIPROCAL_RETURN"
+    }
+  },
+  "regressions": {
+    "defaultTatooine": "PASS_READY_tatooineSpaceport_FRESH_BROWSER",
+    "typecheck": "PASS",
+    "build": "PASS_NPM_RUN_BUILD_ESCALATED",
+    "combatSystems": "UNCHANGED",
+    "combatLabs": "PRESERVED",
+    "syntheticGeometry": "NONE"
+  },
+  "browserEvidence": {
+    "route": "http://127.0.0.1:5173/?academyCandidate=1",
+    "interior": "BROWSER_SESSION_INSPECTED",
+    "courtyard": "BROWSER_SESSION_INSPECTED_TEXTURED_V2",
+    "party": "AREN_NARA_VISIBLE"
+  }
+}

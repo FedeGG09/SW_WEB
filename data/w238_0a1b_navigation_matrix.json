@@ -1,0 +1,35 @@
+{
+  "schema": "W238_0A1B_NAVIGATION_MATRIX_V1",
+  "sectors": {
+    "danm13": {
+      "rooms": 21,
+      "walkableFaces": 739,
+      "blockedFaces": 1551,
+      "pthNodes": 120,
+      "pthEdges": 261,
+      "visRooms": 21,
+      "roomLinks": 19,
+      "sourceSidecars": "jedi_enclave_navigation.json",
+      "runtime": "WOK_FACE_PROJECTION_BOUND_TO_CANDIDATE_PREVIEW"
+    },
+    "danm14aa": {
+      "rooms": 9,
+      "walkableFaces": 846,
+      "blockedFaces": 1918,
+      "pthNodes": 85,
+      "pthEdges": 190,
+      "visRooms": 9,
+      "roomLinks": 27,
+      "sourceSidecars": "jedi_enclave_danm14aa_navigation.json",
+      "runtime": "WOK_FACE_PROJECTION_BOUND_TO_CANDIDATE_PREVIEW"
+    }
+  },
+  "runtime": {
+    "actorMovement": "Aren movement is constrained to walkable WOK face projections; Nara follows through the same projection.",
+    "grounding": "runtime y is projected from source WOK face plane on successful movement",
+    "pth": "sidecar loaded and counted; full graph path orchestration remains OPEN",
+    "vis": "sidecar loaded; selected sector render visibility verified",
+    "invalidFaces": 0,
+    "teleports": "0 observed in candidate route; source-door entry placement is classified as module transition placement"
+  }
+}

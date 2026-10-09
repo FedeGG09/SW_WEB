@@ -1,0 +1,1813 @@
+{
+  "schema": "W238.0A.2B.source_appearance_registry.v1",
+  "key": "sourceAppearanceIdentity",
+  "records": [
+    {
+      "appearanceId": "kotor1:appearance:014",
+      "sourceAppearanceRow": 14,
+      "appearanceLabel": "Commoner_01_Fem_Asian",
+      "race": "N_CommF",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommF",
+      "bodyTextureResRef": "N_CommF",
+      "headIndex": 8,
+      "headModelResRef": "comm_a_f",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_jedif:6",
+          "module": "danm13",
+          "tag": "dan13_jedif",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commf",
+        "mdl": {
+          "resref": "n_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 152872,
+          "sha256": "b915e94aeb05c341134901afadfeb0404d17ad87a5b61945962a804f8b66a602"
+        },
+        "mdx": {
+          "resref": "n_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 128832,
+          "sha256": "882ce8f043ad669b2f0c30211dc6f738d4ceff0d0a608ad874ce339edb7cb632"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 64,
+        "internalName": "N_CommF"
+      },
+      "headModel": {
+        "resref": "comm_a_f",
+        "mdl": {
+          "resref": "comm_a_f",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 78430,
+          "sha256": "20a9b84ce42ca04af54ac8f18fc2146a7ad5935513f5cde2e7c47bb9b31216db"
+        },
+        "mdx": {
+          "resref": "comm_a_f",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 55264,
+          "sha256": "b420bc60bafcc6d313b5a650886a0e182fb4329ec8d77f806625796dd6162c68"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "comm_a_f"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:048",
+      "sourceAppearanceRow": 48,
+      "appearanceLabel": "Alien_Twilek_Male_01",
+      "race": "N_TwilekM",
+      "modelType": "B",
+      "bodyModelResRef": "N_TwilekM",
+      "bodyTextureResRef": "N_TwilekMA",
+      "headIndex": 62,
+      "headModelResRef": "twilek_m",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_crattis:2",
+          "module": "danm13",
+          "tag": "dan13_crattis",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm13:LurArka:10",
+          "module": "danm13",
+          "tag": "LurArka",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_twilekm",
+        "mdl": {
+          "resref": "n_twilekm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 205254,
+          "sha256": "4bb832af50a85a89cdb43a2bb2d3c8f2442a24fdc945c4ac8566fa9818e04810"
+        },
+        "mdx": {
+          "resref": "n_twilekm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 162432,
+          "sha256": "312a2d46cd9b29345b2dc28f7725e72ef492abd19ac08e5f64b7c7af4cc51fc2"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 83,
+        "internalName": "N_TwilekM"
+      },
+      "headModel": {
+        "resref": "twilek_m",
+        "mdl": {
+          "resref": "twilek_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 91882,
+          "sha256": "4e584685e23a13b8a4cc9e367a6a93062fb8fb4a0ca0b5fdc994496d2a6d886f"
+        },
+        "mdx": {
+          "resref": "twilek_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 102688,
+          "sha256": "aba05a2daec655bfcd8dd6df3632cfb48e1230e1bf822620f4ac6d68b5d27bdb"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "N_TwilekM",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "Twilek_M"
+      },
+      "rigFamily": "KOTOR_ALIEN_HUMANOID",
+      "derivedGlbPath": "public/_lab/kotor/characters/w238_0a2b/kotor1_n_twilekm_twilek_m.glb",
+      "assetStatus": "CONVERTED_EXACT_SOURCE_VALIDATED",
+      "conversionWarnings": [],
+      "derivedGlbSha256": "8c4787e5cc776388ec0fa609b12132f5ad2b9c476f4ff2fe17dacf30dba2b152",
+      "validationReport": "tools/_w238_0a2b_jobs/twilek_m/twilek_validation.json"
+    },
+    {
+      "appearanceId": "kotor1:appearance:052",
+      "sourceAppearanceRow": 52,
+      "appearanceLabel": "Unique_Vandar",
+      "race": "N_Yoda",
+      "modelType": "F",
+      "bodyModelResRef": "N_Yoda",
+      "bodyTextureResRef": "N_Yoda",
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_vandar:13",
+          "module": "danm13",
+          "tag": "dan13_vandar",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_yoda",
+        "mdl": {
+          "resref": "n_yoda",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 250075,
+          "sha256": "7090541cbb1acde92bf312b4605215865105c1f396069a67e1895d840426a6f8"
+        },
+        "mdx": {
+          "resref": "n_yoda",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 161872,
+          "sha256": "06fe1e7c9f351d3bac207d36a0c3488c459ef98c09765c24cf9416f03a6c594b"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Male02",
+        "localAnimationCount": 4,
+        "nodeCount": 75,
+        "internalName": "N_Yoda"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_ALIEN_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:075",
+      "sourceAppearanceRow": 75,
+      "appearanceLabel": "Creature_Kath_Hound_A01",
+      "race": "C_KhoundA",
+      "modelType": "S",
+      "bodyModelResRef": "C_KhoundA",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14aa_bay:6",
+          "module": "danm14aa",
+          "tag": "dan14aa_bay",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:15",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:16",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "c_khounda",
+        "mdl": {
+          "resref": "c_khounda",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 397307,
+          "sha256": "916172db512e00c960b0a46ca63d1ae1dc12dbfff32a9d0aa25ddde7d8642721"
+        },
+        "mdx": {
+          "resref": "c_khounda",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 158928,
+          "sha256": "90c5423b93128b286c314cab87077f377dcd143ac4c2319c719922cae00589a0"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "NULL",
+        "localAnimationCount": 32,
+        "nodeCount": 41,
+        "internalName": "C_KhoundA"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_CREATURE",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:076",
+      "sourceAppearanceRow": 76,
+      "appearanceLabel": "Creature_Kath_Hound_B01",
+      "race": "C_KhoundB",
+      "modelType": "S",
+      "bodyModelResRef": "C_KhoundB",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:g_kathhound:10",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:14",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "c_khoundb",
+        "mdl": {
+          "resref": "c_khoundb",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 462514,
+          "sha256": "ff71e16de31a3bf5e04d2a52b79c194fe068cc289d8377b76ce240a4dea4e6c1"
+        },
+        "mdx": {
+          "resref": "c_khoundb",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 175936,
+          "sha256": "20042a546b3055722cefc0d60030413a03c4f314be05e1773c76c51fbcbb829c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "NULL",
+        "localAnimationCount": 32,
+        "nodeCount": 46,
+        "internalName": "c_khoundB"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_CREATURE",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:185",
+      "sourceAppearanceRow": 185,
+      "appearanceLabel": "Commoner_01_Fem_White",
+      "race": "N_CommF",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommF",
+      "bodyTextureResRef": "N_CommF",
+      "headIndex": 12,
+      "headModelResRef": "comm_w_f",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_belaya:1",
+          "module": "danm13",
+          "tag": "dan13_belaya",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm13:dan13_jedif2:5",
+          "module": "danm13",
+          "tag": "dan13_jedif2",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commf",
+        "mdl": {
+          "resref": "n_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 152872,
+          "sha256": "b915e94aeb05c341134901afadfeb0404d17ad87a5b61945962a804f8b66a602"
+        },
+        "mdx": {
+          "resref": "n_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 128832,
+          "sha256": "882ce8f043ad669b2f0c30211dc6f738d4ceff0d0a608ad874ce339edb7cb632"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 64,
+        "internalName": "N_CommF"
+      },
+      "headModel": {
+        "resref": "comm_w_f",
+        "mdl": {
+          "resref": "comm_w_f",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 78022,
+          "sha256": "ba3980af21c0ad976dc1b780e85c16a3e762eaa7ed4b00b77c191239460e4e67"
+        },
+        "mdx": {
+          "resref": "comm_w_f",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 55840,
+          "sha256": "7bcc67bceece086b9f38ad3d4b2cf926cf2852457671071c25aa98fca3663777"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "comm_w_f"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:188",
+      "sourceAppearanceRow": 188,
+      "appearanceLabel": "Commoner_01_Fem_Old_White",
+      "race": "N_CommF",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommF",
+      "bodyTextureResRef": "N_CommF",
+      "headIndex": 24,
+      "headModelResRef": "old_w_f",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_elise:0",
+          "module": "danm14aa",
+          "tag": "dan14_elise",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commf",
+        "mdl": {
+          "resref": "n_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 152872,
+          "sha256": "b915e94aeb05c341134901afadfeb0404d17ad87a5b61945962a804f8b66a602"
+        },
+        "mdx": {
+          "resref": "n_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 128832,
+          "sha256": "882ce8f043ad669b2f0c30211dc6f738d4ceff0d0a608ad874ce339edb7cb632"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 64,
+        "internalName": "N_CommF"
+      },
+      "headModel": {
+        "resref": "old_w_f",
+        "mdl": {
+          "resref": "old_w_f",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 76923,
+          "sha256": "06473e1e8cc19b06be86faa92ccd3a6d85eb6df8348f2fc3afdabd146d498010"
+        },
+        "mdx": {
+          "resref": "old_w_f",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 55264,
+          "sha256": "321cf489fcf9ef3492f052ef19b9885427d99546e63fcf98a60ecbaf0d522ed3"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "old_w_f"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:190",
+      "sourceAppearanceRow": 190,
+      "appearanceLabel": "Commoner_01_Mal_White",
+      "race": "N_CommM",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommM",
+      "bodyTextureResRef": "N_CommM",
+      "headIndex": 13,
+      "headModelResRef": "comm_w_m",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_jedim:7",
+          "module": "danm13",
+          "tag": "dan13_jedim",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:dan14_jon:1",
+          "module": "danm14aa",
+          "tag": "dan14_jon",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commm",
+        "mdl": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 165323,
+          "sha256": "bc7836e1d43daedf95e699ee53753c9599226b136ef2bd73ca072b4207f6f8e8"
+        },
+        "mdx": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 140368,
+          "sha256": "eed7ff8a8dae136b003d629ae66ffeae6daa008e203854d022e32ae86d800b9c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 59,
+        "internalName": "N_CommM"
+      },
+      "headModel": {
+        "resref": "comm_w_m",
+        "mdl": {
+          "resref": "comm_w_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 70669,
+          "sha256": "3f12ec12d92f3ef5760f5c7fe3b61f2e7eac11f1c7d37c59de7e17e9f0db5b7b"
+        },
+        "mdx": {
+          "resref": "comm_w_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 51424,
+          "sha256": "290fe5492873086da3ee127c4ba66c014e8c2fd7a6f6a3c63b0f37e9fb1ffdbe"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 32,
+        "internalName": "comm_w_m"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:192",
+      "sourceAppearanceRow": 192,
+      "appearanceLabel": "Commoner_01_Mal_Old_Asian",
+      "race": "N_CommM",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommM",
+      "bodyTextureResRef": "N_CommM",
+      "headIndex": 21,
+      "headModelResRef": "old_a_m",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_ahlan:0",
+          "module": "danm13",
+          "tag": "dan13_ahlan",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commm",
+        "mdl": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 165323,
+          "sha256": "bc7836e1d43daedf95e699ee53753c9599226b136ef2bd73ca072b4207f6f8e8"
+        },
+        "mdx": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 140368,
+          "sha256": "eed7ff8a8dae136b003d629ae66ffeae6daa008e203854d022e32ae86d800b9c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 59,
+        "internalName": "N_CommM"
+      },
+      "headModel": {
+        "resref": "old_a_m",
+        "mdl": {
+          "resref": "old_a_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 72954,
+          "sha256": "5589afd20bd1817f8c6b8be57297f5bd2e3a3e4be619ef0bd57ae54dd51c4f1e"
+        },
+        "mdx": {
+          "resref": "old_a_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 54496,
+          "sha256": "89691219f2b778749de68c5a224d11918e275c41e801fccb44c0cf2d3559cba2"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 32,
+        "internalName": "old_a_m"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:214",
+      "sourceAppearanceRow": 214,
+      "appearanceLabel": "Jedi_White_Male_02",
+      "race": "N_JediCounF",
+      "modelType": "B",
+      "bodyModelResRef": "N_JediCounM",
+      "bodyTextureResRef": "N_JediCounM",
+      "headIndex": 52,
+      "headModelResRef": "PMHC02",
+      "headTextureColumns": {
+        "headtexvvve": "PMHC02D",
+        "headtexvve": "PMHC02D3",
+        "headtexve": "PMHC02D2",
+        "headtexe": "PMHC02D1"
+      },
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_jedim2:21",
+          "module": "danm14aa",
+          "tag": "dan14_jedim2",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_jedicounm",
+        "mdl": {
+          "resref": "n_jedicounm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 170266,
+          "sha256": "968e10240f01f8468c1e05298a7e3db8a4602d6cd1225c693e714ada522a9f98"
+        },
+        "mdx": {
+          "resref": "n_jedicounm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 148896,
+          "sha256": "d7d76c8daa478cd0165053c17aa9579133755c377ac5784f7b3b7a3b85462441"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 61,
+        "internalName": "N_JediCounM"
+      },
+      "headModel": {
+        "resref": "pmhc02",
+        "mdl": {
+          "resref": "pmhc02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\player.bif",
+          "size": 81096,
+          "sha256": "e32bea36abcd29b0fc55c4672cc8506165032f5801bb0ece61c7dc6ee4f409b3"
+        },
+        "mdx": {
+          "resref": "pmhc02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\player.bif",
+          "size": 58368,
+          "sha256": "2564c62ad3a41b5c44a1fbf62506c0aba0fb9192973f88750efa8c3050a388f4"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 35,
+        "internalName": "PMHC02"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": "public/_lab/kotor/characters/w238_0a2b/kotor1_n_jedicounm_pmhc02.glb",
+      "assetStatus": "CONVERTED_EXACT_SOURCE_VALIDATED",
+      "conversionWarnings": [],
+      "derivedGlbSha256": "a86a37b189ead0fc6184f1f03aa2065c7f1c0287f3bab941b11c909bd3b97358",
+      "validationReport": "tools/_w238_0a2b_jobs/jedi_council/jedi_validation.json"
+    },
+    {
+      "appearanceId": "kotor1:appearance:227",
+      "sourceAppearanceRow": 227,
+      "appearanceLabel": "Jedi_Black_Male_05",
+      "race": "N_JediCounF",
+      "modelType": "B",
+      "bodyModelResRef": "N_JediCounM",
+      "bodyTextureResRef": "N_JediCounM",
+      "headIndex": 50,
+      "headModelResRef": "PMHB05",
+      "headTextureColumns": {
+        "headtexvvve": "PMHB05D",
+        "headtexvve": "PMHB05D3",
+        "headtexve": "PMHB05D2",
+        "headtexe": "PMHB05D1"
+      },
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_jedim:2",
+          "module": "danm14aa",
+          "tag": "dan14_jedim",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_jedicounm",
+        "mdl": {
+          "resref": "n_jedicounm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 170266,
+          "sha256": "968e10240f01f8468c1e05298a7e3db8a4602d6cd1225c693e714ada522a9f98"
+        },
+        "mdx": {
+          "resref": "n_jedicounm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 148896,
+          "sha256": "d7d76c8daa478cd0165053c17aa9579133755c377ac5784f7b3b7a3b85462441"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 61,
+        "internalName": "N_JediCounM"
+      },
+      "headModel": {
+        "resref": "pmhb05",
+        "mdl": {
+          "resref": "pmhb05",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\player.bif",
+          "size": 74243,
+          "sha256": "59085dfc5dd7f98a2635fff891c4fadce6dfc3d31618e8246b33a7bb67d56f45"
+        },
+        "mdx": {
+          "resref": "pmhb05",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\player.bif",
+          "size": 54752,
+          "sha256": "1c8afb3a04953202d49db38978a7468025273d4983f65d47bb5ba82bedaacdb7"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 34,
+        "internalName": "PMHB05"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:233",
+      "sourceAppearanceRow": 233,
+      "appearanceLabel": "Droid_Protocol_02",
+      "race": "C_DrdProt",
+      "modelType": "L",
+      "bodyModelResRef": "C_DrdProt",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_jdroid:8",
+          "module": "danm13",
+          "tag": "dan13_jdroid",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm13:dan13_pdroid:11",
+          "module": "danm13",
+          "tag": "dan13_pdroid",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm13:dan13_pdroid:12",
+          "module": "danm13",
+          "tag": "dan13_pdroid",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm13:dan13_ambdrd01:18",
+          "module": "danm13",
+          "tag": "dan13_ambdrd01",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "c_drdprot",
+        "mdl": {
+          "resref": "c_drdprot",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 345772,
+          "sha256": "e2623cdbdfe5c20199f5604736b501de3bd62a21cf18e08cbeeb3b3a1e2f5dfa"
+        },
+        "mdx": {
+          "resref": "c_drdprot",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 98208,
+          "sha256": "ea87a221cf8d1575eff460571e4abca9778e760d60753fda75a914a833bc50d2"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "NULL",
+        "localAnimationCount": 29,
+        "nodeCount": 58,
+        "internalName": "C_DrdProt"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_DROID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:234",
+      "sourceAppearanceRow": 234,
+      "appearanceLabel": "Droid_Protocol_03",
+      "race": "C_DrdProt",
+      "modelType": "L",
+      "bodyModelResRef": "C_DrdProt",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_ambdrd02:17",
+          "module": "danm13",
+          "tag": "dan13_ambdrd02",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "c_drdprot",
+        "mdl": {
+          "resref": "c_drdprot",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 345772,
+          "sha256": "e2623cdbdfe5c20199f5604736b501de3bd62a21cf18e08cbeeb3b3a1e2f5dfa"
+        },
+        "mdx": {
+          "resref": "c_drdprot",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 98208,
+          "sha256": "ea87a221cf8d1575eff460571e4abca9778e760d60753fda75a914a833bc50d2"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "NULL",
+        "localAnimationCount": 29,
+        "nodeCount": 58,
+        "internalName": "C_DrdProt"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_DROID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:245",
+      "sourceAppearanceRow": 245,
+      "appearanceLabel": "Creature_Kath_Hound_A02",
+      "race": "C_KhoundA",
+      "modelType": "S",
+      "bodyModelResRef": "C_KhoundA",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:g_kathhound:7",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:8",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:9",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:11",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:12",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:g_kathhound:13",
+          "module": "danm14aa",
+          "tag": "g_kathhound",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "c_khounda",
+        "mdl": {
+          "resref": "c_khounda",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 397307,
+          "sha256": "916172db512e00c960b0a46ca63d1ae1dc12dbfff32a9d0aa25ddde7d8642721"
+        },
+        "mdx": {
+          "resref": "c_khounda",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 158928,
+          "sha256": "90c5423b93128b286c314cab87077f377dcd143ac4c2319c719922cae00589a0"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "NULL",
+        "localAnimationCount": 32,
+        "nodeCount": 41,
+        "internalName": "C_KhoundA"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_CREATURE",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:258",
+      "sourceAppearanceRow": 258,
+      "appearanceLabel": "Alien_Rodian_04",
+      "race": "N_Rodian",
+      "modelType": "F",
+      "bodyModelResRef": "N_Rodian",
+      "bodyTextureResRef": "N_Rodian",
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_adum:17",
+          "module": "danm14aa",
+          "tag": "dan14_adum",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_rodian",
+        "mdl": {
+          "resref": "n_rodian",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 316059,
+          "sha256": "f51218eb60c7b2f5e4e7463537ee0d237cd39bf84e50a95e46704a913adc0a05"
+        },
+        "mdx": {
+          "resref": "n_rodian",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 194992,
+          "sha256": "a0351029e6edc1045b0b2a592143fdeabe190b4d900302ec3b000f915fc028e8"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 5,
+        "nodeCount": 79,
+        "internalName": "N_Rodian"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_ALIEN_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:269",
+      "sourceAppearanceRow": 269,
+      "appearanceLabel": "Alien_Twilek_Male_02",
+      "race": "N_TwilekM",
+      "modelType": "B",
+      "bodyModelResRef": "N_TwilekM",
+      "bodyTextureResRef": "N_TwilekMB",
+      "headIndex": 62,
+      "headModelResRef": "twilek_m",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_karal:9",
+          "module": "danm13",
+          "tag": "dan13_karal",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm13:Deesra:21",
+          "module": "danm13",
+          "tag": "Deesra",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_twilekm",
+        "mdl": {
+          "resref": "n_twilekm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 205254,
+          "sha256": "4bb832af50a85a89cdb43a2bb2d3c8f2442a24fdc945c4ac8566fa9818e04810"
+        },
+        "mdx": {
+          "resref": "n_twilekm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 162432,
+          "sha256": "312a2d46cd9b29345b2dc28f7725e72ef492abd19ac08e5f64b7c7af4cc51fc2"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 83,
+        "internalName": "N_TwilekM"
+      },
+      "headModel": {
+        "resref": "twilek_m",
+        "mdl": {
+          "resref": "twilek_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 91882,
+          "sha256": "4e584685e23a13b8a4cc9e367a6a93062fb8fb4a0ca0b5fdc994496d2a6d886f"
+        },
+        "mdx": {
+          "resref": "twilek_m",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 102688,
+          "sha256": "aba05a2daec655bfcd8dd6df3632cfb48e1230e1bf822620f4ac6d68b5d27bdb"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "N_TwilekM",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "Twilek_M"
+      },
+      "rigFamily": "KOTOR_ALIEN_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:314",
+      "sourceAppearanceRow": 314,
+      "appearanceLabel": "Lite_Droid_Astro_02",
+      "race": "L_Astro02",
+      "modelType": "L",
+      "bodyModelResRef": "L_Astro02",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_ambdrd03:19",
+          "module": "danm13",
+          "tag": "dan13_ambdrd03",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "l_astro02",
+        "mdl": {
+          "resref": "l_astro02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 43870,
+          "sha256": "8b36beffe328f8466546855a60fa180b253aee7a5ede324255eef9e78e24dd58"
+        },
+        "mdx": {
+          "resref": "l_astro02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 29248,
+          "sha256": "d51ec24a24d1db51ae4eba8825a2cb28ba7eab792741e850bdf44399e7066be1"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "NULL",
+        "localAnimationCount": 2,
+        "nodeCount": 7,
+        "internalName": "L_Astro02"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_DROID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:374",
+      "sourceAppearanceRow": 374,
+      "appearanceLabel": "Alien_Duros_03",
+      "race": "N_Duros",
+      "modelType": "F",
+      "bodyModelResRef": "N_Duros",
+      "bodyTextureResRef": "N_Duros",
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_kni:5",
+          "module": "danm14aa",
+          "tag": "dan14_kni",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_duros",
+        "mdl": {
+          "resref": "n_duros",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 266218,
+          "sha256": "5a589e9d36ab0ffe640fff9060698760abe19ec8c6df76b08bbc268f9afa2b70"
+        },
+        "mdx": {
+          "resref": "n_duros",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 199088,
+          "sha256": "f01b317198a5da3945ff16c4fba48eb379f8d736f72b6f18dcca92068412488f"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 4,
+        "nodeCount": 72,
+        "internalName": "N_Duros"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_ALIEN_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:383",
+      "sourceAppearanceRow": 383,
+      "appearanceLabel": "Lite_Droid_Astro_03",
+      "race": "L_Astro02",
+      "modelType": "L",
+      "bodyModelResRef": "L_Astro02",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_ambdrd03:20",
+          "module": "danm13",
+          "tag": "dan13_ambdrd03",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "l_astro02",
+        "mdl": {
+          "resref": "l_astro02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 43870,
+          "sha256": "8b36beffe328f8466546855a60fa180b253aee7a5ede324255eef9e78e24dd58"
+        },
+        "mdx": {
+          "resref": "l_astro02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 29248,
+          "sha256": "d51ec24a24d1db51ae4eba8825a2cb28ba7eab792741e850bdf44399e7066be1"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "NULL",
+        "localAnimationCount": 2,
+        "nodeCount": 7,
+        "internalName": "L_Astro02"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_DROID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:393",
+      "sourceAppearanceRow": 393,
+      "appearanceLabel": "Lite_Commoner_Female_03",
+      "race": "L_CommF",
+      "modelType": "F",
+      "bodyModelResRef": "L_CommF",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_setf:19",
+          "module": "danm14aa",
+          "tag": "dan14_setf",
+          "classification": "SCRIPTED",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "l_commf",
+        "mdl": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 153846,
+          "sha256": "59076bfffed5049493742398d7056391cb0af8ffde64d54380d0aaebe0b95f61"
+        },
+        "mdx": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 122080,
+          "sha256": "94dcf3c50bcb96d689895c839769bd0f78de38f7ced68a814f20c6fef5d25bb4"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 73,
+        "internalName": "L_CommF"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:394",
+      "sourceAppearanceRow": 394,
+      "appearanceLabel": "Lite_Commoner_Female_04",
+      "race": "L_CommF",
+      "modelType": "F",
+      "bodyModelResRef": "L_CommF",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_setm:4",
+          "module": "danm14aa",
+          "tag": "dan14_setm",
+          "classification": "SCRIPTED",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        },
+        {
+          "stableNpcId": "danm14aa:dan14_setf:18",
+          "module": "danm14aa",
+          "tag": "dan14_setf",
+          "classification": "SCRIPTED",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "l_commf",
+        "mdl": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 153846,
+          "sha256": "59076bfffed5049493742398d7056391cb0af8ffde64d54380d0aaebe0b95f61"
+        },
+        "mdx": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 122080,
+          "sha256": "94dcf3c50bcb96d689895c839769bd0f78de38f7ced68a814f20c6fef5d25bb4"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 73,
+        "internalName": "L_CommF"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:407",
+      "sourceAppearanceRow": 407,
+      "appearanceLabel": "Lite_Commoner_Female_B01",
+      "race": "L_CommF",
+      "modelType": "F",
+      "bodyModelResRef": "L_CommF",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_setf:20",
+          "module": "danm14aa",
+          "tag": "dan14_setf",
+          "classification": "SCRIPTED",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "l_commf",
+        "mdl": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 153846,
+          "sha256": "59076bfffed5049493742398d7056391cb0af8ffde64d54380d0aaebe0b95f61"
+        },
+        "mdx": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 122080,
+          "sha256": "94dcf3c50bcb96d689895c839769bd0f78de38f7ced68a814f20c6fef5d25bb4"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 73,
+        "internalName": "L_CommF"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:411",
+      "sourceAppearanceRow": 411,
+      "appearanceLabel": "Lite_Commoner_Female_B05",
+      "race": "L_CommF",
+      "modelType": "F",
+      "bodyModelResRef": "L_CommF",
+      "bodyTextureResRef": null,
+      "headIndex": null,
+      "headModelResRef": null,
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm14aa:dan14_setf:3",
+          "module": "danm14aa",
+          "tag": "dan14_setf",
+          "classification": "SCRIPTED",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "l_commf",
+        "mdl": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 153846,
+          "sha256": "59076bfffed5049493742398d7056391cb0af8ffde64d54380d0aaebe0b95f61"
+        },
+        "mdx": {
+          "resref": "l_commf",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 122080,
+          "sha256": "94dcf3c50bcb96d689895c839769bd0f78de38f7ced68a814f20c6fef5d25bb4"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female03",
+        "localAnimationCount": 0,
+        "nodeCount": 73,
+        "internalName": "L_CommF"
+      },
+      "headModel": {
+        "resref": null,
+        "status": "EMPTY"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:416",
+      "sourceAppearanceRow": 416,
+      "appearanceLabel": "Unique_Zhar",
+      "race": "N_CommM",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommM",
+      "bodyTextureResRef": "N_CommM",
+      "headIndex": 78,
+      "headModelResRef": "N_ZharH",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_zhar:15",
+          "module": "danm13",
+          "tag": "dan13_zhar",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commm",
+        "mdl": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 165323,
+          "sha256": "bc7836e1d43daedf95e699ee53753c9599226b136ef2bd73ca072b4207f6f8e8"
+        },
+        "mdx": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 140368,
+          "sha256": "eed7ff8a8dae136b003d629ae66ffeae6daa008e203854d022e32ae86d800b9c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 59,
+        "internalName": "N_CommM"
+      },
+      "headModel": {
+        "resref": "n_zharh",
+        "mdl": {
+          "resref": "n_zharh",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 91881,
+          "sha256": "044c7a218f6abeee6bafd74e5a1cc64a9f95e5b61a52aaa5e45fdb711a93782b"
+        },
+        "mdx": {
+          "resref": "n_zharh",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 102688,
+          "sha256": "39cfb3d19fa4264c02f998ddf144a195513d2b18bf8ecb6ff848e34646adc8fe"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "N_TwilekM",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "N_ZharH"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:423",
+      "sourceAppearanceRow": 423,
+      "appearanceLabel": "Unique_Dorak",
+      "race": "N_CommM",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommM",
+      "bodyTextureResRef": "N_CommM",
+      "headIndex": 80,
+      "headModelResRef": "N_DorakH",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_dorak:3",
+          "module": "danm13",
+          "tag": "dan13_dorak",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commm",
+        "mdl": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 165323,
+          "sha256": "bc7836e1d43daedf95e699ee53753c9599226b136ef2bd73ca072b4207f6f8e8"
+        },
+        "mdx": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 140368,
+          "sha256": "eed7ff8a8dae136b003d629ae66ffeae6daa008e203854d022e32ae86d800b9c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 59,
+        "internalName": "N_CommM"
+      },
+      "headModel": {
+        "resref": "n_dorakh",
+        "mdl": {
+          "resref": "n_dorakh",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 72780,
+          "sha256": "7f9c14f01b8c8065e35ff94dedb2dd960701208103458c1a787ea57c8fe3086c"
+        },
+        "mdx": {
+          "resref": "n_dorakh",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 53472,
+          "sha256": "3455ae444da9a2202a5dcd9ee75c599c0bd8f42558e7133b3d4dccead1f934d5"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "N_DorakH"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:424",
+      "sourceAppearanceRow": 424,
+      "appearanceLabel": "Unique_Vrook",
+      "race": "N_CommM",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommM",
+      "bodyTextureResRef": "N_CommM",
+      "headIndex": 81,
+      "headModelResRef": "N_VrookH",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_vrook:14",
+          "module": "danm13",
+          "tag": "dan13_vrook",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commm",
+        "mdl": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 165323,
+          "sha256": "bc7836e1d43daedf95e699ee53753c9599226b136ef2bd73ca072b4207f6f8e8"
+        },
+        "mdx": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 140368,
+          "sha256": "eed7ff8a8dae136b003d629ae66ffeae6daa008e203854d022e32ae86d800b9c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 59,
+        "internalName": "N_CommM"
+      },
+      "headModel": {
+        "resref": "n_vrookh",
+        "mdl": {
+          "resref": "n_vrookh",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 73577,
+          "sha256": "6f8d0ad8bb6a4f34acff9101ef304e06322eaa1002dd9545de644e3e9c3e8b24"
+        },
+        "mdx": {
+          "resref": "n_vrookh",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 54368,
+          "sha256": "03f788a9ca6591257944e97d7dc87ca3db98996f89ba520da15c2c6b291438dc"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 32,
+        "internalName": "N_VrookH"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:450",
+      "sourceAppearanceRow": 450,
+      "appearanceLabel": "Alien_Twilek_Male_Orange",
+      "race": "N_CommM",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommM",
+      "bodyTextureResRef": "N_CommM",
+      "headIndex": 64,
+      "headModelResRef": "twilek_m02",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_solaa:16",
+          "module": "danm13",
+          "tag": "dan13_solaa",
+          "classification": "STATIC",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commm",
+        "mdl": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 165323,
+          "sha256": "bc7836e1d43daedf95e699ee53753c9599226b136ef2bd73ca072b4207f6f8e8"
+        },
+        "mdx": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 140368,
+          "sha256": "eed7ff8a8dae136b003d629ae66ffeae6daa008e203854d022e32ae86d800b9c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 59,
+        "internalName": "N_CommM"
+      },
+      "headModel": {
+        "resref": "twilek_m02",
+        "mdl": {
+          "resref": "twilek_m02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 91884,
+          "sha256": "8de642a9064716d26ff2bc45756ada4a2a0819d8351bdd8ace8869a209b6acf4"
+        },
+        "mdx": {
+          "resref": "twilek_m02",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 102688,
+          "sha256": "1e577dfcc5e189c6c87f662252c1458e245f1cad9f150b688dd9dceac1c66e52"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "N_TwilekM",
+        "localAnimationCount": 0,
+        "nodeCount": 33,
+        "internalName": "Twilek_M02"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    },
+    {
+      "appearanceId": "kotor1:appearance:465",
+      "sourceAppearanceRow": 465,
+      "appearanceLabel": "Commoner_02_Mal_Asian",
+      "race": "N_CommM",
+      "modelType": "B",
+      "bodyModelResRef": "N_CommM",
+      "bodyTextureResRef": "N_CommM",
+      "headIndex": 96,
+      "headModelResRef": "comm_a_m2",
+      "headTextureColumns": {},
+      "instances": [
+        {
+          "stableNpcId": "danm13:dan13_jedim2:4",
+          "module": "danm13",
+          "tag": "dan13_jedim2",
+          "classification": "CONDITIONAL",
+          "spawnPolicy": "SOURCE_POLICY_PRESERVED"
+        }
+      ],
+      "bodyModel": {
+        "resref": "n_commm",
+        "mdl": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 165323,
+          "sha256": "bc7836e1d43daedf95e699ee53753c9599226b136ef2bd73ca072b4207f6f8e8"
+        },
+        "mdx": {
+          "resref": "n_commm",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 140368,
+          "sha256": "eed7ff8a8dae136b003d629ae66ffeae6daa008e203854d022e32ae86d800b9c"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 59,
+        "internalName": "N_CommM"
+      },
+      "headModel": {
+        "resref": "comm_a_m2",
+        "mdl": {
+          "resref": "comm_a_m2",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 70878,
+          "sha256": "9aa76aec71e0e3354b7ca1dccb656ad25c6424a19637f24f0de118ba34377f57"
+        },
+        "mdx": {
+          "resref": "comm_a_m2",
+          "status": "SOURCE_AVAILABLE",
+          "sourcePath": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic\\data\\models.bif",
+          "size": 53024,
+          "sha256": "c497214728b85f3fc5fdc5a0a912a4b78b72496af5f095654b7d87aa688ac165"
+        },
+        "parseStatus": "PARSED",
+        "supermodel": "S_Female02",
+        "localAnimationCount": 0,
+        "nodeCount": 32,
+        "internalName": "comm_a_m2"
+      },
+      "rigFamily": "KOTOR_HUMANOID",
+      "derivedGlbPath": null,
+      "assetStatus": "SOURCE_RESOLVED_CONVERSION_PENDING",
+      "conversionWarnings": []
+    }
+  ],
+  "runtimeBoundary": "registry describes source readiness; spawn eligibility remains in AcademyNpcPopulation policy"
+}

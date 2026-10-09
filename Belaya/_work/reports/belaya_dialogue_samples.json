@@ -1,0 +1,51 @@
+{
+  "sourceCharacter": "BELAYA",
+  "dialogue": "dan13_belaya",
+  "samples": [
+    {
+      "dialogue": "dan13_belaya",
+      "nodeList": "EntryList",
+      "nodeIndex": 0,
+      "speaker": null,
+      "text": "Felicidades, joven padawan. Seguro que te vas bien con tu entrenamiento.",
+      "voResRef": "nm13aabela05048_",
+      "audioFile": "NM13AABELA05048_.wav",
+      "audioFormat": [
+        ".wav"
+      ],
+      "lipResRef": "nm13aabela05048_",
+      "lipContainer": "danm13_loc.mod",
+      "mappingBasis": "exact VO_ResRef matched to WAV basename and LIP resref"
+    },
+    {
+      "dialogue": "dan13_belaya",
+      "nodeList": "EntryList",
+      "nodeIndex": 1,
+      "speaker": null,
+      "text": "El Maestro Zhar me ha dicho que has completado las pruebas satisfactoriamente, ya veo que te has construido tu propio sable de luz. Ya eres un verdadero Jedi. Felicidades.",
+      "voResRef": "nm13aabela05045_",
+      "audioFile": "NM13AABELA05045_.wav",
+      "audioFormat": [
+        ".wav"
+      ],
+      "lipResRef": "nm13aabela05045_",
+      "lipContainer": "danm13_loc.mod",
+      "mappingBasis": "exact VO_ResRef matched to WAV basename and LIP resref"
+    },
+    {
+      "dialogue": "dan13_belaya",
+      "nodeList": "EntryList",
+      "nodeIndex": 2,
+      "speaker": null,
+      "text": "Deberías estar orgulloso de ti mismo...peor recuerda que todavía te queda mucho que aprender.",
+      "voResRef": "nm13aabela05046_",
+      "audioFile": "NM13AABELA05046_.wav",
+      "audioFormat": [
+        ".wav"
+      ],
+      "lipResRef": "nm13aabela05046_",
+      "lipContainer": "danm13_loc.mod",
+      "mappingBasis": "exact VO_ResRef matched to WAV basename and LIP resref"
+    }
+  ]
+}

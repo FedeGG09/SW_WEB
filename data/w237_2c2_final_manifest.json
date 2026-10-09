@@ -1,0 +1,83 @@
+{
+  "phase": "W237.2C.2",
+  "date": "2026-10-04",
+  "prototype": "AREN_JKA_PROTOTYPE_V0",
+  "sourcePlayer": "models/players/jedi/model.glm",
+  "sourceSkin": "models/players/jedi/model_default.skin",
+  "sourceSkeleton": "models/players/_humanoid/_humanoid.gla",
+  "sourceInstallReadOnly": true,
+  "sourcePlayerGate": "PARTIAL",
+  "sourceLimitations": ["Skin references models/players/stormtrooper/caps.tga, absent from the vanilla archives checked; no replacement was invented."],
+  "blenderGate": "PASS",
+  "glbGate": "PASS",
+  "characterLabGate": "PASS",
+  "saberGate": "PASS",
+  "combatReadyGate": "PASS",
+  "firstAttackGate": "PASS",
+  "academyGate": "NOT_RUN",
+  "partyGate": "NOT_RUN",
+  "asset": {
+    "path": "/_lab/jka/characters/aren/aren_jka_prototype_v0.glb",
+    "sha256": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca",
+    "bytes": 1115900,
+    "meshCount": 38,
+    "skinCount": 1,
+    "jointCount": 53,
+    "triangleCount": 3315,
+    "imageCount": 7,
+    "animationCount": 11,
+    "morphTargetCount": 0
+  },
+  "faceRig": {
+    "classification": "FACIAL_JOINTS_PRESERVED_NO_RUNTIME_FACIAL_SYSTEM",
+    "facialJoints": ["face", "ceyebrow", "jaw", "lblip2", "leye", "rblip2", "ltlip2", "rtlip2", "reye"]
+  },
+  "combatPreview": {
+    "ready": "JKA_SABER_READY",
+    "sequence": ["JKA_ATTACK_START", "JKA_ATTACK", "JKA_ATTACK_RETURN", "JKA_SABER_READY"],
+    "effects": { "damage": false, "bladeTrace": false, "hitbox": false, "parry": false, "combo": false }
+  },
+  "weapon": {
+    "runtimeAsset": "/assets/weapons/mara_jade_lightsaber_grip_centered.glb",
+    "sourceAttachmentNode": "rhang_tag_bone",
+    "runtimeInstanceCount": 1,
+    "bladeLengthMeters": 0.98,
+    "visibleInIdleAndReady": true
+  },
+  "characterLab": {
+    "url": "http://127.0.0.1:5178/?characterLab=1&player=aren-jka-prototype",
+    "candidateIdentityAssertion": "PASS",
+    "originalAbaSelection": "PASS",
+    "walkTrialMeters": 30.46,
+    "runTrialMeters": 31.37,
+    "backwardClipObserved": "JKA_WALK_BACKWARD",
+    "strafeLeftClipObserved": "JKA_STRAFE_LEFT",
+    "strafeRightClipObserved": "JKA_STRAFE_RIGHT",
+    "attackSequenceObserved": "START pose, swing pose, returned READY"
+  },
+  "originalArenPreserved": {
+    "path": "/assets/characters/player/aren_vey_human_v1.glb",
+    "sha256": "79073f978c889e268e77800dbf7a2d609ec40a2bb314100447ce458f8d8a7ba4"
+  },
+  "protectedHashes": {
+    "aren": { "actual": "79073f978c889e268e77800dbf7a2d609ec40a2bb314100447ce458f8d8a7ba4", "expected": "79073f978c889e268e77800dbf7a2d609ec40a2bb314100447ce458f8d8a7ba4" },
+    "naraOriginal": { "actual": "bcc9e5dc3d96b71ee821fb9bcf047ff576bde762fc31fa918a574a6d4525a816", "expected": "bcc9e5dc3d96b71ee821fb9bcf047ff576bde762fc31fa918a574a6d4525a816" },
+    "belaya": { "actual": "b28a1fbc113fb76a66454b3adfa0ac7c327108b15d6ba3b28590103a32e580d5", "expected": "b28a1fbc113fb76a66454b3adfa0ac7c327108b15d6ba3b28590103a32e580d5" },
+    "jolee": { "actual": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f", "expected": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f" },
+    "jediEnclave": { "actual": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c", "expected": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c" },
+    "ebonHawk": { "actual": "655b5a9b4000af42b7cd0e04a67d63c7e32e26e685bf982474ddd8fbdc11ca2b", "expected": "655b5a9b4000af42b7cd0e04a67d63c7e32e26e685bf982474ddd8fbdc11ca2b" },
+    "anchorhead": { "actual": "c03716016415bbbda3512000fdc408cc4b172387bc3ddec1f6381474d6d5ee31", "expected": "c03716016415bbbda3512000fdc408cc4b172387bc3ddec1f6381474d6d5ee31" },
+    "missionBaseline": { "actual": "982dc6df8482da10cc8e49917bab9cafbe41f9afc95a86b97046f5e4e41ac1d6", "expected": "982dc6df8482da10cc8e49917bab9cafbe41f9afc95a86b97046f5e4e41ac1d6" },
+    "missionCandidateO": { "actual": "b7aa12f5c5b7ac3d6035b556075c2dee58dca4bfdfb00f3496eafc34e58c4263", "expected": "b7aa12f5c5b7ac3d6035b556075c2dee58dca4bfdfb00f3496eafc34e58c4263" },
+    "firefly": { "actual": "14c92b5eba9c174ade61a84c410777850f47d288f31d1066ce891e0fe1712180", "expected": "14c92b5eba9c174ade61a84c410777850f47d288f31d1066ce891e0fe1712180" },
+    "jkaCandidate": { "actual": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca", "expected": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca" }
+  },
+  "normalGame": "PASS: READY tatooineSpaceport without DEV flags",
+  "browserConsole": "No in-page error surfaced; DevTools console log was not directly captured.",
+  "build": "PASS",
+  "permanentCandidate": "MAYBE",
+  "followersChanged": false,
+  "worldChanged": false,
+  "finalGate": "PARTIAL",
+  "readyForW237_2D": "NO"
+}

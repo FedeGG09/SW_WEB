@@ -1,0 +1,79 @@
+{
+  "milestone": "W237.2F.4",
+  "source": {
+    "installedAnimationConfig": "models/players/_humanoid/animation.cfg",
+    "openJkReferences": ["code/cgame/animtable.h", "codemp/game/bg_saber.c"],
+    "semantic": "defender-facing native P1 block/parry response quadrants"
+  },
+  "classifier": {
+    "module": "src/combat/SaberParryDirectionClassifier.ts",
+    "space": "DEFENDER_LOCAL",
+    "inputs": ["accepted attacker previous blade", "accepted attacker current blade", "contact point", "defender transform"],
+    "classificationOncePerParry": true,
+    "topCenterThreshold": "abs(horizontal) <= 0.5 * abs(vertical)",
+    "zeroMotionFallback": "TOP"
+  },
+  "responses": {
+    "TOP": { "symbol": "BOTH_P1_S1_T_", "firstFrame": 10409, "frameCount": 2, "fps": 20, "group": "JKA_PARRY_TOP" },
+    "TOP_LEFT": { "symbol": "BOTH_P1_S1_TL", "firstFrame": 10405, "frameCount": 2, "fps": 20, "group": "JKA_PARRY_TOP_LEFT" },
+    "TOP_RIGHT": { "symbol": "BOTH_P1_S1_TR", "firstFrame": 10407, "frameCount": 2, "fps": 20, "group": "JKA_PARRY_TOP_RIGHT" },
+    "BOTTOM_LEFT": { "symbol": "BOTH_P1_S1_BL", "firstFrame": 10401, "frameCount": 2, "fps": 20, "group": "JKA_PARRY_BOTTOM_LEFT" },
+    "BOTTOM_RIGHT": { "symbol": "BOTH_P1_S1_BR", "firstFrame": 10403, "frameCount": 2, "fps": 20, "group": "JKA_PARRY_BOTTOM_RIGHT" }
+  },
+  "asset": {
+    "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v2.glb",
+    "sha256": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3",
+    "joints": 53,
+    "visibleMeshes": 14,
+    "groupsBefore": 14,
+    "groupsAfter": 18,
+    "newGroups": ["JKA_PARRY_TOP_LEFT", "JKA_PARRY_TOP_RIGHT", "JKA_PARRY_BOTTOM_RIGHT", "JKA_PARRY_BOTTOM_LEFT"]
+  },
+  "syntheticMatrix": [
+    { "incoming": "TOP", "classified": "TOP", "animation": "JKA_PARRY_TOP", "result": "PASS" },
+    { "incoming": "TOP_LEFT", "classified": "TOP_LEFT", "animation": "JKA_PARRY_TOP_LEFT", "result": "PASS" },
+    { "incoming": "TOP_RIGHT", "classified": "TOP_RIGHT", "animation": "JKA_PARRY_TOP_RIGHT", "result": "PASS" },
+    { "incoming": "BOTTOM_LEFT", "classified": "BOTTOM_LEFT", "animation": "JKA_PARRY_BOTTOM_LEFT", "result": "PASS" },
+    { "incoming": "BOTTOM_RIGHT", "classified": "BOTTOM_RIGHT", "animation": "JKA_PARRY_BOTTOM_RIGHT", "result": "PASS" }
+  ],
+  "boundaries": {
+    "TOP_vs_TOP_LEFT": "TOP",
+    "TOP_vs_TOP_RIGHT": "TOP",
+    "TOP_LEFT_vs_BOTTOM_LEFT": "BOTTOM_LEFT",
+    "TOP_RIGHT_vs_BOTTOM_RIGHT": "BOTTOM_RIGHT"
+  },
+  "rotationInvariance": [
+    { "arenRotationDegrees": 0, "localIncoming": "TOP_LEFT", "classified": "TOP_LEFT" },
+    { "arenRotationDegrees": 90, "localIncoming": "TOP_LEFT", "classified": "TOP_LEFT" },
+    { "arenRotationDegrees": 180, "localIncoming": "TOP_LEFT", "classified": "TOP_LEFT" }
+  ],
+  "realJolee": {
+    "attacker": "JOLEE_KOTOR1_ACADEMY_NPC",
+    "clip": "c2a1",
+    "classification": "ROUTED_FROM_ACCEPTED_CONTACT",
+    "selectedGroup": "DIRECTION_CLASSIFIER_RESULT",
+    "damage": "PHYSICS_UNCHANGED"
+  },
+  "protectedSystems": {
+    "saberTraceControllerChanged": false,
+    "saberClashDetectorChanged": false,
+    "parrySuccessLogicChanged": false,
+    "manualBlockChanged": false,
+    "gripChanged": false,
+    "characterAssetsChanged": false,
+    "navigationChanged": false
+  },
+  "gates": {
+    "source": "PASS",
+    "classifier": "PASS",
+    "asset": "PASS",
+    "directionMatrix": "PASS",
+    "rotationInvariance": "PASS",
+    "realContact": "PARTIAL_RUNTIME_LOAD_PENDING",
+    "physicalRegression": "INHERITED_PASS_UNCHANGED_PHYSICS",
+    "visual": "AWAITING_USER_REVIEW",
+    "build": "PASS",
+    "normalGame": "UNVERIFIED_ASSET_STREAM_STALLED_AT_TATOOINE_LOAD",
+    "final": "PARTIAL"
+  }
+}

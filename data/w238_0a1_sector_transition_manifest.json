@@ -1,0 +1,39 @@
+{
+  "schema": "W238_0A1_SECTOR_TRANSITION_V1",
+  "candidate": "ACADEMY_PROLOGUE_V1",
+  "source": {
+    "from": {
+      "module": "danm13",
+      "doorTag": "dan13_door03",
+      "linkedToModule": "danm14aa",
+      "linkedTo": "from13",
+      "transitionDestin": 7470,
+      "position": [
+        82.17449951171875,
+        127.64099884033203,
+        5.074999809265137
+      ]
+    },
+    "to": {
+      "module": "danm14aa",
+      "doorTag": "man14aa_door03",
+      "linkedToModule": "danm13",
+      "linkedTo": "from14a",
+      "transitionDestin": 39043,
+      "position": [
+        108.5250015258789,
+        93.9749984741211,
+        1.5
+      ]
+    },
+    "sourceEvidence": "data/w238_0a_academy_source_manifest.json and extracted m13aa.git/m14aa.git",
+    "classification": "RECIPROCAL_MODULE_TRANSITION_DOOR"
+  },
+  "runtime": {
+    "candidateRoute": "?academyCandidate=1",
+    "sourceDoorControl": "SOURCE DOOR TRANSITION",
+    "runtimeStatus": "SOURCE_BACKED_CANDIDATE_PREVIEW",
+    "entryPlacement": "module entry positions are derived from reciprocal source door records; preview sectors remain visually separated by a candidate-only +300 x offset"
+  },
+  "gate": "SOURCE_BACKED; FULL_NAV_DOOR_RUNTIME_PARTIAL"
+}

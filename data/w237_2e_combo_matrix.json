@@ -1,0 +1,83 @@
+{
+  "milestone": "W237.2E-CLOSE",
+  "status": "PARTIAL",
+  "leader": "AREN_NATIVE_JKA_V1",
+  "weapon": "JKA_NATIVE_TRAINING_SINGLE_SABER_V1",
+  "comboAsset": {
+    "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_combo_v3.glb",
+    "sha256": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+    "meshCount": 14,
+    "meshNodeCount": 14,
+    "jointCount": 53,
+    "animationGroupCount": 13,
+    "requiredGroupsPresent": true,
+    "staticAnimationChannelAudit": {
+      "channelsPerGroup": 159,
+      "uniqueTargetPropertiesPerGroup": 159,
+      "targetJointsPerGroup": 53,
+      "foreignTargetsPerGroup": 0,
+      "duplicateTargetPropertyPairsPerGroup": 0,
+      "translationRotationScaleChannelsPerJoint": 1,
+      "pass": true,
+      "runtimeOwnershipObserved": false
+    }
+  },
+  "clips": {
+    "attack1Start": { "group": "JKA_ATTACK_START", "sourceSymbol": "BOTH_S1_S1_T_" },
+    "attack1": { "group": "JKA_ATTACK", "sourceSymbol": "BOTH_A1_T__B_", "frames": 8, "fps": 30 },
+    "comboTransition": { "group": "JKA_COMBO_TRANSITION_B_TO_TL", "sourceSymbol": "BOTH_T1_BR_TL", "frames": 13, "fps": 20 },
+    "attack2": { "group": "JKA_COMBO_ATTACK_TL_TO_BR", "sourceSymbol": "BOTH_A1_TL_BR", "frames": 6, "fps": 30 },
+    "attack2Return": { "group": "JKA_COMBO_RETURN_BR_TO_READY", "sourceSymbol": "BOTH_R1_BR_S1", "frames": 6, "fps": 30 }
+  },
+  "sourceEvidence": {
+    "openJkReference": "E:\\OpenJK-master\\codemp\\game\\bg_panimate.cpp; transition selection follows current end quadrant and next start quadrant",
+    "vanillaAnimationCfg": "installed Jedi Academy models/players/_humanoid/animation.cfg",
+    "decision": "Attack 1 ends in bottom quadrant; use BOTH_T1_BR_TL, then BOTH_A1_TL_BR, then BOTH_R1_BR_S1",
+    "implementationCodeCopied": false
+  },
+  "comboWindow": {
+    "method": "normalized Attack 1 AnimationGroup progress",
+    "open": 0.75,
+    "close": 1.0,
+    "sourceFrames": [6, 8],
+    "sourceAttackFrames": 8,
+    "earlyPolicy": "reject",
+    "latePolicy": "reject",
+    "maxQueuedFollowUps": 1
+  },
+  "deterministicStateMachine": {
+    "executed": true,
+    "singlePress": "PASS: Attack 1 -> RETURN -> READY",
+    "validDoublePress": "PASS: queued follow-up -> transition -> Attack 2 -> READY",
+    "earlyPress": "PASS: EARLY_REJECTED",
+    "latePress": "PASS: LATE_REJECTED",
+    "spam": "PASS: one accepted press; three subsequent presses WINDOW_ALREADY_FILLED"
+  },
+  "academyRuntime": {
+    "url": "http://127.0.0.1:5184/?jediAcademyLab=1&party=1&leader=aren-native-jka-v1&nara=jan&jolee=npc&jkaWeapon=native&jkaCombo=1",
+    "httpStatus": 200,
+    "visualGate": "AWAITING_USER_REVIEW",
+    "runtimeComboMatrix": "NOT_RUN",
+    "activeGroupTelemetry": "NOT_CAPTURED",
+    "janFollowRegression": "NOT_RUN",
+    "joleeNpcRegression": "NOT_RUN"
+  },
+  "physicalMatrix": {
+    "attack1AcceptedHits": "NOT_RUN",
+    "attack1DamageEvents": "NOT_RUN",
+    "attack2AcceptedHits": "NOT_RUN",
+    "attack2DamageEvents": "NOT_RUN",
+    "missDamageEvents": "NOT_RUN",
+    "attackInstanceIdsDistinct": "IMPLEMENTED_BY_SEPARATE_TRACE_BEGIN_ATTACK_CALLS; runtime not observed",
+    "perAttackRepeatDedup": "UNCHANGED_CONTROLLER; combo runtime not observed",
+    "lowFpsComboSweep": "NOT_RUN_IN_THIS_MILESTONE; prior W237.2D baseline remains certified",
+    "saberTraceControllerChanged": false
+  },
+  "buildAndRegression": {
+    "typecheck": "PASS",
+    "build": "PASS",
+    "academySpaHttp": 200,
+    "tatooineSpaHttp": 200,
+    "tatooineReadyState": "UNVERIFIED"
+  }
+}

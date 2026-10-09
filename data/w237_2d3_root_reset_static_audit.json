@@ -1,0 +1,94 @@
+{
+  "milestone": "W237.2D.3",
+  "scope": "STATIC_TRACE_AND_ROOT_RESET_AB_PREPARATION",
+  "browserTests": "WAITING_FOR_BROWSER_AB_TEST",
+  "resetAnimatedRootsImplementationFile": "src/assets/AssetLoader.ts",
+  "resetNodeSelectionRule": "AssetLoader combines imported transformNodes and meshes, selects nodes with no parent among those imported nodes, wraps those nodes under ImportedAsset.root, captures their local positions, then restores those positions after animation evaluation.",
+  "actors": {
+    "CALEB": {
+      "asset": "public/_lab/jka/characters/aren/aren_caleb_jka_candidate_v0.glb",
+      "sha256": "06681468976eb7ea4e53bb692bbcfbedaed0304ae23166b6117917103cd48215",
+      "jointCount": 53,
+      "animationGroupCount": 11,
+      "resetObserverCount": 1,
+      "resetObserverOwner": "PlayerController",
+      "importedAssetInstanceCount": 1,
+      "runtimeWrapperCount": 1,
+      "skeletonInstanceCount": 1,
+      "sourceGltfSceneRootCount": 56,
+      "resetNodeNames": [
+        "scene_root", "*hips_cap_l_leg_0", "*hips_cap_r_leg_0", "*hips_cap_torso_0", "*hips_l_knee_0", "*hips_r_knee_0", "hips2_0", "hips_belt2_0", "hips_legs_0", "hips_robe_0", "hips_robecap_torso_0", "l_leg_0", "r_leg_0", "*back_0", "*chestg_0", "*hip_bl_0", "*hip_br_0", "*hip_fl_0", "*hip_fr_0", "*hip_l_0", "*hip_r_0", "*lchest_l_0", "*lchest_r_0", "*shldr_l_0", "*shldr_r_0", "*torso_cap_head_0", "*torso_cap_hips_0", "*torso_cap_l_arm_0", "*torso_cap_r_arm_0", "*uchest_l_0", "*uchest_r_0", "head_0", "l_shoulder_robe_0", "l_shoulder_robecap_0", "r_shoulder_robe_0", "r_shoulder_robecap_0", "torso2_0", "torso_robe_0", "torso_robe_hood_0", "torso_robecap_head_0", "torso_robecap_hips_0", "*l_arm_cap_l_hand_0", "*l_arm_cap_torso_0", "*l_arm_elbow_0", "l_arm2_0", "l_arm_robe_0", "l_arm_robecap_0", "l_hand_0", "*r_arm_cap_r_hand_0", "*r_arm_cap_torso_0", "*r_arm_elbow_0", "r_arm2_0", "r_arm_robe_0", "r_arm_robecap_0", "r_hand_0", "Cube"
+      ],
+      "resetNodesThatAreSkinJoints": [],
+      "resetNodesTargetedByGlbAnimationChannels": []
+    },
+    "MEETRA": {
+      "asset": "public/_lab/jka/characters/nara/nara_meetra_jka_candidate_v0.glb",
+      "sha256": "6f0c1da82fb569ad4a2f0d014ce8336e21f6b1d77fcfbb41bc0d1c7b51150f32",
+      "jointCount": 53,
+      "animationGroupCount": 11,
+      "resetObserverCount": 1,
+      "resetObserverOwner": "Follower:Nara",
+      "importedAssetInstanceCount": 1,
+      "runtimeWrapperCount": 1,
+      "skeletonInstanceCount": 1,
+      "sourceGltfSceneRootCount": 30,
+      "resetNodeNames": [
+        "scene_root", "*hips_l_knee_0", "*hips_r_knee_0", "body_0", "*l_leg_calf_0", "*l_leg_foot_0", "*r_leg_calf_0", "*r_leg_foot_0", "skirt_0", "*back_0", "*chestg_0", "*hip_bl_0", "*hip_br_0", "*hip_fl_0", "*hip_fr_0", "*hip_l_0", "*hip_r_0", "*lchest_l_0", "*lchest_r_0", "*shldr_l_0", "*shldr_r_0", "*uchest_l_0", "*uchest_r_0", "head_0", "head_root_0", "*l_arm_elbow_0", "l_hand_0", "*r_arm_elbow_0", "r_hand_0", "Cube"
+      ],
+      "resetNodesThatAreSkinJoints": [],
+      "resetNodesTargetedByGlbAnimationChannels": []
+    }
+  },
+  "callSiteAudit": [
+    { "system": "PlayerController", "actor": "player ImportedAsset", "callback": "onAfterAnimations", "target": "one asset's imported root nodes", "disposed": true },
+    { "system": "EbonHawkPartyAdapter.Follower", "actor": "each follower ImportedAsset", "callback": "onAfterAnimations", "target": "that follower's imported root nodes", "disposed": true },
+    { "system": "PartyController", "actor": "PartyActor ImportedAsset", "callback": "onAfterAnimations", "target": "that party actor's root nodes", "disposed": true },
+    { "system": "JediAcademyPartyLab", "actor": "standalone Jolee NPC only", "callback": "onAfterAnimations", "target": "Jolee ImportedAsset root nodes", "disposed": true },
+    { "system": "DuelistAI", "actor": "Duelist ImportedAsset", "callback": "onAfterAnimations", "target": "Duelist ImportedAsset root nodes", "disposed": false },
+    { "system": "KhepraHospitalElyra", "actor": "Elyra ImportedAsset", "callback": "direct call during placement", "target": "Elyra ImportedAsset root nodes", "disposed": "not an observer" }
+  ],
+  "animationStartCallSiteAudit": [
+    { "file": "src/player/PlayerAnimationController.ts", "actor": "PlayerController-owned ImportedAsset", "operation": "group.start", "role": "exact locomotion clip playback; stops its locomotion group set first" },
+    { "file": "src/player/PlayerCombatAnimationController.ts", "actor": "PlayerController-owned ImportedAsset", "operation": "group.start", "role": "exact combat/ready playback; stopAll over that asset group array first" },
+    { "file": "src/dev/kotor/EbonHawkPartyAdapter.ts", "actor": "Follower-owned ImportedAsset", "operation": "group.start", "role": "exact follower semantic clip; stops that follower's previous group" },
+    { "file": "src/dev/kotor/JediAcademyPartyLab.ts", "actor": "Caleb/Meetra", "operation": "none directly", "role": "uses PlayerController methods for leader; Follower owns Meetra clips" },
+    { "file": "src/dev/kotor/JediAcademyPartyLab.ts", "actor": "Jolee NPC / saber visual", "operation": "idle.start / powerup.start", "role": "separate NPC and saber assets only" },
+    { "file": "src/player/WeaponAttachment.ts", "actor": "candidate's passed ImportedAsset", "operation": "actor-local skeleton.bones lookup", "role": "preferred hand socket lookup; no scene-global lookup" }
+  ],
+  "duplicateRootResetObserver": false,
+  "resetTouchesSkinJoints": false,
+  "resetIsLimitedToOneMotionRoot": false,
+  "resetIncludesSceneRootAndStaticTopLevelMeshNodes": true,
+  "sceneRootIsAncestorOfSkeletonRoot": true,
+  "animationOwnership": {
+    "directAcademyAnimationStartsForCalebOrMeetra": false,
+    "EXPLORATION_IDLE": { "clip": "BOTH_STAND1", "owner": "PlayerAnimationController" },
+    "EXPLORATION_WALK": { "clip": "BOTH_WALK1", "owner": "PlayerAnimationController; also registered in PlayerCombatAnimationController's exact-group table" },
+    "EXPLORATION_RUN": { "clip": "BOTH_RUN1", "owner": "PlayerAnimationController; also registered in PlayerCombatAnimationController's exact-group table" },
+    "MOVE_BACKWARD": { "clip": "BOTH_WALKBACK1", "owner": "PlayerAnimationController; also registered in PlayerCombatAnimationController's exact-group table" },
+    "STRAFE_LEFT": { "clip": "BOTH_STRAFE_LEFT1", "owner": "PlayerAnimationController; also registered in PlayerCombatAnimationController's exact-group table" },
+    "STRAFE_RIGHT": { "clip": "BOTH_STRAFE_RIGHT1", "owner": "PlayerAnimationController; also registered in PlayerCombatAnimationController's exact-group table" },
+    "SABER_READY": { "clip": "BOTH_SABERFAST_STANCE", "owner": "PlayerCombatAnimationController" },
+    "ATTACK_START": { "clip": "BOTH_S1_S1_T_", "owner": "PlayerCombatAnimationController" },
+    "ATTACK_ACTIVE": { "clip": "BOTH_A1_T__B_", "owner": "PlayerCombatAnimationController" },
+    "ATTACK_RETURN": { "clip": "BOTH_R1_B__S1", "owner": "PlayerCombatAnimationController" },
+    "duplicateClipRegistryMembership": true,
+    "simultaneousAnimatableOwnershipProven": false,
+    "locomotionSuppressionWhileCombatActive": true
+  },
+  "tests": {
+    "twoActorHarnessUrl": "?jkaDonorIsolationLab=1&jkaRootReset=on",
+    "academyRootResetUrlOn": "?jediAcademyLab=1&party=1&leader=aren-caleb-jka-candidate&nara=meetra&jolee=npc&jkaRootReset=on",
+    "academyRootResetUrlOff": "?jediAcademyLab=1&party=1&leader=aren-caleb-jka-candidate&nara=meetra&jolee=npc&jkaRootReset=off",
+    "TWO_ACTOR_RESET_ON": "NOT_RUN_BROWSER_UNAVAILABLE",
+    "TWO_ACTOR_RESET_OFF": "NOT_RUN_BROWSER_UNAVAILABLE",
+    "ACADEMY_RESET_ON": "NOT_RUN_BROWSER_UNAVAILABLE",
+    "ACADEMY_RESET_OFF": "NOT_RUN_BROWSER_UNAVAILABLE",
+    "resetAltersSkeletonHierarchy": "NOT_MEASURED_RUNTIME",
+    "firstFailureBoundary": "FULL_ACADEMY_REPRODUCED_MANUALLY; exact integration step not yet isolated",
+    "rootCause": "UNKNOWN",
+    "fixApplied": "NONE"
+  },
+  "build": "NOT_RUN_BY_INSTRUCTION"
+}

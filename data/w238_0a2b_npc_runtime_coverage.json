@@ -1,0 +1,407 @@
+{
+  "schema": "W238.0A.2B.npc_runtime_coverage.v1",
+  "directGitInstances": 44,
+  "records": [
+    {
+      "stableNpcId": "danm13:dan13_ahlan:0",
+      "appearanceId": "kotor1:appearance:192",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_belaya:1",
+      "appearanceId": "kotor1:appearance:185",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": true,
+      "assetPath": "/_lab/kotor/characters/belaya/belaya_kotor1_donor.glb",
+      "runtimeStatus": "RUNTIME_READY_EXACT_EXISTING_ASSET"
+    },
+    {
+      "stableNpcId": "danm13:dan13_crattis:2",
+      "appearanceId": "kotor1:appearance:048",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_dorak:3",
+      "appearanceId": "kotor1:appearance:423",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_jedim2:4",
+      "appearanceId": "kotor1:appearance:465",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_jedif2:5",
+      "appearanceId": "kotor1:appearance:185",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_jedif:6",
+      "appearanceId": "kotor1:appearance:014",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_jedim:7",
+      "appearanceId": "kotor1:appearance:190",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_jdroid:8",
+      "appearanceId": "kotor1:appearance:233",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_karal:9",
+      "appearanceId": "kotor1:appearance:269",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:LurArka:10",
+      "appearanceId": "kotor1:appearance:048",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_pdroid:11",
+      "appearanceId": "kotor1:appearance:233",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_pdroid:12",
+      "appearanceId": "kotor1:appearance:233",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_vandar:13",
+      "appearanceId": "kotor1:appearance:052",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_vrook:14",
+      "appearanceId": "kotor1:appearance:424",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_zhar:15",
+      "appearanceId": "kotor1:appearance:416",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_solaa:16",
+      "appearanceId": "kotor1:appearance:450",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_ambdrd02:17",
+      "appearanceId": "kotor1:appearance:234",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_ambdrd01:18",
+      "appearanceId": "kotor1:appearance:233",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_ambdrd03:19",
+      "appearanceId": "kotor1:appearance:314",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:dan13_ambdrd03:20",
+      "appearanceId": "kotor1:appearance:383",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm13:Deesra:21",
+      "appearanceId": "kotor1:appearance:269",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_elise:0",
+      "appearanceId": "kotor1:appearance:188",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_jon:1",
+      "appearanceId": "kotor1:appearance:190",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_jedim:2",
+      "appearanceId": "kotor1:appearance:227",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_setf:3",
+      "appearanceId": "kotor1:appearance:411",
+      "sourceClassification": "SCRIPTED",
+      "spawnPolicy": "SCRIPT_CREATED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_setm:4",
+      "appearanceId": "kotor1:appearance:394",
+      "sourceClassification": "SCRIPTED",
+      "spawnPolicy": "SCRIPT_CREATED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_kni:5",
+      "appearanceId": "kotor1:appearance:374",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14aa_bay:6",
+      "appearanceId": "kotor1:appearance:075",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:7",
+      "appearanceId": "kotor1:appearance:245",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:8",
+      "appearanceId": "kotor1:appearance:245",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:9",
+      "appearanceId": "kotor1:appearance:245",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:10",
+      "appearanceId": "kotor1:appearance:076",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:11",
+      "appearanceId": "kotor1:appearance:245",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:12",
+      "appearanceId": "kotor1:appearance:245",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:13",
+      "appearanceId": "kotor1:appearance:245",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:14",
+      "appearanceId": "kotor1:appearance:076",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:15",
+      "appearanceId": "kotor1:appearance:075",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:g_kathhound:16",
+      "appearanceId": "kotor1:appearance:075",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_adum:17",
+      "appearanceId": "kotor1:appearance:258",
+      "sourceClassification": "STATIC",
+      "spawnPolicy": "ALWAYS_PRESENT_VERIFIED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_setf:18",
+      "appearanceId": "kotor1:appearance:394",
+      "sourceClassification": "SCRIPTED",
+      "spawnPolicy": "SCRIPT_CREATED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_setf:19",
+      "appearanceId": "kotor1:appearance:393",
+      "sourceClassification": "SCRIPTED",
+      "spawnPolicy": "SCRIPT_CREATED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_setf:20",
+      "appearanceId": "kotor1:appearance:407",
+      "sourceClassification": "SCRIPTED",
+      "spawnPolicy": "SCRIPT_CREATED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    },
+    {
+      "stableNpcId": "danm14aa:dan14_jedim2:21",
+      "appearanceId": "kotor1:appearance:214",
+      "sourceClassification": "CONDITIONAL",
+      "spawnPolicy": "CONDITION_UNRESOLVED",
+      "modelReady": false,
+      "assetPath": null,
+      "runtimeStatus": "WITHHELD_MODEL_CONVERSION_PENDING"
+    }
+  ],
+  "summary": {
+    "modelReady": 1,
+    "modelBlocked": 43,
+    "spawnPolicyPreserved": true
+  }
+}

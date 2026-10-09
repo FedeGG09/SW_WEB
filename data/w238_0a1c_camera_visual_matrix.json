@@ -1,0 +1,14 @@
+{
+  "schema": "W238_0A1C_CAMERA_VISUAL_MATRIX_V1",
+  "camera": { "type": "ThirdPersonCamera", "inspectionFlyCameraUsed": false, "target": "controlled Aren actor" },
+  "screenshots": {
+    "interior": { "userVideo": "observation_only", "freshRuntimeProvenance": { "route": "ACADEMY_PROLOGUE_V1", "sector": "danm13", "rooms": ["m13aa_04a", "m13aa_12a"], "profiles": ["AREN_NATIVE_JKA_V1", "NARA_NATIVE_JKA_V1"], "camera": "ThirdPersonCamera" } },
+    "courtyard": { "freshRuntime": { "sector": "danm14aa", "room": "m14aa_01c", "face": 4, "party": 2, "wokFaces": 5054, "pthNodes": 205 } }
+  },
+  "exteriorSourceFidelity": "VERIFIED_BASECOLOR_PLAYER_HEIGHT",
+  "whiteSurface": { "classification": "SOURCE_EXPECTED_NONBLOCKING_VISUAL", "meshCandidates": ["m13aa_12a::Box07", "m13aa_04a::Box17"], "glbNodes": ["Room_m13aa_12a::Box07", "Room_m13aa_04a::Box17"], "material": "JEDI_solid_23", "materialSlot": 43, "diffuse": null, "lightmap": null, "uv0": false, "visibleResult": "OPAQUE_SOLID_SOURCE_SHELL" },
+  "blackBackground": "OUT_OF_BOUNDS_ONLY",
+  "lighting": { "sourceLightmapsRetained": true, "standardGltfLightmapBindings": 0, "gate": "PARTIAL_NONBLOCKING", "exposureChanged": false },
+  "foliage": "SOURCE_TEXTURED_OR_AUDIT_PARTIAL_NO_LIGHTMAP_UV",
+  "gate": "PASS_NO_CRITICAL_GAMEPLAY_BLOCKER"
+}

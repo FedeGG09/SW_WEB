@@ -1,0 +1,72 @@
+{
+  "milestone": "W237.2F.1",
+  "gate": "PASS",
+  "status": "matrix_a_to_g_pass",
+  "files": {
+    "parryController": "src/combat/SaberParryController.ts",
+    "clashDetector": "src/combat/SaberClashDetector.ts",
+    "academyLab": "src/dev/kotor/JediAcademyPartyLab.ts",
+    "report": "docs/combat/W237_2F1_FIRST_PHYSICAL_PARRY.md",
+    "matrix": "data/w237_2f1_parry_matrix.json"
+  },
+  "runtime": {
+    "attacker": "AREN_NATIVE_JKA_V1",
+    "defender": "JOLEE_KOTOR1_ACADEMY_NPC",
+    "joleeReadyClip": "g2r1",
+    "joleeParryClip": "c2p1",
+    "joleeVisibleBladeLengthM": 1.029152,
+    "clashRadiusM": 0.08,
+    "dedupKey": "attackInstanceId + defenderId",
+    "bodyDamageOrdering": "parry before body trace target selection"
+  },
+  "matrix": {
+    "A_READY": "PASS",
+    "B_UNBLOCKED_DAMAGE": "PASS",
+    "C_FIRST_PARRY": "PASS",
+    "D_MULTI_FRAME_DEDUP": "PASS",
+    "E_SECOND_ATTACK": "PASS",
+    "F_MISS": "PASS",
+    "G_100MS_SWEEP": "PASS"
+  },
+  "targetIsolation": {
+    "trainingDummyInParryLab": false,
+    "bodyTargets": ["JOLEE_KOTOR1_ACADEMY_NPC"],
+    "joleeTestInitialHp": 100,
+    "dummyCodeDeleted": false,
+    "dummyBaselineChanged": false,
+    "gate": "PASS"
+  },
+  "regression": {
+    "shortAcademySmoke": "PASS_BY_REQUIRED_ROOM_CONTINUITY_CRITERIA",
+    "shortSmokeVisitedRooms": 5,
+    "shortSmokeTransitions": 4,
+    "janTeleports": 0,
+    "janStuck": 0,
+    "visFallbacks": 0,
+    "wokRejects": 0,
+    "comboRegression": "PASS",
+    "comboAttackIdsDistinct": true,
+    "comboDamageEvents": 2,
+    "comboDummyHealthAfter": 80
+  },
+  "validation": {
+    "typecheck": "PASS",
+    "browserPanelLoad": "PASS",
+    "browserMatrix": "PASS",
+    "visualDirectionReview": "PARTIAL_NOT_INDEPENDENTLY_GRADED",
+    "build": "PASS",
+    "normalGame": "PASS_READY_tatooineSpaceport"
+  },
+  "protectedAssetsChanged": false,
+  "protectedAssetHashes": {
+    "arenNativeBase": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58",
+    "arenNativeCombo": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+    "naraNative": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a",
+    "nativeSaber": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677",
+    "goldenAren": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca",
+    "jolee": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f",
+    "academy": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+  },
+  "saberTraceControllerChanged": false,
+  "readyForW237_2F2": "YES"
+}

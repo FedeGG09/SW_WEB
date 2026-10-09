@@ -1,0 +1,99 @@
+{
+  "milestone": "W237.2F.4",
+  "primary": {
+    "leader": "AREN_NATIVE_JKA_V1",
+    "defender": "NARA_NATIVE_JKA_V1"
+  },
+  "naraCombatAsset": {
+    "path": "public/_lab/jka/characters/nara/nara_native_jka_v1_combat_v1.glb",
+    "sha256": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+    "joints": 53,
+    "animationGroups": 15
+  },
+  "naraGrip": {
+    "translationM": [0.04, 0, 0],
+    "rotationEulerDeg": [0, 5, 80],
+    "source": "AREN_CERTIFIED_NATIVE_GRIP_REUSED",
+    "profileScoped": true,
+    "arenChanged": false,
+    "visualReview": "PASS_USER_VERIFIED",
+    "readyGrip": "PASS",
+    "attackGrip": "PASS",
+    "parryGrip": "PASS",
+    "reusedExactly": true,
+    "poseSpecific": false
+  },
+  "nativeWeapon": {
+    "socket": "rhang_tag_bone",
+    "bladeTag": "*blade1",
+    "axis": "NEGATIVE_X",
+    "lengthM": 0.98,
+    "sha256": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04ad0d860a3ba92357b677"
+  },
+  "pairLab": {
+    "route": "?jkaPairCombatLab=1",
+    "academy": false,
+    "jolee": false,
+    "dummy": false,
+    "party": false,
+    "navigation": false
+  },
+  "protected": {
+    "saberTraceController": false,
+    "saberClashDetector": false,
+    "parrySuccessLogic": false,
+    "roshGripChanged": false,
+    "joleeAssetsChanged": false,
+    "academyWorldChanged": false
+  },
+  "gates": {
+    "profileAndAsset": "PASS",
+    "bidirectionalContactSmoke": "PASS",
+    "fullA0_A5": "EXECUTED_INDIVIDUAL_PAIR_LAB_SMOKE",
+    "fullB0_B5": "EXECUTED_INDIVIDUAL_PAIR_LAB_SMOKE",
+    "visual": "PASS_USER_VERIFIED",
+    "academyPartyRegression": "PASS",
+    "arenComboRegression": "PASS",
+    "build": "PASS",
+    "normalGame": "PASS_READY_tatooineSpaceport",
+    "final": "PASS"
+  },
+  "academySmoke": {
+    "partySize": 2,
+    "joleeRole": "ACADEMY_STORY_NPC",
+    "roomsReached": 3,
+    "naraTeleports": 0,
+    "naraStuck": 0,
+    "visFallbacks": 0,
+    "wokRejects": 0,
+    "legacyDistanceQuotaIgnored": true
+  },
+  "arenComboRegression": {
+    "pass": true,
+    "attackOneInstanceId": "jka_fast_t2b_0001",
+    "attackTwoInstanceId": "jka_fast_t2b_0002",
+    "instanceIdsDistinct": true,
+    "sequence": ["JKA_ATTACK_START", "JKA_ATTACK", "JKA_COMBO_TRANSITION_B_TO_TL", "JKA_COMBO_ATTACK_TL_TO_BR", "JKA_COMBO_RETURN_BR_TO_READY"]
+  },
+  "architecture": {
+    "primaryHumanoid": "NATIVE_JKA",
+    "joleePrimaryRole": "ACADEMY_STORY_NPC",
+    "canArenReceivePlayerControl": true,
+    "canNaraReceivePlayerControl": true,
+    "canArenUseFollowerControl": true,
+    "canNaraUseFollowerControl": true,
+    "actualCharacterSwitchImplemented": false
+  },
+  "protectedHashes": {
+    "arenBase": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58",
+    "arenCombo": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+    "arenDefenseV1": "26145739f58c11402b97987bfbf235b4f8118f98373e945eb197f1fe78deb66b",
+    "arenDefenseV2": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3",
+    "naraOriginalNative": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a",
+    "naraCombat": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+    "nativeSaber": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677",
+    "jolee": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f",
+    "academyWorld": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+  },
+  "next": "W237.2F.4 closed; do not begin character switching or another combat feature"
+}

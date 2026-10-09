@@ -1,0 +1,421 @@
+{
+  "manifest": "W237.2G.4.1",
+  "finalGate": "PARTIAL",
+  "status": "CORE_INTERCEPTION_PASS_RUNTIME_CLOSURE_PARTIAL",
+  "scope": "Actor-generic physical saber interception for the existing one-shot JKA blaster. A block terminates the projectile only after an eligible defender's actual visible blade is reached by the adaptive swept test.",
+  "baseline": {
+    "hostileProfile": "HOSTILE_MERCENARY_JKA_V1",
+    "selectedSpecies": "RODIAN",
+    "hostileAsset": "public/_lab/jka/characters/enemies/rodian/hostile_mercenary_jka_v1.glb",
+    "hostileAssetSha256": "f084310ebcbc52015e2abca6921cf1eec39150a032a913f247881a97b9c4df42",
+    "hostileJointCount": 53,
+    "hostileAnimationGroupCount": 8,
+    "weapon": "JKA_RODIAN_BLASTER_V1",
+    "weaponAsset": "public/_lab/jka/weapons/blaster/jka_rodian_blaster_v1.glb",
+    "weaponAssetSha256": "237fc2ea7b77f1fb30bb914f2581027867299c6591482d0ca79035b51dab05d2",
+    "weaponSocket": "rhand_tag_bone",
+    "muzzleTag": "*flash_0",
+    "projectileSpeedMps": 23,
+    "damage": 10,
+    "maxLifetimeSeconds": 3,
+    "maxDistanceM": 70
+  },
+  "implementation": {
+    "interceptor": "src/combat/SaberProjectileInterceptor.ts",
+    "projectileIntegration": "src/combat/BlasterProjectile.ts",
+    "fireIntegration": "src/combat/SingleBlasterFireController.ts",
+    "bladeSource": "WeaponAttachment.getBladeSegment()",
+    "radiusM": 0.08,
+    "frontArcDeg": 180,
+    "adaptiveMaxEndpointDisplacementM": 0.04,
+    "collisionPriority": "EARLIEST_PHYSICAL_HIT",
+    "eligibleStates": "alive + blockEligible + front arc",
+    "outcome": "SABER_BLOCK",
+    "reflection": false,
+    "ownerTransfer": false,
+    "protectedSaberSystemsChanged": false
+  },
+  "isolated": {
+    "route": "?jkaHostileLab=1",
+    "I0_LOAD": {
+      "result": "PASS",
+      "actors": 3,
+      "sabers": 2,
+      "hostileWeapon": 1,
+      "syntheticFastSweep": "PASS",
+      "syntheticMovingBladeSweep": "PASS"
+    },
+    "I1_AREN_UNBLOCKED": {
+      "result": "PASS",
+      "outcome": "HIT_ACTOR",
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "damageEvents": 1,
+      "saberBlocks": 0,
+      "speedMps": 23
+    },
+    "I2_AREN_BLOCK": {
+      "result": "PASS",
+      "outcome": "SABER_BLOCK",
+      "hpBefore": 100,
+      "hpAfter": 100,
+      "damageEvents": 0,
+      "saberBlocks": 1,
+      "contactDistanceM": 0.07364723003852461,
+      "projectileSweepFraction": 0.9545454545454546,
+      "bladeSweepFraction": 1,
+      "sampleCount": 22,
+      "defensiveArcOk": true,
+      "blockEligible": true,
+      "contactPointWorld": [
+        -1.8753953355758526,
+        0.9779042079755205,
+        0.6635678690864033
+      ]
+    },
+    "I3_NARA_UNBLOCKED": {
+      "result": "PASS",
+      "outcome": "HIT_ACTOR",
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "damageEvents": 1,
+      "saberBlocksBefore": 1,
+      "saberBlocksAfter": 1,
+      "currentSaberBlockDelta": 0,
+      "speedMps": 23
+    },
+    "I4_NARA_BLOCK": {
+      "result": "PASS",
+      "outcome": "SABER_BLOCK",
+      "hpBefore": 100,
+      "hpAfter": 100,
+      "damageEvents": 0,
+      "saberBlocksAfter": 2,
+      "saberBlocksBefore": 1,
+      "currentSaberBlockDelta": 1,
+      "contactDistanceM": 0.07517419895143684,
+      "projectileSweepFraction": 0.4230769230769231,
+      "bladeSweepFraction": 0.5208330922137623,
+      "sampleCount": 26,
+      "defensiveArcOk": true,
+      "blockEligible": true,
+      "contactPointWorld": [
+        0.8691763851812326,
+        0.9795763658025519,
+        1.463843394218367
+      ]
+    },
+    "I5_BLOCK_WITHOUT_BLADE_CONTACT": {
+      "result": "PASS",
+      "source": "fresh Academy body-line control",
+      "outcome": "HIT_ACTOR",
+      "blockEnabled": true,
+      "saberBlocks": 0,
+      "damageStillOccurs": true
+    },
+    "I6_BLOCK_ELIGIBILITY": {
+      "result": "IMPLEMENTED",
+      "runtimeEvidence": "isolated Aren/Nara block cases",
+      "note": "Eligibility is supplied by actor state; no global auto-block."
+    },
+    "I8_FAST_PROJECTILE_SWEEP": {
+      "result": "PASS",
+      "sampleCount": 50,
+      "maxEndpointDisplacementM": 0.04
+    },
+    "I9_MOVING_BLADE_SWEEP": {
+      "result": "PASS",
+      "sampleCount": 50,
+      "maxEndpointDisplacementM": 0.04
+    },
+    "I10_COLLISION_ORDER": {
+      "result": "PASS",
+      "policy": "saber before actor/world when its physical fraction is earliest",
+      "isolatedProof": "Aren/Nara blade block terminates bolt with zero damage"
+    },
+    "I14_ANIMATION_OWNERSHIP": {
+      "result": "PASS_OBSERVED",
+      "note": "interception adds no animation-group writer"
+    },
+    "I15_STRESS": {
+      "result": "PASS",
+      "rows": 100,
+      "worldRows": 14,
+      "activeProjectilesAfter": 0,
+      "duplicateEvents": 0,
+      "note": "Fresh isolated 100-shot run; per-shot temporary world geometry was disposed and no observer/actor accumulation was observed."
+    },
+    "I7_REAR_OUTSIDE_ARC": {
+      "result": "PASS",
+      "defensiveArcOk": false,
+      "outcome": "HIT_ACTOR",
+      "saberBlocks": 0,
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "note": "Fresh isolated outside-180-degree-arc runtime case; physical resolution continued to the actor."
+    },
+    "I11_PAUSE_PRE_INTERCEPT": {
+      "result": "PASS",
+      "sameProjectileId": true,
+      "frozen": true,
+      "pausedFrames": 181,
+      "outcomeAfterResume": "SABER_BLOCK",
+      "damageEvents": 0,
+      "note": "Fresh pre-contact pause; same projectile resumed and was blocked once."
+    },
+    "I12A_ENABLE_BLOCK_DURING_FLIGHT": {
+      "result": "PASS",
+      "startedBlocking": false,
+      "enabledBeforeContact": true,
+      "outcome": "SABER_BLOCK",
+      "damageEvents": 0
+    },
+    "I12B_DISABLE_BLOCK_DURING_FLIGHT": {
+      "result": "PASS",
+      "startedBlocking": true,
+      "disabledBeforeContact": true,
+      "outcome": "HIT_ACTOR",
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "saberBlocks": 0
+    },
+    "I13_WORLD_FIRST_BLOCK_ACTIVE": {
+      "result": "PASS",
+      "blockEligible": true,
+      "outcome": "HIT_WORLD",
+      "saberBlocks": 0,
+      "actorHitCount": 0,
+      "note": "Fresh temporary DEV wall made world physically earlier; world query was restored afterward."
+    },
+    "PROJECTILE_VELOCITY_MUTATION_REGRESSION": {
+      "result": "PASS",
+      "velocityBefore": [
+        0,
+        0,
+        23
+      ],
+      "velocityAfter": [
+        0,
+        0,
+        23
+      ],
+      "speedBefore": 23,
+      "speedAfter": 23,
+      "trajectoryUnchanged": true,
+      "note": "Interceptor evaluation did not mutate velocity or previous/current trajectory."
+    }
+  },
+  "academy": {
+    "route": "?jediAcademyLab=1&party=1&leader=aren-native-jka-v1&nara=native-jka-v1&jolee=npc&jkaControlSwap=1&jkaHostile=1",
+    "load": "PASS_FRESH_LOADED_SESSION",
+    "A0_AREN_UNBLOCKED": {
+      "result": "PASS",
+      "outcome": "HIT_ACTOR",
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "damageEvents": 1,
+      "saberBlocks": 0,
+      "speedMps": 23
+    },
+    "A1_AREN_BLOCK": {
+      "result": "OPEN",
+      "outcome": "HIT_WORLD",
+      "blockEligible": true,
+      "hpAfter": 100,
+      "saberBlocks": 0,
+      "note": "Blade-line placement resolved against earlier Academy world geometry; no clear corridor captured."
+    },
+    "A2_NARA_BLOCK": "OPEN_NATIVE_CLEAR_CORRIDOR_NOT_CAPTURED",
+    "A3_WORLD_OCCLUSION": {
+      "result": "PASS_OBSERVED",
+      "outcome": "HIT_WORLD",
+      "blockEligible": true,
+      "saberBlocks": 0,
+      "actorHitCount": 0
+    },
+    "A4_PAUSE": "OPEN_PRE_INTERCEPT_NOT_CAPTURED",
+    "gate": "PARTIAL",
+    "ACADEMY_INTERCEPT_TEST_ROOM": "NOT_FOUND_OPEN_PENDING",
+    "ACADEMY_WORLD_CLEARANCE_PROOF": "NOT_CAPTURED — current blade-line placement resolved against earlier Academy world geometry; no bypass added.",
+    "A5_MOVE_THEN_BLOCK": {
+      "result": "OPEN",
+      "commandState": "NOT_CAPTURED",
+      "postMovePlayingGroups": "NOT_CAPTURED",
+      "postMoveSaberBlock": "NOT_CAPTURED"
+    }
+  },
+  "tatooine": {
+    "devRoute": "?world=tatooine&jkaHostile=1",
+    "normalRoute": "?world=tatooine",
+    "gate": "PARTIAL",
+    "T0_AREN_NO_BLOCK": {
+      "result": "PASS",
+      "outcome": "HIT_ACTOR",
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "damageEvents": 1,
+      "saberBlocks": 0,
+      "speedMps": 23
+    },
+    "T1_AREN_BLOCK": {
+      "result": "PASS",
+      "outcome": "SABER_BLOCK",
+      "hpBefore": 100,
+      "hpAfter": 100,
+      "damageEvents": 0,
+      "saberBlocks": 1,
+      "intercepts": 1,
+      "defenderActive": true,
+      "speedMps": 23
+    },
+    "T2_NARA_NO_BLOCK": "OPEN_NATIVE_NARA_ROUTE_ABSENT — NARA_PRESENT=false; current Tatooine party Nara is legacy nara_voss and is not registered in this interceptor route.",
+    "T3_NARA_BLOCK": "OPEN_NATIVE_NARA_ROUTE_ABSENT — no native Nara defender is present in the Tatooine DEV route.",
+    "T4_WORLD_OCCLUSION": "OPEN_NOT_CAPTURED",
+    "T5_PAUSE": {
+      "result": "PASS",
+      "frozen": true,
+      "releaseBeforeResume": 0,
+      "outcomeAfterResume": "SABER_BLOCK",
+      "damageEvents": 0,
+      "saberBlocks": 1
+    },
+    "devRouteLoad": "PASS_READY_TATOOINE_WITH_ASYNC_DEV_HOSTILE_SETUP",
+    "devBlockMatrix": "PASS_AREN_T0_T1_T5_NARA_OPEN",
+    "normalGame": "PASS_READY_tatooineSpaceport"
+  },
+  "protectedHashes": {
+    "arenBase": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58",
+    "arenCombo": "6e921a5e8fdc0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+    "arenDefenseV1": "26145739f58c11402b97987bfbf235b4f8118f98373e945eb197f1fe78deb66b",
+    "arenDefenseV2": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3",
+    "naraOriginal": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a",
+    "naraCombat": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+    "nativeSaber": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677",
+    "jolee": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f",
+    "academyWorld": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c",
+    "rodian": "f084310ebcbc52015e2abca6921cf1eec39150a032a913f247881a97b9c4df42",
+    "rodianBlaster": "237fc2ea7b77f1fb30bb914f2581027867299c6591482d0ca79035b51dab05d2"
+  },
+  "protectedHashVerification": "Fresh file hashes match certified values; Academy world path resolved and current SHA-256 matches expected.",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "gates": {
+    "W237_2G4_1_BASELINE_GATE": "PASS",
+    "W237_2G4_1_GEOMETRY_GATE": "PASS",
+    "W237_2G4_1_ELIGIBILITY_GATE": "PASS",
+    "W237_2G4_1_SWEPT_GATE": "PASS",
+    "W237_2G4_1_COLLISION_ORDER_GATE": "PASS",
+    "W237_2G4_1_PAUSE_GATE": "PASS_ISOLATED_PRE_INTERCEPT",
+    "W237_2G4_1_ANIMATION_GATE": "PASS",
+    "W237_2G4_1_ACADEMY_GATE": "PARTIAL",
+    "W237_2G4_1_TATOOINE_GATE": "PARTIAL",
+    "W237_2G4_1_STRESS_GATE": "PASS",
+    "W237_2G4_1_FINAL_GATE": "PARTIAL"
+  },
+  "readiness": {
+    "READY_FOR_PHYSICAL_BLASTER_DEFLECTION": "NO",
+    "READY_FOR_ENEMY_RANGED_AI": "NO",
+    "READY_FOR_THERMAL_DETONATOR": "NO",
+    "READY_FOR_ROCKET_ENEMY": "NO"
+  },
+  "matrixSchemaAudit": "PASS_ORIGINAL_REQUIRED_IDS_RESTORED_IN_CLOSURE_HARNESS",
+  "matrixIdDriftFound": "YES — prior I7/I12/I13/I15 and Academy A5 carried placeholder or inherited semantics; closure restores their original meanings.",
+  "academyWorldRealPath": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb",
+  "academyWorldSha256Current": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c",
+  "academyWorldSha256Expected": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c",
+  "academyWorldHashMatch": "YES",
+  "runtimeClosure": {
+    "matrixSchemaAudit": "PASS",
+    "matrixIdDriftFound": "YES_I7_I12_I13_I15_A5",
+    "projectileVelocityMutationRegression": "PASS",
+    "academy": "PARTIAL_A0_A3_PASS_A1_A2_A4_A5_OPEN",
+    "tatooine": "PARTIAL_T0_T1_T5_PASS_T2_T3_NATIVE_NARA_ROUTE_ABSENT_T4_OPEN",
+    "academyWorldPath": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb",
+    "academyWorldHashMatch": "YES",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "deflectionImplemented": "NO"
+  },
+  "worldRouteClosure": {
+    "schemaAudit": "PASS_ORIGINAL_REQUIRED_IDS_RESTORED",
+    "matrixIdDriftFound": "YES_I7_I12_I13_I15_A5",
+    "gameTsNormalPathChanged": "NO",
+    "devOnlyGatingConfirmed": "YES",
+    "academyTestRoom": "NOT_FOUND_OPEN_PENDING",
+    "academyWorldClearanceProof": "NOT_CAPTURED",
+    "academyA0": {
+      "result": "PASS",
+      "outcome": "HIT_ACTOR",
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "damageEvents": 1,
+      "saberBlocks": 0
+    },
+    "academyA1": {
+      "result": "OPEN",
+      "outcome": "HIT_WORLD",
+      "blockEligible": true,
+      "hpAfter": 100,
+      "saberBlocks": 0
+    },
+    "academyA2": "OPEN_NATIVE_CLEAR_CORRIDOR_NOT_CAPTURED",
+    "academyA3": {
+      "result": "PASS_OBSERVED",
+      "outcome": "HIT_WORLD",
+      "blockEligible": true,
+      "saberBlocks": 0
+    },
+    "academyA4": "OPEN_PRE_INTERCEPT_NOT_CAPTURED",
+    "academyA5": "OPEN_MOVE_THEN_BLOCK_NOT_CAPTURED",
+    "academyTeleports": 0,
+    "academyStuck": 0,
+    "academyVisFallbacks": 0,
+    "academyWokRejects": 0,
+    "tatooineDevStallStage": "DEV_HOSTILE_OPTIONAL_INIT",
+    "tatooineDevStallRootCause": "Awaited optional hostile GLB/blaster/interceptor initialization blocked Game.start; moved behind post-ready DEV async branch.",
+    "tatooineArenPresent": "YES",
+    "tatooineNaraPresent": "NO_NATIVE_NARA_ROUTE (legacy nara_voss only)",
+    "tatooineRodianPresent": "YES",
+    "tatooineT0": {
+      "result": "PASS",
+      "outcome": "HIT_ACTOR",
+      "hpBefore": 100,
+      "hpAfter": 90,
+      "damageEvents": 1,
+      "saberBlocks": 0,
+      "speedMps": 23
+    },
+    "tatooineT1": {
+      "result": "PASS",
+      "outcome": "SABER_BLOCK",
+      "hpBefore": 100,
+      "hpAfter": 100,
+      "damageEvents": 0,
+      "saberBlocks": 1,
+      "intercepts": 1,
+      "defenderActive": true,
+      "speedMps": 23
+    },
+    "tatooineT2": "OPEN_NATIVE_NARA_ROUTE_ABSENT — NARA_PRESENT=false; current Tatooine party Nara is legacy nara_voss and is not registered in this interceptor route.",
+    "tatooineT3": "OPEN_NATIVE_NARA_ROUTE_ABSENT — no native Nara defender is present in the Tatooine DEV route.",
+    "tatooineT4": "OPEN_NOT_CAPTURED",
+    "tatooineT5": {
+      "result": "PASS",
+      "frozen": true,
+      "releaseBeforeResume": 0,
+      "outcomeAfterResume": "SABER_BLOCK",
+      "damageEvents": 0,
+      "saberBlocks": 1
+    },
+    "normalTatooineReady": "PASS_READY_tatooineSpaceport",
+    "devHostileLeak": "NO",
+    "devUiLeak": "NO",
+    "devNaraTestLeak": "NO",
+    "academyPanelVisibilityFix": "DEV_HOSTILE_QUERY_GATED",
+    "protectedSystemsChanged": false,
+    "deflectionImplemented": false,
+    "typecheck": "PASS",
+    "build": "PASS",
+    "finalGate": "PARTIAL"
+  }
+}

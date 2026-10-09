@@ -1,0 +1,184 @@
+{
+  "milestone": "W237.2F.0",
+  "scope": "SOURCE_RESEARCH_AND_MINIMAL_DUEL_DESIGN_ONLY",
+  "implementationPerformed": false,
+  "baseline": {
+    "leader": "AREN_NATIVE_JKA_V1",
+    "follower": "NARA_NATIVE_JKA_V1",
+    "joleeRole": "ACADEMY_NPC",
+    "roshBlade": {
+      "source": "WeaponAttachment.getBladeSegment()",
+      "handSocket": "rhang_tag_bone",
+      "bladeTag": "*blade1 / JKA_BLADE_SOCKET",
+      "axis": "NEGATIVE_X",
+      "lengthM": 0.98
+    },
+    "joleeBlade": {
+      "asset": "public/_lab/kotor/characters/jolee/jolee_kotor1_lightsaber.glb",
+      "attachment": "original KOTOR weapon root parented to actor-local rhand",
+      "hiltMesh": "lshandle07",
+      "visibleBladeMeshes": ["plane227", "plane228", "plane229", "plane230"],
+      "namedBladeTagPresent": false,
+      "plannedSegmentSource": "runtime near/far anchors derived once from evaluated visible blade-plane geometry"
+    }
+  },
+  "openJkEvidence": {
+    "saberClash": [
+      {
+        "file": "E:/OpenJK-master/code/game/wp_saber.cpp",
+        "lines": "2439-2733",
+        "finding": "traces include CONTENTS_LIGHTSABER, then verify saber intersection/distance separately from body damage"
+      },
+      {
+        "file": "E:/OpenJK-master/code/game/wp_saber.cpp",
+        "lines": "4499-5073",
+        "finding": "old/current blade bases and directions are swept at multiple longitudinal and temporal samples"
+      },
+      {
+        "file": "E:/OpenJK-master/codemp/game/w_saber.c",
+        "lines": "3835-3905,5260-5420",
+        "finding": "MP uses point/box traces expanded from saber radius and old/current blade sampling"
+      }
+    ],
+    "parry": [
+      {
+        "file": "E:/OpenJK-master/code/game/wp_saber.cpp",
+        "lines": "4029-4062",
+        "finding": "parry marks defender state and clears accumulated damage for that attacker/victim blade pair"
+      },
+      {
+        "file": "E:/OpenJK-master/code/game/wp_saber.cpp",
+        "lines": "5100-5415",
+        "finding": "resolution distinguishes attacking and ready/parry defending states before applying the response"
+      },
+      {
+        "file": "E:/OpenJK-master/code/game/bg_panimate.cpp",
+        "lines": "1288-1450",
+        "finding": "attack, start, return and parry move categories are explicit"
+      }
+    ],
+    "codeCopied": false
+  },
+  "geometry": {
+    "model": "SWEPT_FINITE_SEGMENT_PROXIMITY_WITH_EFFECTIVE_CAPSULE_RADIUS",
+    "previousCurrentFrameSweepRequired": true,
+    "currentDetector": "src/combat/SaberClashDetector.ts",
+    "currentDetectorStatus": "REUSE_GEOMETRY_CONCEPT; fixed six temporal samples should become adaptive for low-FPS proof",
+    "initialClashRadiusM": 0.08,
+    "radiusBasis": {
+      "trainingSaberRadiusSourceUnits": 3,
+      "nativeSourceUnitScaleM": 0.026661917204269997,
+      "convertedRadiusM": 0.07998575161281,
+      "visibleCoreRadiusM": 0.034,
+      "existingBodyTraceEpsilonM": 0.035,
+      "legacyDuelThresholdM": 0.09,
+      "rule": "one effective centerline threshold; do not sum 0.08 m for both blades"
+    },
+    "temporalSampling": {
+      "method": "synchronized interpolation of both previous/current finite blade segments",
+      "stepRule": "maximum endpoint displacement per temporal step <= 0.5 * clash radius",
+      "perSampleTest": "exact closest points between finite segments"
+    }
+  },
+  "v0Rule": {
+    "attackerActiveState": "ATTACK_1_ACTIVE / SaberTrace phase ATTACK",
+    "defenderRequiredState": "JOLEE_PARRY_READY",
+    "additionalRequirements": ["attacker blade enabled", "defender blade enabled", "defender alive", "defender stationary", "defender not attacking", "swept blade contact"],
+    "excludedRules": ["random chance", "stats", "Force values", "D20", "facing cone", "direction classification", "manual block input"],
+    "result": "PARRY"
+  },
+  "damageOrdering": {
+    "order": [
+      "sample both visible blades after animation evaluation",
+      "resolve saber clash/parry",
+      "if suppressed, advance SaberTraceController with no Jolee body target",
+      "otherwise run unchanged body trace against Jolee receiver"
+    ],
+    "suppressionScope": "attackInstanceId + defenderId for remainder of attack",
+    "retroactiveDamageRollback": false,
+    "reason": "frame-only suppression can permit damage later in the same stopped swing; combo-wide suppression is too broad"
+  },
+  "deduplication": {
+    "key": "attackInstanceId + defenderId",
+    "eventsPerSwingPerDefender": 1,
+    "nextAttackAllowed": true
+  },
+  "animation": {
+    "joleeReady": "g2r1",
+    "joleeFirstParryClip": "c2p1",
+    "selectionBasis": "certified asset plus existing JoleeCharacterLab PARRY mapping",
+    "directionalMatchToRoshTopToBottom": "NOT_PROVEN_BY_KOTOR_SOURCE_SYMBOLS; requires W237.2F.1 visual gate",
+    "roshBounceRequired": false,
+    "roshResponse": "continue current Attack 1 and recover through existing authored sequence"
+  },
+  "recommendedArchitecture": {
+    "components": [
+      {
+        "name": "SaberTraceController",
+        "status": "UNCHANGED",
+        "responsibility": "body hit, attackInstanceId, per-target damage dedup"
+      },
+      {
+        "name": "SaberClashDetector",
+        "status": "EXTEND_EXISTING",
+        "responsibility": "pure previous/current blade geometry and contact point"
+      },
+      {
+        "name": "SaberParryController",
+        "status": "NEW_MINIMAL_COMPONENT",
+        "responsibility": "state guard, clash dedup, defender suppression and typed parry event"
+      },
+      {
+        "name": "Academy parry DEV orchestrator",
+        "status": "THIN_HARNESS",
+        "responsibility": "Jolee weapon/segment provider, update ordering, c2p1 response and telemetry"
+      }
+    ],
+    "notRecommended": {
+      "separateParryResolver": "unnecessary for one deterministic rule",
+      "separateCombatAnimationController": "existing Jolee animation-group path can play one response",
+      "reuseWholeDuelCombatSystem": "reject; bundles AI, manual defense, stagger and camera, and only suppresses body hit on the contact frame"
+    }
+  },
+  "futureTestMatrix": [
+    {"id": "A", "case": "READY near Jolee", "expectedParries": 0, "expectedDamage": 0},
+    {"id": "B", "case": "ATTACK; Jolee not parry-ready; body contact", "expectedParries": 0, "expectedDamage": 1},
+    {"id": "C", "case": "ATTACK; Jolee parry-ready; blades cross", "expectedParries": 1, "expectedDamage": 0},
+    {"id": "D", "case": "same swing intersects blades over multiple frames", "expectedParries": 1, "expectedAdditionalParries": 0},
+    {"id": "E", "case": "second attack crosses", "expectedNewParries": 1},
+    {"id": "F", "case": "deliberate saber miss", "expectedParries": 0},
+    {"id": "G", "case": "synthetic 100 ms blade crossing", "expected": "SWEPT_CLASH_DETECTED"}
+  ],
+  "filesExpectedToChangeInW237_2F1": [
+    "src/combat/SaberClashDetector.ts",
+    "src/combat/SaberParryController.ts",
+    "src/dev/kotor/JediAcademyPartyLab.ts or a narrow Academy parry DEV harness",
+    "focused W237.2F.1 reports/data"
+  ],
+  "filesThatMustNotChange": [
+    "src/combat/SaberTraceController.ts",
+    "src/player/WeaponAttachment.ts native JKA behavior and Rosh grip",
+    "Rosh/Jan/Jolee/native-saber GLBs",
+    "combo source clips, input window and state timing",
+    "damage amount and existing attack-ID/dedup semantics",
+    "Academy GLB, WOK, PTH, VIS, navigation and party/follower logic"
+  ],
+  "closing": {
+    "OPENJK_SABER_CLASH_REFERENCE": "code/game/wp_saber.cpp:2439-2733; code/game/wp_saber.cpp:4499-5073; codemp/game/w_saber.c:3835-3905,5260-5420",
+    "OPENJK_PARRY_REFERENCE": "code/game/wp_saber.cpp:4029-4062,5100-5415; code/game/bg_panimate.cpp:1288-1450",
+    "BLADE_COLLISION_MODEL": "SWEPT_FINITE_SEGMENT_PROXIMITY / EFFECTIVE_CAPSULE_RADIUS",
+    "PREVIOUS_CURRENT_FRAME_SWEEP_REQUIRED": "YES",
+    "CLASH_RADIUS_INITIAL_RECOMMENDATION": "0.08 m effective centerline distance",
+    "ATTACKER_ACTIVE_STATE": "ATTACK_1_ACTIVE / SaberTrace phase ATTACK",
+    "DEFENDER_REQUIRED_STATE": "JOLEE PARRY_READY, saber enabled, alive, stationary, not attacking",
+    "JOLEE_FIRST_PARRY_CLIP": "c2p1; directional match not source-proven",
+    "ATTACKER_BOUNCE_REQUIRED": "NO",
+    "BODY_DAMAGE_SUPPRESSION_SCOPE": "attackInstanceId + defenderId for remainder of that attack",
+    "PARRY_DEDUP_KEY": "attackInstanceId + defenderId",
+    "ROSH_BLADE_SOURCE": "WeaponAttachment.getBladeSegment() from *blade1 / JKA_BLADE_SOCKET",
+    "JOLEE_BLADE_SOURCE": "evaluated visible plane227-plane230 endpoints under lshandle07",
+    "RECOMMENDED_COMPONENTS": "SaberTraceController unchanged; SaberClashDetector geometry; new SaberParryController; thin Academy DEV orchestrator",
+    "W237_2F0_ARCHITECTURE_GATE": "PASS",
+    "READY_FOR_W237_2F1_IMPLEMENTATION": "YES"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "nerathisweb",
+  "version": "1.0.0",
+  "description": "Nerathis Web Phase W0 technical vertical slice",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build --configLoader runner --outDir dist-w238-0a2h-final --emptyOutDir=true",
+    "preview": "vite preview",
+    "desktop:dev": "npm run build && electron desktop/main.cjs",
+    "desktop:stage": "node tools/stage_playtest_app.cjs",
+    "desktop:package:dir": "npm run build && npm run desktop:stage && electron-builder --win dir",
+    "desktop:package": "npm run build && npm run desktop:stage && electron-builder --win portable"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@babylonjs/core": "^9.27.1",
+    "@babylonjs/loaders": "^9.27.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "devDependencies": {
+    "electron": "^38.8.6",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.nerathis.playtest",
+    "productName": "NERATHIS-Playtest",
+    "directories": {
+      "app": "desktop/playtest-app",
+      "output": "releases/NERATHIS-Playtest-v0.2"
+    },
+    "files": ["**/*"],
+    "extraResources": [
+      {
+        "from": "tools/_w238_0a2f_hd_converted",
+      "to": "hdDantooine",
+      "filter": ["**/*"]
+    }
+    ],
+    "npmRebuild": false,
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "artifactName": "NERATHIS-Playtest-v0.2.${ext}"
+    }
+  }
+}

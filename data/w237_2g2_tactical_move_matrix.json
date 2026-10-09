@@ -1,0 +1,227 @@
+{
+  "milestone": "W237.2G.2",
+  "scope": "MOVE_TO_POINT only",
+  "canonicalProject": "E:\\NerathisWeb",
+  "runtime": {
+    "commandModel": "src/party/tactical/TacticalCommand.ts",
+    "commandQueue": "src/party/tactical/TacticalCommandQueue.ts",
+    "commandExecutor": "src/party/tactical/TacticalCommandExecutor.ts",
+    "orderSelection": "src/party/tactical/TacticalOrderSelection.ts",
+    "supportedCommandTypes": [
+      "MOVE_TO_POINT"
+    ],
+    "commandStates": [
+      "QUEUED",
+      "ACTIVE",
+      "COMPLETED",
+      "CANCELLED",
+      "FAILED"
+    ],
+    "arrivalToleranceM": 0.3,
+    "maxQueuePerActor": 8,
+    "authority": [
+      "TACTICAL_ORDER_EXECUTION",
+      "DIRECT_PLAYER_CONTROL",
+      "FOLLOWER_CONTROL"
+    ],
+    "selectionSeparateFromControl": true
+  },
+  "matrix": [
+    {
+      "case": "Q0",
+      "name": "empty",
+      "pass": true
+    },
+    {
+      "case": "Q1",
+      "name": "Aren single move",
+      "pass": true
+    },
+    {
+      "case": "Q2",
+      "name": "Nara single move",
+      "pass": true
+    },
+    {
+      "case": "Q3",
+      "name": "simultaneous two actor move",
+      "pass": true
+    },
+    {
+      "case": "Q4",
+      "name": "Aren FIFO",
+      "ids": [
+        "tactical_move_000001",
+        "tactical_move_000002",
+        "tactical_move_000003"
+      ],
+      "pass": true
+    },
+    {
+      "case": "Q5",
+      "name": "Nara FIFO",
+      "pass": true
+    },
+    {
+      "case": "Q6",
+      "name": "follower override and resume",
+      "pass": true
+    },
+    {
+      "case": "Q7",
+      "name": "controlled actor override and restore",
+      "pass": true
+    },
+    {
+      "case": "Q8",
+      "name": "pause mid order",
+      "positionStableWhilePaused": true,
+      "activePreserved": true,
+      "resumedSameCommand": true,
+      "pass": true
+    },
+    {
+      "case": "Q9",
+      "name": "cancel active and pending",
+      "pass": true
+    },
+    {
+      "case": "Q10",
+      "name": "invalid destination",
+      "accepted": false,
+      "reason": "INVALID_NAV_DESTINATION",
+      "pass": true
+    },
+    {
+      "case": "Q11",
+      "name": "stress",
+      "requests": 30,
+      "accepted": 30,
+      "actorCount": 2,
+      "saberCount": 2,
+      "markerCountAfterClear": 0,
+      "pass": true
+    }
+  ],
+  "regression": {
+    "naraAttackLoopReproduced": true,
+    "naraAttackLoopRootCause": "ANIMATION_OWNERSHIP_DESYNC: an imported started locomotion group could remain active when Follower.play selected its first semantic group; the actor-generic transition now stops prior started groups once before starting the requested group.",
+    "naraAttackLoopSourceFiles": [
+      "src/dev/kotor/JkaPairCombatLab.ts",
+      "src/party/NaraJediController.ts"
+    ],
+    "naraAttackLoopSourceMethods": [
+      "explicit startAttack callers",
+      "pointer-up light input",
+      "J heavy input"
+    ],
+    "naraAttackLoopG2Caused": false,
+    "r0FreshNoInput": "PASS",
+    "r1PausedSelection": "PASS",
+    "r2MoveOnly": "PASS",
+    "r3PostMoveReady": "PASS",
+    "r4PauseResume": "PASS",
+    "r5DirectControlNoAttack": "PASS",
+    "r6SingleExplicitAttackReturnsReady": "PASS",
+    "arenIdleComparison": "PASS",
+    "duplicateObserverFound": false,
+    "protectedCombatSystemChanged": false,
+    "attackCommandImplemented": false
+  },
+  "regressionStatus": {
+    "typecheck": "PASS",
+    "build": "PASS",
+    "normalGame": "PASS_READY_tatooineSpaceport_FRESH_5177",
+    "academyTacticalRuntime": "PASS_FRESH_5177",
+    "protectedHashes": "PASS"
+  },
+  "gates": {
+    "commandModel": "PASS",
+    "queue": "PASS",
+    "moveExecution": "PASS",
+    "multiActor": "PASS",
+    "pauseIntegration": "PASS",
+    "academy": "PASS",
+    "stress": "PASS",
+    "regression": "PASS",
+    "final": "PASS"
+  },
+  "finalRuntimeClosure": {
+    "naraUserVisibleLoopPreviouslyObserved": true,
+    "naraRuntimeIdentity": {
+      "url": "http://127.0.0.1:5177/?jediAcademyLab=1&party=1&leader=aren-native-jka-v1&nara=native-jka-v1&jolee=npc&jkaControlSwap=1",
+      "server": "fresh Vite DEV process on 5177",
+      "profileId": "NARA_NATIVE_JKA_V1",
+      "assetUrl": "/_lab/jka/characters/nara/nara_native_jka_v1_combat_v1.glb",
+      "expectedAssetSha256": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+      "animationGroupCount": 15,
+      "priorObservedServer": "5173"
+    },
+    "naraAnimationAudit": {
+      "classification": "FIXED",
+      "actualBabylonFinding": "Before the actor-generic transition correction, fresh Academy telemetry showed JKA_WALK_FORWARD and JKA_IDLE active together. Afterward, idle/paused-selection telemetry showed one non-attack group only and no attack-group start without input.",
+      "playingGroupsDuringIdle": ["JKA_IDLE"],
+      "attackGroupWithoutInput": false,
+      "animationOwnershipDesync": "FIXED",
+      "resolution": "YES",
+      "limitations": "The current 5177 runtime did not replay the user-reported attack-named group; it established and corrected the concrete concurrent-group ownership fault. The old visible session used port 5173, so the stale runtime difference is recorded but not asserted as the cause."
+    },
+    "academyLoad": {
+      "requestUrl": "/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb",
+      "httpStatus": 200,
+      "firstByteSeconds": 0.494582,
+      "transferCompletedSeconds": 53.157883,
+      "sceneReady": "PASS",
+      "browserConsoleErrors": []
+    },
+    "academyTacticalMove": {
+      "pass": true,
+      "roomTransitions": 4,
+      "route": ["m13aa_04a", "m13aa_02g", "m13aa_02f", "m13aa_02e", "m13aa_03a"],
+      "arenTeleports": 0,
+      "naraTeleports": 0,
+      "stuck": 0,
+      "visFallbacks": 0,
+      "wokRejects": 0,
+      "tacticalCommandFailures": 0
+    },
+    "pauseMidAttack": {
+      "pass": true,
+      "attackInstanceId": "jka_fast_t2b_0001",
+      "frozenGroup": "JKA_ATTACK_START",
+      "frozenFrame": 6.912,
+      "damageEventsDuringPause": 0,
+      "resumeSequence": ["JKA_SABER_READY", "JKA_ATTACK_START", "JKA_ATTACK", "JKA_ATTACK_RETURN", "JKA_SABER_READY"]
+    },
+    "normalGame": "PASS_READY_tatooineSpaceport_FRESH_5177",
+    "protectedSystemsChanged": false,
+    "attackCommandImplemented": false
+  },
+  "protectedHashes": {
+    "arenBase": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58",
+    "arenCombo": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+    "arenDefenseV1": "26145739f58c11402b97987bfbf235b4f8118f98373e945eb197f1fe78deb66b",
+    "arenDefenseV2": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3",
+    "naraOriginal": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a",
+    "naraCombat": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+    "nativeSaber": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677",
+    "jolee": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f",
+    "academyWorld": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+  },
+  "counts": {
+    "actorCountBeforeAfter": "2 -> 2",
+    "saberCountBeforeAfter": "2 -> 2",
+    "inputObserverDelta": 0,
+    "renderObserverDelta": 0,
+    "commandExecutorDelta": 0
+  },
+  "authorityRegressions": {
+    "followerSuppressedByTacticalOrder": true,
+    "followerResumedAfterQueueEmpty": true,
+    "directInputSuppressedDuringOrder": true,
+    "directControlRestoredAfterQueue": true,
+    "pausePreservesActiveCommand": true,
+    "pausePreservesQueue": true,
+    "resumeContinuesSameCommand": true
+  }
+}

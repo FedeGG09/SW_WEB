@@ -1,0 +1,228 @@
+{
+  "schema": "W238.0A.2B.animation_matrix.v1",
+  "sourcePolicy": "preserve local clips and resolve declared supermodel chain nearest-parent-first",
+  "models": [
+    {
+      "sourceModel": "c_drdprot",
+      "supermodel": "NULL",
+      "localAnimationCount": 29,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "c_khounda",
+      "supermodel": "NULL",
+      "localAnimationCount": 32,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "c_khoundb",
+      "supermodel": "NULL",
+      "localAnimationCount": 32,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "comm_a_f",
+      "supermodel": "S_Female03",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "comm_a_m2",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "comm_w_f",
+      "supermodel": "S_Female03",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "comm_w_m",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "l_astro02",
+      "supermodel": "NULL",
+      "localAnimationCount": 2,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "l_commf",
+      "supermodel": "S_Female03",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_commf",
+      "supermodel": "S_Female03",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_commm",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_dorakh",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_duros",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 4,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_jedicounm",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "VALIDATED_SELECTED_CLIPS"
+    },
+    {
+      "sourceModel": "n_rodian",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 5,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_twilekm",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "VALIDATED_SELECTED_CLIPS"
+    },
+    {
+      "sourceModel": "n_vrookh",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_yoda",
+      "supermodel": "S_Male02",
+      "localAnimationCount": 4,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "n_zharh",
+      "supermodel": "N_TwilekM",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "null",
+      "supermodel": null,
+      "localAnimationCount": null,
+      "sourceAnimationStatus": "SOURCE_ANIMATION_NOT_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "old_a_m",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "old_w_f",
+      "supermodel": "S_Female03",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "pmhb05",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "pmhc02",
+      "supermodel": "S_Female02",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "s_female01",
+      "supermodel": null,
+      "localAnimationCount": null,
+      "sourceAnimationStatus": "SOURCE_ANIMATION_NOT_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "s_female02",
+      "supermodel": null,
+      "localAnimationCount": null,
+      "sourceAnimationStatus": "SOURCE_ANIMATION_NOT_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "s_female03",
+      "supermodel": null,
+      "localAnimationCount": null,
+      "sourceAnimationStatus": "SOURCE_ANIMATION_NOT_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "s_male01",
+      "supermodel": null,
+      "localAnimationCount": null,
+      "sourceAnimationStatus": "SOURCE_ANIMATION_NOT_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "s_male02",
+      "supermodel": null,
+      "localAnimationCount": null,
+      "sourceAnimationStatus": "SOURCE_ANIMATION_NOT_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "twilek_m",
+      "supermodel": "N_TwilekM",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    },
+    {
+      "sourceModel": "twilek_m02",
+      "supermodel": "N_TwilekM",
+      "localAnimationCount": 0,
+      "sourceAnimationStatus": "SOURCE_LOCAL_AND_SUPERMODEL_METADATA_RESOLVED",
+      "derivedClipStatus": "PENDING_GLB_CONVERSION"
+    }
+  ],
+  "existingReference": {
+    "asset": "public/_lab/kotor/characters/belaya/belaya_kotor1_donor.glb",
+    "status": "CERTIFIED_EXISTING_REFERENCE",
+    "sourceAnimationSmoke": "PASS_FROM_W238_0A2"
+  }
+}

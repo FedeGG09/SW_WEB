@@ -1,0 +1,191 @@
+{
+  "milestone": "W238.0A.1",
+  "status": "PARTIAL",
+  "candidateRoute": "?academyCandidate=1",
+  "candidateWorld": "ACADEMY_PROLOGUE_V1",
+  "candidateGlb": {
+    "path": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm14aa_kotor1_candidate.glb",
+    "sha256": "47a423e7219304bde0ce699ccf9f1d9397566a584a2546c05204504648acf771",
+    "bytes": 11221116,
+    "rooms": 9,
+    "meshes": 768,
+    "triangles": 41781,
+    "materials": 750
+  },
+  "source": {
+    "originalInstallation": "E:\\Program Files (x86)\\Star Wars Knights of the Old Republic Collection\\Star Wars Knights of the Old Republic",
+    "readOnly": true,
+    "danm14aaRooms": 9,
+    "danm13ProtectedSha256": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+  },
+  "sectors": [
+    "danm13",
+    "danm14aa"
+  ],
+  "party": [
+    "AREN_NATIVE_JKA_V1",
+    "NARA_NATIVE_JKA_V1"
+  ],
+  "transition": {
+    "schema": "W238_0A1_SECTOR_TRANSITION_V1",
+    "candidate": "ACADEMY_PROLOGUE_V1",
+    "source": {
+      "from": {
+        "module": "danm13",
+        "doorTag": "dan13_door03",
+        "linkedToModule": "danm14aa",
+        "linkedTo": "from13",
+        "transitionDestin": 7470,
+        "position": [
+          82.17449951171875,
+          127.64099884033203,
+          5.074999809265137
+        ]
+      },
+      "to": {
+        "module": "danm14aa",
+        "doorTag": "man14aa_door03",
+        "linkedToModule": "danm13",
+        "linkedTo": "from14a",
+        "transitionDestin": 39043,
+        "position": [
+          108.5250015258789,
+          93.9749984741211,
+          1.5
+        ]
+      },
+      "sourceEvidence": "data/w238_0a_academy_source_manifest.json and extracted m13aa.git/m14aa.git",
+      "classification": "RECIPROCAL_MODULE_TRANSITION_DOOR"
+    },
+    "runtime": {
+      "candidateRoute": "?academyCandidate=1",
+      "sourceDoorControl": "SOURCE DOOR TRANSITION",
+      "runtimeStatus": "SOURCE_BACKED_CANDIDATE_PREVIEW",
+      "entryPlacement": "module entry positions are derived from reciprocal source door records; preview sectors remain visually separated by a candidate-only +300 x offset"
+    },
+    "gate": "SOURCE_BACKED; FULL_NAV_DOOR_RUNTIME_PARTIAL"
+  },
+  "materialValidation": {
+    "status": "PARTIAL_OPEN_WHITE_EXTERIOR_AND_FOLIAGE_LIGHTMAP_REVIEW",
+    "sourceTextures": 20,
+    "sourceLightmaps": 41,
+    "boundLightmappedMeshes": 309,
+    "uv0Missing": 36,
+    "uv1Missing": 423
+  },
+  "runtime": {
+    "schema": "W238_0A1_RUNTIME_MATRIX_V1",
+    "route": "http://127.0.0.1:5173/?academyCandidate=1",
+    "mode": "DEV_OPT_IN_CANDIDATE",
+    "normalGameFresh": {
+      "url": "http://127.0.0.1:5173/?world=tatooine",
+      "status": "PASS_READY_tatooineSpaceport",
+      "devCandidateUi": "ABSENT"
+    },
+    "matrix": {
+      "R0_candidate_route_load": "PASS_BROWSER_AX",
+      "R1_danm13_render": "VERIFIED_BROWSER_SCREENSHOT",
+      "R2_danm14aa_render": "VERIFIED_BROWSER_SCREENSHOT_PARTIAL_MATERIALS",
+      "R3_all_rooms": "PASS_SOURCE_9_9_AND_EXPORT_9_9",
+      "R4_aren_native": "PASS_BROWSER_TELEMETRY",
+      "R5_nara_native": "PASS_BROWSER_TELEMETRY",
+      "R6_aren_grounding": "PARTIAL_PREVIEW_POSITION_ONLY",
+      "R7_nara_grounding": "PARTIAL_PREVIEW_POSITION_ONLY",
+      "R8_aren_locomotion": "PARTIAL_DIRECT_PREVIEW_NO_WOK_COLLISION",
+      "R9_nara_follow": "PARTIAL_DIRECT_PREVIEW_NO_WOK_COLLISION",
+      "R10_danm13_wok": "PARTIAL_SIDECAR_CERTIFIED_EXISTING_RUNTIME_NOT_BOUND_TO_CANDIDATE",
+      "R11_danm14aa_wok": "PARTIAL_SIDECAR_LOADED",
+      "R12_pth": "PARTIAL_SIDECAR_LOADED",
+      "R13_vis": "PASS_SIDECAR_LOADED",
+      "R14_door_approach": "OPEN",
+      "R15_source_transition": "PASS_SOURCE_BACKED_CANDIDATE_CONTROL",
+      "R16_no_dev_hostile": "PASS",
+      "R17_no_combat_hud": "PASS_MINIMAL_CANDIDATE_UI",
+      "R18_no_synthetic_geometry": "PASS",
+      "R19_animation_ownership": "PASS_READY_GROUP_ONLY",
+      "R20_console_errors": "PASS_OBSERVED_EMPTY_ERROR_BUFFER",
+      "R21_reload_cleanup": "OPEN"
+    },
+    "party": {
+      "actors": [
+        "AREN_NATIVE_JKA_V1",
+        "NARA_NATIVE_JKA_V1"
+      ],
+      "count": 2,
+      "jolee": "NOT_LOADED_BY_CANDIDATE_ROUTE"
+    },
+    "browserEvidence": {
+      "interiorScreenshot": "browser-session:academyCandidate=1/danm13",
+      "courtyardScreenshot": "browser-session:academyCandidate=1/danm14aa",
+      "visualReview": "PARTIAL_OPEN"
+    }
+  },
+  "protectedHashes": {
+    "AREN_BASE": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1.glb",
+      "sha256": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58"
+    },
+    "AREN_COMBO": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_combo_v3.glb",
+      "sha256": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc"
+    },
+    "AREN_DEFENSE_V1": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v1.glb",
+      "sha256": "26145739f58c11402b97987bfbf235b4f8118f98373e945eb197f1fe78deb66b"
+    },
+    "AREN_DEFENSE_V2": {
+      "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v2.glb",
+      "sha256": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3"
+    },
+    "NARA_ORIGINAL": {
+      "path": "public/_lab/jka/characters/nara/nara_native_jka_v1.glb",
+      "sha256": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a"
+    },
+    "NARA_COMBAT": {
+      "path": "public/_lab/jka/characters/nara/nara_native_jka_v1_combat_v1.glb",
+      "sha256": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148"
+    },
+    "NATIVE_SABER": {
+      "path": "public/_lab/jka/weapons/saber/jka_native_single_saber_v1.glb",
+      "sha256": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677"
+    },
+    "JOLLEE": {
+      "path": "public/_lab/kotor/characters/jolee/jolee_bindo_kotor1.glb",
+      "sha256": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f"
+    },
+    "DANM13": {
+      "path": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb",
+      "sha256": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+    },
+    "RODIAN": {
+      "path": "public/_lab/jka/characters/enemies/rodian/hostile_mercenary_jka_v1.glb",
+      "sha256": "f084310ebcbc52015e2abca6921cf1eec39150a032a913f247881a97b9c4df42"
+    },
+    "RODIAN_BLASTER": {
+      "path": "public/_lab/jka/weapons/blaster/jka_rodian_blaster_v1.glb",
+      "sha256": "237fc2ea7b77f1fb30bb914f2581027867299c6591482d0ca79035b51dab05d2"
+    }
+  },
+  "gates": {
+    "source": "PASS",
+    "conversion": "PASS",
+    "material": "PARTIAL",
+    "navigation": "PARTIAL",
+    "sector": "PASS_SOURCE_BACKED_PARTIAL_RUNTIME",
+    "render": "PARTIAL",
+    "arenNara": "PARTIAL_CANDIDATE_PREVIEW",
+    "regression": "PARTIAL",
+    "final": "PARTIAL"
+  },
+  "readyFor": {
+    "academyNpcRuntime": "CANDIDATE_ONLY_NOT_CERTIFIED",
+    "academyTutorialAuthoring": "NO",
+    "defaultAcademyPromotion": "NO"
+  },
+  "limitations": [
+    "Courtyard material/lightmap visual fidelity is not certified: white exterior surfaces and high-contrast red/green regions remain open.",
+    "Candidate route loads navigation sidecars but does not yet prove full WOK/PTH collision and room traversal through both sectors.",
+    "The source transition is resolved and exposed as a candidate control; full production door interaction remains open.",
+    "No default world or source assets were changed."
+  ]
+}

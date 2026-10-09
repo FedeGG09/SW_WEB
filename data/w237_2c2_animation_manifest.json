@@ -1,0 +1,22 @@
+{
+  "sourceSkeleton": "_humanoid.gla",
+  "sourceAnimationConfig": "animation.cfg",
+  "blenderJediAcademyTools": "2.1.0",
+  "blenderVersion": "4.4.0",
+  "nativeRetarget": false,
+  "clips": [
+    { "semantic": "IDLE", "symbol": "BOTH_STAND1", "frameStart": 14651, "frameCount": 2, "fps": 20, "glbGroup": "JKA_IDLE" },
+    { "semantic": "WALK_FORWARD", "symbol": "BOTH_WALK1", "frameStart": 20438, "frameCount": 26, "fps": 20, "glbGroup": "JKA_WALK_FORWARD" },
+    { "semantic": "RUN_FORWARD", "symbol": "BOTH_RUN1", "frameStart": 12305, "frameCount": 26, "fps": 40, "glbGroup": "JKA_RUN_FORWARD" },
+    { "semantic": "WALK_BACKWARD", "symbol": "BOTH_WALKBACK1", "frameStart": 20667, "frameCount": 29, "fps": 20, "glbGroup": "JKA_WALK_BACKWARD" },
+    { "semantic": "RUN_BACKWARD", "symbol": "BOTH_RUNBACK1", "frameStart": 12367, "frameCount": 10, "fps": 20, "glbGroup": "JKA_RUN_BACKWARD" },
+    { "semantic": "STRAFE_LEFT", "symbol": "BOTH_STRAFE_LEFT1", "frameStart": 16131, "frameCount": 13, "fps": 10, "glbGroup": "JKA_STRAFE_LEFT" },
+    { "semantic": "STRAFE_RIGHT", "symbol": "BOTH_STRAFE_RIGHT1", "frameStart": 16144, "frameCount": 13, "fps": 10, "glbGroup": "JKA_STRAFE_RIGHT" },
+    { "semantic": "SABER_READY", "symbol": "BOTH_SABERFAST_STANCE", "frameStart": 13052, "frameCount": 2, "fps": 60, "glbGroup": "JKA_SABER_READY" },
+    { "semantic": "ATTACK_START", "symbol": "BOTH_S1_S1_T_", "frameStart": 12479, "frameCount": 6, "fps": 20, "glbGroup": "JKA_ATTACK_START" },
+    { "semantic": "ATTACK", "symbol": "BOTH_A1_T__B_", "frameStart": 99, "frameCount": 8, "fps": 30, "glbGroup": "JKA_ATTACK" },
+    { "semantic": "ATTACK_RETURN", "symbol": "BOTH_R1_B__S1", "frameStart": 11116, "frameCount": 5, "fps": 30, "glbGroup": "JKA_ATTACK_RETURN" }
+  ],
+  "animationCount": 11,
+  "allHumanoidAnimationsImported": false
+}

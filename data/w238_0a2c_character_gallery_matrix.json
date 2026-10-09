@@ -1,0 +1,69 @@
+{
+  "schema": "W238.0A.2C_CHARACTER_GALLERY_V1",
+  "route": "?kotorCharacterGallery=1",
+  "categories": [
+    {
+      "category": "HUMANOID_JEDI",
+      "status": "PASS_BABYLON_GALLERY"
+    },
+    {
+      "category": "ALIEN_HUMANOID",
+      "status": "PASS_BABYLON_GALLERY"
+    },
+    {
+      "category": "DROID",
+      "status": "PASS_BABYLON_GALLERY"
+    },
+    {
+      "category": "CREATURE",
+      "status": "PASS_BABYLON_GALLERY"
+    }
+  ],
+  "profiles": {
+    "public/_lab/kotor/characters/w238_0a2c/kotor1_n_jedicounm_pmhb05.glb": {
+      "category": "HUMANOID_JEDI",
+      "meshes": 12,
+      "transformNodes": 113,
+      "skeletons": [
+        25,
+        57
+      ],
+      "groups": 7
+    },
+    "public/_lab/kotor/characters/w238_0a2c/kotor1_n_rodian_body.glb": {
+      "category": "ALIEN_HUMANOID",
+      "meshes": 66,
+      "transformNodes": 91,
+      "skeletons": [
+        74
+      ],
+      "groups": 5
+    },
+    "public/_lab/kotor/characters/w238_0a2c/kotor1_n_duros_body.glb": {
+      "category": "ALIEN_HUMANOID",
+      "meshes": 58,
+      "transformNodes": 86,
+      "skeletons": [
+        68
+      ],
+      "groups": 4
+    },
+    "public/_lab/kotor/characters/w238_0a2c/kotor1_c_drdprot_body.glb": {
+      "category": "DROID",
+      "meshes": 48,
+      "transformNodes": 10,
+      "skeletons": [],
+      "groups": 5
+    },
+    "public/_lab/kotor/characters/w238_0a2c/kotor1_c_khounda_body.glb": {
+      "category": "CREATURE",
+      "meshes": 35,
+      "transformNodes": 47,
+      "skeletons": [
+        39
+      ],
+      "groups": 6
+    }
+  },
+  "productionPopulation": "Belaya-only prior runtime preserved"
+}

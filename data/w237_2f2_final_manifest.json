@@ -1,0 +1,39 @@
+{
+  "milestone": "W237.2F.2",
+  "status": "PASS",
+  "attacker": "JOLEE_KOTOR1_ACADEMY_NPC",
+  "defender": "AREN_NATIVE_JKA_V1",
+  "trainingDummyInLab": false,
+  "bodyTargets": ["AREN_NATIVE_JKA_V1"],
+  "parryController": "src/combat/SaberParryController.ts",
+  "changedFiles": [
+    "src/combat/SaberParryController.ts",
+    "src/dev/kotor/JediAcademyPartyLab.ts"
+  ],
+  "protectedFilesUnchanged": [
+    "src/combat/SaberClashDetector.ts",
+    "src/combat/SaberTraceController.ts",
+    "public/_lab/jka/characters/aren/aren_native_jka_v1.glb",
+    "public/_lab/jka/characters/aren/aren_native_jka_v1_combo_v3.glb",
+    "public/_lab/jka/characters/nara/nara_native_jka_v1.glb",
+    "public/_lab/kotor/characters/jolee/jolee_bindo_kotor1.glb",
+    "public/_lab/jka/weapons/saber/jka_native_single_saber_v1.glb"
+  ],
+  "matrix": "data/w237_2f2_reverse_block_matrix.json",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "normalGame": "PASS_READY_tatooineSpaceport",
+  "protectedHashes": "PASS",
+  "gates": {
+    "reverseDamage": "PASS",
+    "manualBlock": "PASS",
+    "dedup": "PASS",
+    "input": "PASS",
+    "reverseArchitecture": "PASS",
+    "regression": "PASS_WITH_LEGACY_SMOKE_QUOTA_EXEMPTION"
+  },
+  "finalGate": "PASS",
+  "readyForJkaBlockAnimation": true,
+  "readyForDirectionalParry": false,
+  "readyForCombatAi": false
+}

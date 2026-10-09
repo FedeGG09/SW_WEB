@@ -1,0 +1,26 @@
+{
+  "milestone": "W237.2F.6",
+  "oldCoordinatorPath": "src/dev/kotor/CharacterControlOwnership.ts",
+  "newCoordinatorPath": "src/party/CharacterControlOwnership.ts",
+  "singleSourceOfTruth": true,
+  "actorContract": "generic ControlOwnershipId string plus safe-transfer predicate and transfer callback",
+  "devDuplicateImplementation": false,
+  "transitionPolicy": { "safeStates": ["READY", "BLOCK_READY", "LOCOMOTION"], "unsafePolicy": "QUEUE_UNTIL_READY", "statuses": ["IDLE", "QUEUED", "APPLYING"] },
+  "migrationMatrix": [
+    { "case": "M0", "player": "AREN_NATIVE_JKA_V1", "follower": "NARA_NATIVE_JKA_V1", "pass": true },
+    { "case": "M1", "arenMovement": true, "naraFollowed": true, "pass": true },
+    { "case": "M2", "player": "NARA_NATIVE_JKA_V1", "follower": "AREN_NATIVE_JKA_V1", "pass": true },
+    { "case": "M3", "naraMovement": true, "arenFollowed": true, "pass": true },
+    { "case": "M4", "naraAttack1": true, "pass": true },
+    { "case": "M5", "naraBlock": "BLOCK_READY", "pass": true },
+    { "case": "M6", "player": "AREN_NATIVE_JKA_V1", "follower": "NARA_NATIVE_JKA_V1", "pass": true },
+    { "case": "M7", "arenAttack1": true, "pass": true }
+  ],
+  "unsafeSwap": { "request": "QUEUED", "attackInterrupted": false, "appliedAfterReady": true, "appliedOnce": true, "pass": true },
+  "stress": { "swaps": 5, "actorCount": "2 -> 2", "saberCount": "2 -> 2", "inputObserverDelta": 0, "renderObserverDelta": 0, "cameraCountDelta": 0, "followerUpdateDelta": 0, "pass": true },
+  "academy": { "partySize": 2, "joleeRole": "ACADEMY_STORY_NPC", "sequence": ["Aren controlled", "Aren route", "swap Nara", "Nara route", "swap Aren"], "roomsVisited": ["m13aa_04a", "m13aa_02g", "m13aa_02f", "m13aa_02e", "m13aa_03a"], "routePass": true, "arenTeleports": 0, "naraTeleports": 0, "stuck": 0, "visFallbacks": 0, "wokRejects": 0, "interactionOrigin": { "aren": "adapter.interactionOrigin()", "nara": "adapter.interactionOrigin()" } },
+  "protected": { "saberTraceControllerChanged": false, "saberClashDetectorChanged": false, "saberParryControllerChanged": false, "directionClassifierChanged": false, "combatAssetsChanged": false, "worldChanged": false },
+  "regression": { "typecheck": "PASS", "build": "PASS", "normalGame": "PASS_READY_tatooineSpaceport" },
+  "gates": { "runtimePromotion": "PASS", "migrationRegression": "PASS", "academy": "PASS", "stress": "PASS", "normalGame": "PASS", "final": "PASS" },
+  "futurePartySize": "MINOR_EXTENSION"
+}

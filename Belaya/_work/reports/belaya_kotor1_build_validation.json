@@ -1,0 +1,3379 @@
+{
+  "phase": "W230.2B",
+  "status": "PASS_CORE_IMPORT_PARTIAL_MATERIAL_MAPPING",
+  "job": "belaya_kotor1",
+  "body": {
+    "internalName": "PFBIM",
+    "supermodel": "S_Female03",
+    "odysseyNodeCount": 66,
+    "armatureBones": 61,
+    "armatureBoneNames": [
+      "camerahook",
+      "cutscenedummy",
+      "rootdummy",
+      "pelvis_g",
+      "lthigh_g",
+      "lshin_g",
+      "lfoot_g",
+      "lfootT_g",
+      "rthigh_g",
+      "rshin_g",
+      "rfoot_g",
+      "rfootT_g",
+      "torso_g",
+      "torsoUpr_g",
+      "breastbone",
+      "headhook",
+      "necklwr_g",
+      "neck_g",
+      "Impact",
+      "lcollar_dum",
+      "lcollar_g",
+      "lbicep_g",
+      "lbicepL_g",
+      "lforearm_g",
+      "lforearm",
+      "lhand_g",
+      "LaFngrB_g",
+      "LaFngrT_g",
+      "LbFngrB_g",
+      "LbFngrT_g",
+      "LcFngrB_g",
+      "LcFngrT_g",
+      "LdFngrB_g",
+      "LdFngrT_g",
+      "lhand",
+      "LThumbB_g",
+      "LThumbT_g",
+      "MedalHook",
+      "rcollar_dum",
+      "rcollar_g",
+      "rbicep_g",
+      "rbicepL_g",
+      "rforearm_g",
+      "rhand_g",
+      "RaFngrB_g",
+      "RaFngrT_g",
+      "RbFngrB_g",
+      "RbFngrT_g",
+      "RcFngrB_g",
+      "RcFngrT_g",
+      "RdFngrB_g",
+      "RdFngrT_g",
+      "rhand",
+      "RThumbB_g",
+      "RThumbT_g",
+      "DeflectHook",
+      "FreeLookHook",
+      "handconjure",
+      "headconjure",
+      "impact_bolt",
+      "LightsaberHook"
+    ],
+    "skin": {
+      "meshObjects": 48,
+      "weightedSkinMeshes": 4,
+      "weightedVertices": 920,
+      "unweightedVertices": 0,
+      "nonfiniteWeights": 0,
+      "weightSumOutside1e4": 0
+    }
+  },
+  "head": {
+    "internalName": "comm_w_f",
+    "supermodel": "S_Female03",
+    "odysseyNodeCount": 33,
+    "armatureBones": 23,
+    "armatureBoneNames": [
+      "cutscenedummy.001",
+      "rootdummy.001",
+      "torso_g.001",
+      "torsoUpr_g.001",
+      "necklwr_g.001",
+      "neck_g",
+      "Hturn_g",
+      "head_g",
+      "f_lbrw_g",
+      "f_llweye_g",
+      "f_lns_g",
+      "f_mdbrw_g",
+      "f_rbrw_g",
+      "f_rlweye_g",
+      "f_rns_g",
+      "talkdummy",
+      "f_jaw_g",
+      "f_Llm_g",
+      "f_Rlm_g",
+      "f_tonguetip_g",
+      "f_lmc_g",
+      "f_rmc_g",
+      "f_um_g"
+    ],
+    "skin": {
+      "meshObjects": 26,
+      "weightedSkinMeshes": 3,
+      "weightedVertices": 407,
+      "unweightedVertices": 0,
+      "nonfiniteWeights": 0,
+      "weightSumOutside1e4": 24
+    },
+    "attachedTo": "BODY_headhook",
+    "worldPosition": [
+      -0.0,
+      -0.0,
+      1.450004
+    ],
+    "inheritedAnimationResolution": {
+      "enabled": true,
+      "imported": [
+        {
+          "clip": "walk",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "walkinj",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "run",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "runinj",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "pauseinj",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "pausetrd",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "salute",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "victory",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "bow",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "kneel",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "meditate",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "greeting",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "taunt",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "dance",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "dance1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "flirt",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "pausestl",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "die",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "die1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "dead",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "dead1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "pause1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "pause2",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "listen",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "tlknorm",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "tlkforce",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "tlklaugh",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "tlkplead",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "tlksad",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "talk",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "walkss",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "walkst",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "runst",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "runrf",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "runss",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "b7a1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "b7a2",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "b7a3",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g7d1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g7g1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g7w1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g7r1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g2r1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "b9a1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "b9a2",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "b9a3",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g9d1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g9g1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g9w1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "g9r1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "walkrf",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "pause3",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "getupdead",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "getupdead1",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "talkinj",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "listeninj",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "turnleft",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "turnright",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "walkds",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "runds",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "hturnl",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "hturnr",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "pausepsn",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "good",
+          "source": "S_Female03"
+        },
+        {
+          "clip": "f2a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f2a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g4r1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g4a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g4a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "m4a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "m4a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g3r1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g3a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g3a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "m3a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "m3a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3n1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3n2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4n1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4n2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g3w1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g4w1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g3g1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g4g1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3a3",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3a4",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3a5",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f3a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f3a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f3a3",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4a3",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4a4",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4a5",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f4a1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f4a2",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f4a3",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c2a6",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c4a6",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "c3a6",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f4a4",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f3a4",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g3f1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "g4f1",
+          "source": "S_Female02"
+        },
+        {
+          "clip": "f2d2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f2p2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f2d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f2p1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "g4d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m4g1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m4g2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m4d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m4d2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "g3d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m3g1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m3g2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m3d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "m3d2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3p1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3p2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3p3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3p4",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3p5",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3d2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3d3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3d4",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c3d5",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f3p1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f3p2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f3p3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f3d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f3d2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f3d3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4p1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4p2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4p3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4p4",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4p5",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4d2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4d3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4d4",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "c4d5",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f4p1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f4p2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f4p3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f4d1",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f4d2",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "f4d3",
+          "source": "S_Female01"
+        },
+        {
+          "clip": "stealth",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "sitdown",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "animloop01",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "standup",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "treatinj",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "treatinjlp",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "inject",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "activate",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "equip",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "getfromgnd",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "getfromtbl",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "usecomp",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "usecomplp",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "unlockdr",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "unlockcntr",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "disablemine",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "setmine",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "animloop03",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "throwgren",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "castout1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "castoutlp1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "castout2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "castoutlp2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "castout3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "castoutlp3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "persuade",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "throwsab",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "throwsablp",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "catchsab",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "choke",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "horror",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "whirlwind",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "sleep",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1x1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1y1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1z1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1a1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1a2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1d1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1g1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1w1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g1r1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2a1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2a2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2a3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2a4",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2a5",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2n1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2n2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f2a3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g2a1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g2a2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g2w1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g2g1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g2d1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "m2a1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "m2a2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "m2g1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "m2g2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "m2d1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "m2d2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b5a1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b5a2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g5d1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g5g1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g5w1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g5r1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f5p1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f5p2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f5p3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f5d1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f5d2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f5d3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b6a1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b6a2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g6d1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g6g1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g6w1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g6r1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g8a2",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g8a1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g8r1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g8d1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g8g1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "spasm",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b5a3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b6a3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "neutral",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "evil",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "throwgren1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "paralyzed",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "prone",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g9a3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "fblock",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b5a4",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b6a4",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b7a4",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "b9a4",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "animloop02",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "f2a4",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "die3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "dead3",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "g2f1",
+          "source": "S_Male02"
+        },
+        {
+          "clip": "c2d1",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2d2",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2d3",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2p4",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2p3",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2p2",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2d4",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2p5",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2p1",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "f2d3",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "f2p3",
+          "source": "S_Male01"
+        },
+        {
+          "clip": "c2d5",
+          "source": "S_Male01"
+        }
+      ],
+      "overridden": [
+        {
+          "clip": "g4g1",
+          "source": "S_Female01",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g3g1",
+          "source": "S_Female01",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "walkinj",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "run",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "runinj",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "pause1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "pause2",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "pauseinj",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "pausestl",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "pausetrd",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "pausepsn",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "salute",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "victory",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "listen",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "bow",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "kneel",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "meditate",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "tlknorm",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "tlkforce",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "tlkplead",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "tlksad",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "tlklaugh",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "talk",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "greeting",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "flirt",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "taunt",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "dance",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "dance1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "die",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "dead",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "die1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "dead1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g2r1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "b7a1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "b7a2",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g7d1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g7g1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g7w1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g7r1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "b7a3",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "good",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "walkss",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "walkds",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "walkst",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "walkrf",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "runst",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "runss",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "runds",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "runrf",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "hturnr",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "hturnl",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "b9a1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "b9a2",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g9d1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g9g1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g9w1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "g9r1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "pause3",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "getupdead",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "getupdead1",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "talkinj",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "listeninj",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "turnleft",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "turnright",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        },
+        {
+          "clip": "walk",
+          "source": "S_Male02",
+          "winnerAlreadyPresent": true
+        }
+      ],
+      "failed": []
+    }
+  },
+  "animation": {
+    "catalogDeclarations": 337,
+    "bodyResolvedUnique": 268,
+    "bodySupermodelDeclarations": 333,
+    "bodySupermodelImportedUnique": 268,
+    "overrides": 65,
+    "failed": 0,
+    "bySource": [
+      {
+        "source": "S_Female03",
+        "declared": 64,
+        "importedUnique": 64,
+        "supermodel": "S_Female02"
+      },
+      {
+        "source": "S_Female02",
+        "declared": 43,
+        "importedUnique": 43,
+        "supermodel": "S_Female01"
+      },
+      {
+        "source": "S_Female01",
+        "declared": 48,
+        "importedUnique": 46,
+        "supermodel": "S_Male02"
+      },
+      {
+        "source": "S_Male02",
+        "declared": 166,
+        "importedUnique": 103,
+        "supermodel": "S_Male01"
+      },
+      {
+        "source": "S_Male01",
+        "declared": 12,
+        "importedUnique": 12,
+        "supermodel": "NULL"
+      }
+    ],
+    "overriddenSources": [
+      {
+        "clip": "g4g1",
+        "source": "S_Female01",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g3g1",
+        "source": "S_Female01",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "walkinj",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "run",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "runinj",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "pause1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "pause2",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "pauseinj",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "pausestl",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "pausetrd",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "pausepsn",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "salute",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "victory",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "listen",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "bow",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "kneel",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "meditate",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "tlknorm",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "tlkforce",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "tlkplead",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "tlksad",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "tlklaugh",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "talk",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "greeting",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "flirt",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "taunt",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "dance",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "dance1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "die",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "dead",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "die1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "dead1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g2r1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "b7a1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "b7a2",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g7d1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g7g1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g7w1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g7r1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "b7a3",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "good",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "walkss",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "walkds",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "walkst",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "walkrf",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "runst",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "runss",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "runds",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "runrf",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "hturnr",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "hturnl",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "b9a1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "b9a2",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g9d1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g9g1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g9w1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "g9r1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "pause3",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "getupdead",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "getupdead1",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "talkinj",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "listeninj",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "turnleft",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "turnright",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      },
+      {
+        "clip": "walk",
+        "source": "S_Male02",
+        "winningSourceAlreadySeen": true
+      }
+    ],
+    "failedClips": [],
+    "validation": [
+      {
+        "clip": "walk",
+        "semantic": "WALK",
+        "sampleSource": "body",
+        "start": 60,
+        "end": 90,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 60,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4510334730148315
+          },
+          {
+            "percent": 25,
+            "frame": 68,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4427084922790527
+          },
+          {
+            "percent": 50,
+            "frame": 75,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.467633605003357
+          },
+          {
+            "percent": 75,
+            "frame": 82,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.433753490447998
+          },
+          {
+            "percent": 100,
+            "frame": 90,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4510334730148315
+          }
+        ]
+      },
+      {
+        "clip": "run",
+        "semantic": "RUN",
+        "sampleSource": "body",
+        "start": 240,
+        "end": 262,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 240,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.410290241241455
+          },
+          {
+            "percent": 25,
+            "frame": 246,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4486504793167114
+          },
+          {
+            "percent": 50,
+            "frame": 251,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4221497774124146
+          },
+          {
+            "percent": 75,
+            "frame": 256,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4531776905059814
+          },
+          {
+            "percent": 100,
+            "frame": 262,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4102901220321655
+          }
+        ]
+      },
+      {
+        "clip": "pause1",
+        "semantic": "IDLE",
+        "sampleSource": "body",
+        "start": 2320,
+        "end": 2620,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 2320,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.451524257659912
+          },
+          {
+            "percent": 25,
+            "frame": 2395,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4627563953399658
+          },
+          {
+            "percent": 50,
+            "frame": 2470,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.468788504600525
+          },
+          {
+            "percent": 75,
+            "frame": 2545,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4443684816360474
+          },
+          {
+            "percent": 100,
+            "frame": 2620,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4515244960784912
+          }
+        ]
+      },
+      {
+        "clip": "b7a1",
+        "semantic": "ATTACK_FROM_ANIMATIONS_2DA",
+        "sampleSource": "body",
+        "start": 5920,
+        "end": 5965,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 5920,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.409122109413147
+          },
+          {
+            "percent": 25,
+            "frame": 5931,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.3989802598953247
+          },
+          {
+            "percent": 50,
+            "frame": 5942,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4083147048950195
+          },
+          {
+            "percent": 75,
+            "frame": 5954,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4062837362289429
+          },
+          {
+            "percent": 100,
+            "frame": 5965,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4091218709945679
+          }
+        ]
+      },
+      {
+        "clip": "fblock",
+        "semantic": "BLOCK",
+        "sampleSource": "body",
+        "start": 29530,
+        "end": 29537,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 29530,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.2586947679519653
+          },
+          {
+            "percent": 25,
+            "frame": 29532,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.258693814277649
+          },
+          {
+            "percent": 50,
+            "frame": 29534,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.2586926221847534
+          },
+          {
+            "percent": 75,
+            "frame": 29535,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.2586919069290161
+          },
+          {
+            "percent": 100,
+            "frame": 29537,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.2586909532546997
+          }
+        ]
+      },
+      {
+        "clip": "die",
+        "semantic": "DEATH",
+        "sampleSource": "body",
+        "start": 1890,
+        "end": 1978,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 1890,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.3591254949569702
+          },
+          {
+            "percent": 25,
+            "frame": 1912,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.3659476041793823
+          },
+          {
+            "percent": 50,
+            "frame": 1934,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.0323683023452759
+          },
+          {
+            "percent": 75,
+            "frame": 1956,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 0.997984766960144
+          },
+          {
+            "percent": 100,
+            "frame": 1978,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.1111379861831665
+          }
+        ]
+      },
+      {
+        "clip": "talk",
+        "semantic": "TALK",
+        "sampleSource": "body",
+        "start": 5390,
+        "end": 5405,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 5390,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.475219964981079
+          },
+          {
+            "percent": 25,
+            "frame": 5394,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.475219964981079
+          },
+          {
+            "percent": 50,
+            "frame": 5398,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.475219964981079
+          },
+          {
+            "percent": 75,
+            "frame": 5401,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.475219964981079
+          },
+          {
+            "percent": 100,
+            "frame": 5405,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.475219964981079
+          }
+        ]
+      },
+      {
+        "clip": "salute",
+        "semantic": "GESTURE",
+        "sampleSource": "body",
+        "start": 620,
+        "end": 670,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 620,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4479745626449585
+          },
+          {
+            "percent": 25,
+            "frame": 632,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.645458698272705
+          },
+          {
+            "percent": 50,
+            "frame": 645,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.6474227905273438
+          },
+          {
+            "percent": 75,
+            "frame": 658,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4778034687042236
+          },
+          {
+            "percent": 100,
+            "frame": 670,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4479745626449585
+          }
+        ]
+      },
+      {
+        "clip": "taunt",
+        "semantic": "GESTURE",
+        "sampleSource": "body",
+        "start": 1270,
+        "end": 1300,
+        "status": "PASS",
+        "samples": [
+          {
+            "percent": 0,
+            "frame": 1270,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.447974681854248
+          },
+          {
+            "percent": 25,
+            "frame": 1278,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4268382787704468
+          },
+          {
+            "percent": 50,
+            "frame": 1285,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.684882402420044
+          },
+          {
+            "percent": 75,
+            "frame": 1292,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.6504595279693604
+          },
+          {
+            "percent": 100,
+            "frame": 1300,
+            "vertices": 1327,
+            "nonfiniteVertices": 0,
+            "maxAbsLocalCoordinate": 1.4479745626449585
+          }
+        ]
+      }
+    ],
+    "headFacial": [
+      {
+        "clip": "pause1",
+        "status": "PASS",
+        "samples": [
+          {
+            "frame": 2320,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9999143481254578,
+              0.013084951788187027,
+              -0.0001651199854677543,
+              8.601253648521379e-05
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 2395,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9997914433479309,
+              -0.011118873953819275,
+              -0.0001624149881536141,
+              0.00553706381469965
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 2470,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9999695420265198,
+              0.004987451713532209,
+              -0.00010725050378823653,
+              -5.891322871320881e-06
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 2545,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9999938607215881,
+              0.0028161508962512016,
+              -0.00010724657477112487,
+              -6.1444934544852e-06
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 2620,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9999143481254578,
+              0.013084951788187027,
+              -0.0001651199854677543,
+              8.601253648521379e-05
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "clip": "talk",
+        "status": "PASS",
+        "samples": [
+          {
+            "frame": 5390,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9999619126319885,
+              0.00872623547911644,
+              -7.278414705069736e-05,
+              -1.1117700182694534e-07
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 5394,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9960488080978394,
+              -0.08880734443664551,
+              -2.9721864081011518e-08,
+              3.2779769298940664e-07
+            ],
+            "jawLocation": [
+              0.0,
+              0.0005728453397750854,
+              0.00397082045674324
+            ]
+          },
+          {
+            "frame": 5398,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9998477101325989,
+              -0.017451805993914604,
+              0.0001457159814890474,
+              -1.0306524700354203e-07
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 5401,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9996744394302368,
+              -0.02551393024623394,
+              -8.606869883465151e-09,
+              3.210367083283927e-07
+            ],
+            "jawLocation": [
+              0.0,
+              6.480887532234192e-05,
+              0.0016403384506702423
+            ]
+          },
+          {
+            "frame": 5405,
+            "jawBone": "f_jaw_g",
+            "jawQuaternion": [
+              0.9986301064491272,
+              -0.05232559144496918,
+              5.654460721871146e-08,
+              -1.0562863650420695e-07
+            ],
+            "jawLocation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "images": [
+      {
+        "name": "comm_w_f01",
+        "source": "FILE",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true,
+        "filepath": "",
+        "generatedPlaceholder": false
+      },
+      {
+        "name": "PFBI01",
+        "source": "FILE",
+        "size": [
+          512,
+          512
+        ],
+        "packed": true,
+        "filepath": "",
+        "generatedPlaceholder": false
+      }
+    ],
+    "missingGeneratedImages": [],
+    "missionTextureAudit": null
+  },
+  "geometryClassification": {
+    "policy": "source Odyssey mesh render flag mapped by node ID",
+    "body": [
+      {
+        "object": "ArmL",
+        "nodeId": 92,
+        "sourceNode": "ArmL",
+        "sourceMeshType": "SkinmeshNode",
+        "sourceRenderable": true,
+        "classification": "SKINNED_RENDERABLE",
+        "vertices": 178,
+        "faces": 347
+      },
+      {
+        "object": "ArmR",
+        "nodeId": 94,
+        "sourceNode": "ArmR",
+        "sourceMeshType": "SkinmeshNode",
+        "sourceRenderable": true,
+        "classification": "SKINNED_RENDERABLE",
+        "vertices": 178,
+        "faces": 347
+      },
+      {
+        "object": "pelvis_g",
+        "nodeId": 68,
+        "sourceNode": "pelvis_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 26,
+        "faces": 48
+      },
+      {
+        "object": "lthigh_g",
+        "nodeId": 69,
+        "sourceNode": "lthigh_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 18,
+        "faces": 32
+      },
+      {
+        "object": "lshin_g",
+        "nodeId": 70,
+        "sourceNode": "lshin_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 26,
+        "faces": 48
+      },
+      {
+        "object": "lfoot_g",
+        "nodeId": 71,
+        "sourceNode": "lfoot_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 16,
+        "faces": 28
+      },
+      {
+        "object": "lfootT_g",
+        "nodeId": 72,
+        "sourceNode": "lfootT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "rthigh_g",
+        "nodeId": 73,
+        "sourceNode": "rthigh_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 18,
+        "faces": 32
+      },
+      {
+        "object": "rshin_g",
+        "nodeId": 74,
+        "sourceNode": "rshin_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 26,
+        "faces": 48
+      },
+      {
+        "object": "rfoot_g",
+        "nodeId": 75,
+        "sourceNode": "rfoot_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 16,
+        "faces": 28
+      },
+      {
+        "object": "rfootT_g",
+        "nodeId": 76,
+        "sourceNode": "rfootT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "torso_g",
+        "nodeId": 3,
+        "sourceNode": "torso_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 14,
+        "faces": 24
+      },
+      {
+        "object": "torsoUpr_g",
+        "nodeId": 4,
+        "sourceNode": "torsoUpr_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 14,
+        "faces": 24
+      },
+      {
+        "object": "necklwr_g",
+        "nodeId": 89,
+        "sourceNode": "necklwr_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "BODY_neck_g",
+        "nodeId": 469,
+        "sourceNode": "neck_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "breastbone",
+        "nodeId": 86,
+        "sourceNode": "breastbone",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "lcollar_g",
+        "nodeId": 24,
+        "sourceNode": "lcollar_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "lbicep_g",
+        "nodeId": 25,
+        "sourceNode": "lbicep_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 14,
+        "faces": 24
+      },
+      {
+        "object": "lbicepL_g",
+        "nodeId": 26,
+        "sourceNode": "lbicepL_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 13,
+        "faces": 22
+      },
+      {
+        "object": "lforearm_g",
+        "nodeId": 27,
+        "sourceNode": "lforearm_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 21,
+        "faces": 38
+      },
+      {
+        "object": "lhand_g",
+        "nodeId": 28,
+        "sourceNode": "lhand_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LaFngrB_g",
+        "nodeId": 29,
+        "sourceNode": "LaFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LaFngrT_g",
+        "nodeId": 30,
+        "sourceNode": "LaFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LbFngrB_g",
+        "nodeId": 31,
+        "sourceNode": "LbFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LbFngrT_g",
+        "nodeId": 32,
+        "sourceNode": "LbFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LcFngrB_g",
+        "nodeId": 33,
+        "sourceNode": "LcFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LcFngrT_g",
+        "nodeId": 34,
+        "sourceNode": "LcFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LdFngrB_g",
+        "nodeId": 35,
+        "sourceNode": "LdFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LdFngrT_g",
+        "nodeId": 36,
+        "sourceNode": "LdFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "LThumbB_g",
+        "nodeId": 37,
+        "sourceNode": "LThumbB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 10,
+        "faces": 16
+      },
+      {
+        "object": "LThumbT_g",
+        "nodeId": 38,
+        "sourceNode": "LThumbT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 10,
+        "faces": 16
+      },
+      {
+        "object": "rcollar_g",
+        "nodeId": 6,
+        "sourceNode": "rcollar_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "rbicep_g",
+        "nodeId": 7,
+        "sourceNode": "rbicep_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 14,
+        "faces": 24
+      },
+      {
+        "object": "rbicepL_g",
+        "nodeId": 8,
+        "sourceNode": "rbicepL_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 13,
+        "faces": 22
+      },
+      {
+        "object": "rforearm_g",
+        "nodeId": 9,
+        "sourceNode": "rforearm_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 21,
+        "faces": 38
+      },
+      {
+        "object": "rhand_g",
+        "nodeId": 10,
+        "sourceNode": "rhand_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RaFngrB_g",
+        "nodeId": 17,
+        "sourceNode": "RaFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RaFngrT_g",
+        "nodeId": 18,
+        "sourceNode": "RaFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RbFngrB_g",
+        "nodeId": 15,
+        "sourceNode": "RbFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RbFngrT_g",
+        "nodeId": 16,
+        "sourceNode": "RbFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RcFngrB_g",
+        "nodeId": 13,
+        "sourceNode": "RcFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RcFngrT_g",
+        "nodeId": 14,
+        "sourceNode": "RcFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RdFngrB_g",
+        "nodeId": 11,
+        "sourceNode": "RdFngrB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RdFngrT_g",
+        "nodeId": 12,
+        "sourceNode": "RdFngrT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 9,
+        "faces": 14
+      },
+      {
+        "object": "RThumbB_g",
+        "nodeId": 19,
+        "sourceNode": "RThumbB_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 10,
+        "faces": 16
+      },
+      {
+        "object": "RThumbT_g",
+        "nodeId": 20,
+        "sourceNode": "RThumbT_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 10,
+        "faces": 16
+      },
+      {
+        "object": "TailFlap",
+        "nodeId": 95,
+        "sourceNode": "TailFlap",
+        "sourceMeshType": "SkinmeshNode",
+        "sourceRenderable": true,
+        "classification": "SKINNED_RENDERABLE",
+        "vertices": 65,
+        "faces": 105
+      },
+      {
+        "object": "torso",
+        "nodeId": 93,
+        "sourceNode": "torso",
+        "sourceMeshType": "SkinmeshNode",
+        "sourceRenderable": true,
+        "classification": "SKINNED_RENDERABLE",
+        "vertices": 499,
+        "faces": 965
+      }
+    ],
+    "head": [
+      {
+        "object": "necklwr_g.001",
+        "nodeId": 43,
+        "sourceNode": "necklwr_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "neck_g",
+        "nodeId": 44,
+        "sourceNode": "neck_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "head_g",
+        "nodeId": 46,
+        "sourceNode": "head_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 29,
+        "faces": 54
+      },
+      {
+        "object": "eyeLA",
+        "nodeId": 60,
+        "sourceNode": "eyeLA",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": true,
+        "classification": "RIGID_RENDERABLE",
+        "vertices": 17,
+        "faces": 28
+      },
+      {
+        "object": "eyeLlid",
+        "nodeId": 61,
+        "sourceNode": "eyeLlid",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": true,
+        "classification": "RIGID_RENDERABLE",
+        "vertices": 13,
+        "faces": 22
+      },
+      {
+        "object": "eyeRA",
+        "nodeId": 59,
+        "sourceNode": "eyeRA",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": true,
+        "classification": "RIGID_RENDERABLE",
+        "vertices": 17,
+        "faces": 28
+      },
+      {
+        "object": "eyeRlid",
+        "nodeId": 62,
+        "sourceNode": "eyeRlid",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": true,
+        "classification": "RIGID_RENDERABLE",
+        "vertices": 13,
+        "faces": 22
+      },
+      {
+        "object": "f_lbrw_g",
+        "nodeId": 63,
+        "sourceNode": "f_lbrw_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_llweye_g",
+        "nodeId": 83,
+        "sourceNode": "f_llweye_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_lns_g",
+        "nodeId": 84,
+        "sourceNode": "f_lns_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_mdbrw_g",
+        "nodeId": 65,
+        "sourceNode": "f_mdbrw_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_rbrw_g",
+        "nodeId": 64,
+        "sourceNode": "f_rbrw_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_rlweye_g",
+        "nodeId": 82,
+        "sourceNode": "f_rlweye_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_rns_g",
+        "nodeId": 85,
+        "sourceNode": "f_rns_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "Mesh01",
+        "nodeId": 90,
+        "sourceNode": "Mesh01",
+        "sourceMeshType": "DanglymeshNode",
+        "sourceRenderable": true,
+        "classification": "RIGID_RENDERABLE",
+        "vertices": 24,
+        "faces": 42
+      },
+      {
+        "object": "f_jaw_g",
+        "nodeId": 55,
+        "sourceNode": "f_jaw_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_Llm_g",
+        "nodeId": 57,
+        "sourceNode": "f_Llm_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_Rlm_g",
+        "nodeId": 56,
+        "sourceNode": "f_Rlm_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_tonguetip_g",
+        "nodeId": 58,
+        "sourceNode": "f_tonguetip_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "teethlower",
+        "nodeId": 89,
+        "sourceNode": "teethlower",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": true,
+        "classification": "RIGID_RENDERABLE",
+        "vertices": 10,
+        "faces": 8
+      },
+      {
+        "object": "f_lmc_g",
+        "nodeId": 53,
+        "sourceNode": "f_lmc_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_rmc_g",
+        "nodeId": 54,
+        "sourceNode": "f_rmc_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "f_um_g",
+        "nodeId": 52,
+        "sourceNode": "f_um_g",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": false,
+        "classification": "NON_RENDERABLE",
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "object": "teethupper",
+        "nodeId": 91,
+        "sourceNode": "teethupper",
+        "sourceMeshType": "TrimeshNode",
+        "sourceRenderable": true,
+        "classification": "RIGID_RENDERABLE",
+        "vertices": 10,
+        "faces": 8
+      },
+      {
+        "object": "head",
+        "nodeId": 93,
+        "sourceNode": "head",
+        "sourceMeshType": "SkinmeshNode",
+        "sourceRenderable": true,
+        "classification": "SKINNED_RENDERABLE",
+        "vertices": 365,
+        "faces": 712
+      },
+      {
+        "object": "tongue",
+        "nodeId": 92,
+        "sourceNode": "tongue",
+        "sourceMeshType": "SkinmeshNode",
+        "sourceRenderable": true,
+        "classification": "SKINNED_RENDERABLE",
+        "vertices": 18,
+        "faces": 30
+      }
+    ]
+  },
+  "hooks": [
+    {
+      "name": "LightsaberHook",
+      "object": "LightsaberHook",
+      "parent": "PFBIM",
+      "position": [
+        -0.003737,
+        0.757719,
+        1.99984
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "DeflectHook",
+      "object": "DeflectHook",
+      "parent": "PFBIM",
+      "position": [
+        -0.003892,
+        0.473104,
+        2.00109
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "handconjure",
+      "object": "handconjure",
+      "parent": "PFBIM",
+      "position": [
+        -0.069037,
+        0.891812,
+        1.27381
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "headconjure",
+      "object": "headconjure",
+      "parent": "PFBIM",
+      "position": [
+        -0.255539,
+        0.213385,
+        2.01345
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "impact_bolt",
+      "object": "impact_bolt",
+      "parent": "PFBIM",
+      "position": [
+        0.040102,
+        0.416028,
+        1.3162
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Impact",
+      "object": "Impact",
+      "parent": "torsoUpr_g",
+      "position": [
+        0.0,
+        0.105513,
+        1.333003
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "camerahook",
+      "object": "camerahook",
+      "parent": "PFBIM",
+      "position": [
+        0.00061,
+        -0.023542,
+        1.59312
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "FreeLookHook",
+      "object": "FreeLookHook",
+      "parent": "PFBIM",
+      "position": [
+        0.0,
+        0.12,
+        1.59424
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "blendFile": "E:\\NerathisWeb\\Belaya\\_work\\blender\\belaya_kotor1_source.blend",
+  "kotor1Modified": false,
+  "kotor2Modified": false
+}

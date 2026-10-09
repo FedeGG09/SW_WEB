@@ -1,0 +1,90 @@
+{
+  "milestone": "W237.2D.3C",
+  "question": "Does setLeaderLocomotion(true) replacing Caleb's exact locomotion profile cause READY deformation?",
+  "testSetup": {
+    "world": "jedi_enclave_danm13",
+    "leaderSpawn": "W237.1 wp_pc_start projected to WOK",
+    "jkaWeapons": "off",
+    "jkaRootReset": "off",
+    "followers": "none",
+    "readyInit": "none"
+  },
+  "nativeControl": {
+    "characterId": "AREN_JKA_PROTOTYPE_V0",
+    "assetSha256": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca",
+    "readyClip": "JKA_SABER_READY",
+    "activeGroups": 1,
+    "activeAnimatables": 159,
+    "duplicateTargetPropertyWriters": 0,
+    "visual": "PASS_STABLE"
+  },
+  "calebCurrentProfile": {
+    "characterId": "AREN_CALEB_JKA_CANDIDATE",
+    "assetSha256": "06681468976eb7ea4e53bb692bbcfbedaed0304ae23166b6117917103cd48215",
+    "operation": "setLeaderLocomotion(true) then setCombatReadyPose(true)",
+    "readyClip": "BOTH_SABERFAST_STANCE",
+    "activeGroups": 1,
+    "activeAnimatables": 159,
+    "duplicateTargetPropertyWriters": 0,
+    "initialVisual": "FAIL_DEFORMATION_OBSERVED",
+    "normalizedRepeatVisual": "EXTREME_DEFORMATION_NOT_REPRODUCED"
+  },
+  "calebExactProfileBranch": {
+    "operation": "setExactLocomotionProfile(def.exactLocomotion) then setCombatReadyPose(true)",
+    "readyClip": "BOTH_SABERFAST_STANCE",
+    "activeGroups": 1,
+    "activeAnimatables": 159,
+    "duplicateTargetPropertyWriters": 0,
+    "rootAndJointSnapshotDiffFromCurrentBranch": null,
+    "initialVisual": "SAME_DEFORMATION_AS_CURRENT_BRANCH",
+    "normalizedRepeatVisual": "EXTREME_DEFORMATION_NOT_REPRODUCED"
+  },
+  "profileDiff": {
+    "firstDifferingField": "exactLocomotion.idle",
+    "nativeAren": {
+      "idle": "JKA_IDLE",
+      "walk": "JKA_WALK_FORWARD",
+      "run": "JKA_RUN_FORWARD",
+      "backward": "JKA_WALK_BACKWARD",
+      "strafeLeft": "JKA_STRAFE_LEFT",
+      "strafeRight": "JKA_STRAFE_RIGHT"
+    },
+    "caleb": {
+      "idle": "BOTH_STAND1",
+      "walk": "BOTH_WALK1",
+      "run": "BOTH_RUN1",
+      "backward": "BOTH_WALKBACK1",
+      "strafeLeft": "BOTH_STRAFE_LEFT1",
+      "strafeRight": "BOTH_STRAFE_RIGHT1"
+    },
+    "semanticClips": {
+      "nativeAren": null,
+      "caleb": null
+    },
+    "combatGroups": {
+      "nativeAren": {
+        "saberReady": "JKA_SABER_READY",
+        "attackStart": "JKA_ATTACK_START",
+        "attack": "JKA_ATTACK",
+        "attackReturn": "JKA_ATTACK_RETURN"
+      },
+      "caleb": {
+        "saberReady": "BOTH_SABERFAST_STANCE",
+        "attackStart": "BOTH_S1_S1_T_",
+        "attack": "BOTH_A1_T__B_",
+        "attackReturn": "BOTH_R1_B__S1"
+      }
+    }
+  },
+  "decision": {
+    "armedLocomotionProfileCausal": false,
+    "rootCauseBoundary": "UNKNOWN",
+    "fixApplied": "NONE",
+    "meetraChanged": false,
+    "combatOrWorldChanged": false,
+    "productionBuild": "NOT_RUN",
+    "typecheck": "PASS",
+    "donorPromotion": "NO",
+    "readyForW237_2E": "NO"
+  }
+}

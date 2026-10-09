@@ -1,0 +1,141 @@
+{
+  "milestone": "W237.2E.A4",
+  "status": "PASS",
+  "projectRoot": "E:\\NerathisWeb",
+  "leader": "AREN_NATIVE_JKA_V1",
+  "follower": "NARA_NATIVE_JKA_V1",
+  "joleeRole": "ACADEMY_NPC",
+  "weapon": {
+    "id": "JKA_NATIVE_TRAINING_SINGLE_SABER_V1",
+    "handSocket": "rhang_tag_bone",
+    "bladeTag": "*blade1 / JKA_BLADE_SOCKET",
+    "bladeAxis": "NEGATIVE_X",
+    "bladeLengthM": 0.98,
+    "arenSaberCount": 1
+  },
+  "profile": {
+    "field": "nativeJkaWeaponPresentation",
+    "scope": "AREN_NATIVE_JKA_V1 only",
+    "translationM": [0.04, 0, 0],
+    "rotationEulerDeg": [0, 5, 80],
+    "runtimeTranslationM": [0.04, 0, 0],
+    "runtimeRotationEulerDeg": [0, 5, 80],
+    "profileRuntimeMatch": true,
+    "poseSpecificOffsets": false,
+    "legacyGenericPath": {
+      "translationM": [0.008, 0, -0.006],
+      "rotationEulerDeg": [0, 0, 0],
+      "classification": "LEGACY_GENERIC_PATH_ONLY",
+      "changed": false
+    }
+  },
+  "assets": {
+    "roshBase": { "path": "public/_lab/jka/characters/aren/aren_native_jka_v1.glb", "sha256": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58", "unchanged": true },
+    "roshCombo": { "path": "public/_lab/jka/characters/aren/aren_native_jka_v1_combo_v3.glb", "sha256": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc", "joints": 53, "groups": 13, "unchanged": true },
+    "jan": { "path": "public/_lab/jka/characters/nara/nara_native_jka_v1.glb", "sha256": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a", "unchanged": true },
+    "nativeSaber": { "path": "public/_lab/jka/weapons/saber/jka_native_single_saber_v1.glb", "sha256": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677", "unchanged": true },
+    "goldenControl": { "path": "public/_lab/jka/characters/aren/aren_jka_prototype_v0.glb", "sha256": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca", "unchanged": true },
+    "originalAren": { "path": "public/assets/characters/player/aren_vey_human_v1.glb", "sha256": "79073f978c889e268e77800dbf7a2d609ec40a2bb314100447ce458f8d8a7ba4", "unchanged": true },
+    "jolee": { "path": "public/_lab/kotor/characters/jolee/jolee_bindo_kotor1.glb", "sha256": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f", "unchanged": true },
+    "academyWorld": { "path": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb", "sha256": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c", "unchanged": true }
+  },
+  "poseRegression": {
+    "pass": true,
+    "singleTransformAcrossPoses": true,
+    "poses": {
+      "READY": "JKA_SABER_READY",
+      "ATTACK_1_START": "JKA_ATTACK_START",
+      "ATTACK_1": "JKA_ATTACK",
+      "COMBO_TRANSITION": "JKA_COMBO_TRANSITION_B_TO_TL",
+      "ATTACK_2": "JKA_COMBO_ATTACK_TL_TO_BR",
+      "ATTACK_2_RETURN": "JKA_COMBO_RETURN_BR_TO_READY",
+      "FINAL_READY": "JKA_SABER_READY"
+    },
+    "maxActiveIntendedGroups": 1,
+    "activeAnimatablesPerGroup": 159,
+    "duplicateTargetPropertyWriters": 0,
+    "foreignTargets": 0,
+    "bladeLengthM": 0.98,
+    "visualReviewBasis": "User-approved candidate; matching persisted/runtime transform and stable runtime ownership."
+  },
+  "comboMatrix": {
+    "pass": true,
+    "singlePress": "Attack 1 -> return -> READY; no Attack 2",
+    "validDoublePress": "Attack 1 -> transition -> Attack 2 -> return -> READY",
+    "earlyPress": "rejected",
+    "latePress": "rejected",
+    "spam": "one follow-up queued; additional presses rejected",
+    "attack1InstanceId": "jka_fast_t2b_0003",
+    "attack2InstanceId": "jka_fast_t2b_0004",
+    "instanceIdsDistinct": true,
+    "attack1DamageEvents": 1,
+    "attack2DamageEvents": 1,
+    "attack1RepeatContactsSuppressed": 5,
+    "attack2RepeatContactsSuppressed": 4,
+    "totalDamageEvents": 2,
+    "missDamageEvents": 0,
+    "finalDummyHp": 80,
+    "activeGroupsPerPhase": 1,
+    "duplicateWritersPerPhase": 0,
+    "foreignTargetsPerPhase": 0
+  },
+  "physicalHitMatrix": {
+    "pass": true,
+    "readyDamageEvents": 0,
+    "startDamageEvents": 0,
+    "firstAttackInstanceId": "jka_fast_t2b_0003",
+    "firstAttackHits": 1,
+    "firstAttackDamageEvents": 1,
+    "firstAttackRepeatContactsSuppressed": 5,
+    "secondAttackInstanceId": "jka_fast_t2b_0005",
+    "secondAttackHits": 1,
+    "secondAttackDamageEvents": 1,
+    "secondAttackRepeatContactsSuppressed": 5,
+    "missDamageEvents": 0,
+    "finalDummyHp": 80,
+    "lowFpsSweep": { "pass": true, "simulatedFrameMs": 100, "instantaneousBladesMiss": true, "sweptContactDetected": true }
+  },
+  "partySmoke": {
+    "gate": "PASS_SHORT_ROUTE",
+    "partySize": 2,
+    "joleePartyMember": false,
+    "targetRoomsReached": 3,
+    "targetRoomCoverage": 1,
+    "visitedRoomsIncludingIntermediates": 5,
+    "totalDistanceM": 139.96,
+    "walkDistanceM": 36.94,
+    "legacyHelperPass": false,
+    "legacyHelperFailureReason": "walk distance below unrelated 50 m quota; all target-room segments passed",
+    "naraMaxSeparationM": 5.0804,
+    "naraMeanSeparationM": 2.3728,
+    "naraRoomLag": 0,
+    "naraStuck": 0,
+    "naraTeleports": 0,
+    "visFallbacks": 0,
+    "wokRejects": 0
+  },
+  "regression": {
+    "typecheck": "PASS",
+    "build": "PASS",
+    "normalGame": "READY tatooineSpaceport",
+    "protectedHashes": "PASS"
+  },
+  "changeScope": {
+    "saberTraceControllerChanged": false,
+    "assetsChanged": false,
+    "janChanged": false,
+    "groundingChanged": false,
+    "navigationChanged": false,
+    "academyWorldChanged": false,
+    "joleeChanged": false
+  },
+  "gates": {
+    "nativeGrip": "PASS",
+    "combo": "PASS",
+    "physicalCombo": "PASS",
+    "partyRegression": "PASS_SHORT_ROUTE",
+    "regression": "PASS",
+    "final": "PASS",
+    "readyForW237_2FParry": "YES"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "milestone": "W237.2F.4",
+  "pivot": {
+    "primaryRealContact": "NATIVE_JKA_PAIR",
+    "preservedJoleeRole": "ACADEMY_STORY_NPC / KOTOR_INTEROP_REFERENCE",
+    "labRoute": "?jkaPairCombatLab=1"
+  },
+  "actors": {
+    "AREN_NATIVE_JKA_V1": {
+      "asset": "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v2.glb",
+      "sha256": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3",
+      "joints": 53,
+      "nativeGrip": {
+        "translationM": [0.04, 0, 0],
+        "rotationEulerDeg": [0, 5, 80]
+      }
+    },
+    "NARA_NATIVE_JKA_V1": {
+      "asset": "public/_lab/jka/characters/nara/nara_native_jka_v1_combat_v1.glb",
+      "sha256": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+      "joints": 53,
+      "animationGroups": 15,
+      "nativeGrip": {
+        "translationM": [0.04, 0, 0],
+        "rotationEulerDeg": [0, 5, 80]
+      },
+      "gripSource": "AREN_CERTIFIED_NATIVE_GRIP_REUSED",
+      "gripStatus": "USER_VERIFIED_PASS"
+    }
+  },
+  "weapon": {
+    "socket": "rhang_tag_bone",
+    "bladeTag": "*blade1",
+    "axis": "NEGATIVE_X",
+    "bladeLengthM": 0.98,
+    "saberSha256": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04ad0d860a3ba92357b677"
+  },
+  "controllers": {
+    "parry": "src/combat/SaberParryController.ts",
+    "direction": "src/combat/SaberParryDirectionClassifier.ts",
+    "clash": "src/combat/SaberClashDetector.ts",
+    "bodyTrace": "src/combat/SaberTraceController.ts",
+    "changed": false
+  },
+  "contactSmoke": {
+    "clashRadiusM": 0.08,
+    "A1_unblocked": {
+      "parryEvents": 0,
+      "damageEvents": 1,
+      "defenderHp": 90,
+      "result": "PASS"
+    },
+    "A2_blocked": {
+      "parryEvents": 1,
+      "damageEvents": 0,
+      "defenderHp": 100,
+      "direction": "TOP",
+      "distanceM": 0.0014,
+      "sampleCount": 51,
+      "suppressed": true,
+      "result": "PASS"
+    },
+    "B1_unblocked": {
+      "parryEvents": 0,
+      "damageEvents": 1,
+      "defenderHp": 90,
+      "result": "PASS"
+    },
+    "B2_blocked": {
+      "parryEvents": 1,
+      "damageEvents": 0,
+      "defenderHp": 100,
+      "direction": "BOTTOM_LEFT",
+      "distanceM": 0.0743,
+      "sampleCount": 33,
+      "suppressed": true,
+      "result": "PASS"
+    }
+  },
+  "matrixStatus": {
+      "A0_A5": "EXECUTED_INDIVIDUAL_PAIR_LAB_SMOKE",
+      "B0_B5": "EXECUTED_INDIVIDUAL_PAIR_LAB_SMOKE",
+    "fullAcademyRegression": "PASS_REQUESTED_CRITERIA",
+    "visualReview": "PASS_USER_VERIFIED",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "normalGame": "PASS_READY_tatooineSpaceport"
+  },
+  "closure": {
+    "naraGripUserVisualReview": "PASS",
+    "naraReadyGrip": "PASS",
+    "naraAttackGrip": "PASS",
+    "naraParryGrip": "PASS",
+    "naraGripSource": "AREN_CERTIFIED_NATIVE_GRIP_REUSED",
+    "naraGripReusedExactly": true,
+    "poseSpecificNaraGrip": false,
+    "arenGripChanged": false,
+    "arenToNaraDirection": "TOP",
+    "naraToArenDirection": "BOTTOM_LEFT",
+    "academySmoke": {
+      "partySize": 2,
+      "joleeRole": "ACADEMY_STORY_NPC",
+      "requestedRooms": 3,
+      "destinationRoomsReached": ["m13aa_04a", "m13aa_02g", "m13aa_03a"],
+      "visitedRooms": ["m13aa_04a", "m13aa_02g", "m13aa_02f", "m13aa_02e", "m13aa_03a"],
+      "distanceM": 139.770,
+      "coveragePercent": 100,
+      "naraTeleports": 0,
+      "naraStuck": 0,
+      "visFallbacks": 0,
+      "wokRejects": 0,
+      "maxSeparationM": 5.1297,
+      "meanSeparationM": 2.6452,
+      "legacyHelperBoolean": false,
+      "legacyHelperNote": "The helper still applies an unrelated distance quota; requested room-continuity criteria pass."
+    },
+    "arenComboRegression": {
+      "result": "PASS",
+      "sequence": ["JKA_ATTACK_START", "JKA_ATTACK", "JKA_COMBO_TRANSITION_B_TO_TL", "JKA_COMBO_ATTACK_TL_TO_BR", "JKA_COMBO_RETURN_BR_TO_READY"],
+      "attackOneInstanceId": "jka_fast_t2b_0001",
+      "attackTwoInstanceId": "jka_fast_t2b_0002",
+      "instanceIdsDistinct": true,
+      "transitionEntered": true,
+      "returnedReady": true,
+      "animationOwnershipPass": true,
+      "note": "Sequence smoke ran without a target-contact requirement; W237.2E physical hit certification remains the authority for combat damage."
+    },
+    "normalGame": "PASS_READY_tatooineSpaceport",
+    "protectedHashes": {
+      "arenBase": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58",
+      "arenCombo": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+      "arenDefenseV1": "26145739f58c11402b97987bfbf235b4f8118f98373e945eb197f1fe78deb66b",
+      "arenDefenseV2": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3",
+      "naraOriginalNative": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a",
+      "naraCombat": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+      "nativeSaber": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677",
+      "jolee": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f",
+      "academyWorld": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+    },
+    "gates": {
+      "naraAsset": "PASS",
+      "genericCombat": "PASS",
+      "arenToNara": "PASS",
+      "naraToAren": "PASS",
+      "directional": "PASS",
+      "pairVisual": "PASS_USER_VERIFIED",
+      "partyRegression": "PASS",
+      "normalGame": "PASS",
+      "final": "PASS"
+    },
+    "combatArchitecturePrimaryHumanoid": "NATIVE_JKA",
+    "joleePrimaryRole": "ACADEMY_STORY_NPC",
+    "readyForCharacterControlSwap": "YES",
+    "actualCharacterSwitchImplemented": false
+  }
+}

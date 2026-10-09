@@ -1,0 +1,33 @@
+{
+  "schema": "W238_0A1B_DOOR_INTERACTION_MATRIX_V1",
+  "source": {
+    "danm13": {
+      "tag": "dan13_door03",
+      "linkedToModule": "danm14aa",
+      "linkedTo": "from13",
+      "transitionDestin": 7470,
+      "position": [
+        82.17449951171875,
+        127.64099884033203,
+        5.074999809265137
+      ]
+    },
+    "danm14aa": {
+      "tag": "man14aa_door03",
+      "linkedToModule": "danm13",
+      "linkedTo": "from14a",
+      "transitionDestin": 39043,
+      "position": [
+        108.5250015258789,
+        93.9749984741211,
+        1.5
+      ]
+    }
+  },
+  "runtime": {
+    "interaction": "SOURCE_DOOR_TRANSITION button and E key are proximity-gated to Aren at the reciprocal source entry.",
+    "destinationPlacement": "reciprocal source entry position plus candidate-only sector render offset for visual separation",
+    "doorGeometry": "source door visual/trigger metadata retained; no manually welded module geometry",
+    "status": "SOURCE_BACKED_CANDIDATE_INTERACTION; FULL_PRODUCTION_DOOR_CONTROLLER_OPEN"
+  }
+}

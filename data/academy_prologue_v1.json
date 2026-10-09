@@ -1,0 +1,51 @@
+{
+  "id": "ACADEMY_PROLOGUE_V1",
+  "status": "CANDIDATE_NOT_PROMOTED",
+  "game": "KOTOR1",
+  "modules": [
+    {
+      "module": "danm13",
+      "area": "m13aa",
+      "worldAsset": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb",
+      "sourceManifest": "data/w238_0a_academy_source_manifest.json"
+    },
+    {
+      "module": "danm14aa",
+      "area": "m14aa",
+      "worldAsset": "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm14aa_kotor1_candidate.glb",
+      "sourceManifest": "data/w238_0a_academy_source_manifest.json",
+      "runtimeStatus": "CANDIDATE_GLB_EXPORTED"
+    }
+  ],
+  "party": [
+    {
+      "id": "AREN_NATIVE_JKA_V1",
+      "profile": "AREN_NATIVE_JKA_V1"
+    },
+    {
+      "id": "NARA_NATIVE_JKA_V1",
+      "profile": "NARA_NATIVE_JKA_V1"
+    }
+  ],
+  "worldNpcPolicy": {
+    "sourceManifest": "data/w238_0a_academy_npc_manifest.json",
+    "staticOnlyUntilConditionsAreSupported": true,
+    "jolee": "ACADEMY_STORY_NPC",
+    "partyMembers": [
+      "AREN_NATIVE_JKA_V1",
+      "NARA_NATIVE_JKA_V1"
+    ]
+  },
+  "navigation": {
+    "wok": "source-preserved",
+    "vis": "source-preserved",
+    "pth": "source-preserved",
+    "runtimeRoute": "ACADEMY_PROLOGUE_V1_CANDIDATE"
+  },
+  "dialogue": "data/w238_0a_academy_dialogue_manifest.json",
+  "voice": "data/w238_0a_academy_voice_manifest.json",
+  "scripts": "data/w238_0a_academy_script_index.json",
+  "promotionRule": "Do not make Academy the default world until W238_0A_FINAL_GATE is PASS.",
+  "candidateRoute": "?academyCandidate=1",
+  "sectorTransitionManifest": "data/w238_0a1_sector_transition_manifest.json"
+}

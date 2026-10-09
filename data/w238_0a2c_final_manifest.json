@@ -1,0 +1,788 @@
+{
+  "schema": "W238.0A.2C_FINAL_MANIFEST_V1",
+  "milestone": "W238.0A.2C",
+  "counts": {
+    "directGitInstances": 44,
+    "utcUninstantiated": 24,
+    "uniqueAppearanceRows": 28,
+    "uniqueBodyModels": 12,
+    "uniqueHeadModels": 13,
+    "uniqueRigFamilies": 4
+  },
+  "derivedAssets": [
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_l_astro02_body.glb",
+      "source": null,
+      "sourceKind": "DERIVED",
+      "sha256": "e0416dca20a0f3b91b58e9db7b65a95f6bacfd68c58938686806af7edb4efd4b",
+      "bytes": 55340,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/astro02/astro02_validation.json",
+      "meshes": 2,
+      "nodes": 7,
+      "triangles": 772,
+      "jointCountBySkin": [],
+      "animations": 2,
+      "animationNames": [
+        "cwalk",
+        "cpause1"
+      ],
+      "requiredAnimations": {
+        "cpause1": true,
+        "cwalk": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_c_drdprot_body.glb",
+      "source": null,
+      "sourceKind": "DERIVED",
+      "sha256": "1f9a65f89452ffbf89cabc508b35c4cb1f82512f134f67bafc31e0fcf12a143b",
+      "bytes": 636880,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/drdprot/drdprot_validation.json",
+      "meshes": 48,
+      "nodes": 58,
+      "triangles": 1870,
+      "jointCountBySkin": [],
+      "animations": 5,
+      "animationNames": [
+        "cdead",
+        "cwalk",
+        "crun",
+        "cpause1",
+        "tlknorm"
+      ],
+      "requiredAnimations": {
+        "cpause1": true,
+        "cwalk": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_duros_body.glb",
+      "source": "appearance.2da:374",
+      "sourceKind": "DERIVED",
+      "sha256": "25a6031b907a83ad783bded4a3e1a14c740f5793bc0b1e913babf5fb2bea7398",
+      "bytes": 1067000,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/duros/duros_validation.json",
+      "meshes": 58,
+      "nodes": 140,
+      "triangles": 3268,
+      "jointCountBySkin": [
+        67
+      ],
+      "animations": 4,
+      "animationNames": [
+        "pause1",
+        "pause2",
+        "walk",
+        "tlknorm"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_jedicounm_pmhb05.glb",
+      "source": "appearance.2da:227",
+      "sourceKind": "DERIVED",
+      "sha256": "bf4b70023d47c441d99882213071b57be54858fc16f858bd94a2f4500c754c7a",
+      "bytes": 888512,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/jedi_pmhb05/pmhb05_validation.json",
+      "meshes": 12,
+      "nodes": 120,
+      "triangles": 2052,
+      "jointCountBySkin": [
+        25,
+        56
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_c_khounda_body.glb",
+      "source": null,
+      "sourceKind": "DERIVED",
+      "sha256": "3f6e35aebac58929304964455763e2ca600af93c89e0dad17d047602ddab6996",
+      "bytes": 652532,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/khounda/khounda_validation.json",
+      "meshes": 35,
+      "nodes": 80,
+      "triangles": 2652,
+      "jointCountBySkin": [
+        38
+      ],
+      "animations": 6,
+      "animationNames": [
+        "cdead",
+        "cwalk",
+        "crun",
+        "cpause1",
+        "tlknorm",
+        "cdie"
+      ],
+      "requiredAnimations": {
+        "cpause1": true,
+        "cwalk": true,
+        "crun": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_l_commf_body.glb",
+      "source": "appearance.2da:393/394/407/411",
+      "sourceKind": "DERIVED",
+      "sha256": "9d609d9bc6b0009840dbebab2242341836fb18c901db0e4c3be049f81b041a23",
+      "bytes": 998716,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/lcommf/lcommf_validation.json",
+      "meshes": 60,
+      "nodes": 145,
+      "triangles": 1942,
+      "jointCountBySkin": [
+        71
+      ],
+      "animations": 4,
+      "animationNames": [
+        "walk",
+        "run",
+        "pause1",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commf_comm_a_f.glb",
+      "source": "appearance.2da:14",
+      "sourceKind": "DERIVED",
+      "sha256": "7d715e9bce673b1da0804069064e6f9f3292a3630bd1e711ea3939a02e0cc5ee",
+      "bytes": 976600,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commf_comm_a_f/kotor1_n_commf_comm_a_f_validation.json",
+      "meshes": 12,
+      "nodes": 122,
+      "triangles": 2044,
+      "jointCountBySkin": [
+        24,
+        60
+      ],
+      "animations": 7,
+      "animationNames": [
+        "walk",
+        "run",
+        "die",
+        "pause1",
+        "g2r1",
+        "fblock",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commf_comm_w_f.glb",
+      "source": "appearance.2da:185",
+      "sourceKind": "DERIVED",
+      "sha256": "564606543d106b2cdace760071356baa4765b2aceefad8f1ae98e231dc8c7e3e",
+      "bytes": 973124,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commf_comm_w_f/kotor1_n_commf_comm_w_f_validation.json",
+      "meshes": 12,
+      "nodes": 122,
+      "triangles": 2037,
+      "jointCountBySkin": [
+        24,
+        60
+      ],
+      "animations": 7,
+      "animationNames": [
+        "walk",
+        "run",
+        "die",
+        "pause1",
+        "g2r1",
+        "fblock",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commf_old_w_f.glb",
+      "source": "appearance.2da:188",
+      "sourceKind": "DERIVED",
+      "sha256": "bfdaaffb1a4fe3ce179dd413b6dcf27ebca569c5d42ae65eff5a5f34cb0dd2aa",
+      "bytes": 971516,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commf_old_w_f/kotor1_n_commf_old_w_f_validation.json",
+      "meshes": 12,
+      "nodes": 122,
+      "triangles": 2016,
+      "jointCountBySkin": [
+        24,
+        60
+      ],
+      "animations": 7,
+      "animationNames": [
+        "walk",
+        "run",
+        "die",
+        "pause1",
+        "g2r1",
+        "fblock",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commm_comm_a_m2.glb",
+      "source": "appearance.2da:465",
+      "sourceKind": "DERIVED",
+      "sha256": "d6c3eb5f38d0bf79fa62d726214aa26551c9b2f8b534eca1f21589a558675c5b",
+      "bytes": 864948,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commm_comm_a_m2/kotor1_n_commm_comm_a_m2_validation.json",
+      "meshes": 11,
+      "nodes": 113,
+      "triangles": 1984,
+      "jointCountBySkin": [
+        23,
+        55
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commm_comm_w_m.glb",
+      "source": "appearance.2da:190",
+      "sourceKind": "DERIVED",
+      "sha256": "700583de2b96118e89ed71e68b8844406cdb899925dd6b1595e80ec133a1cbbb",
+      "bytes": 858448,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commm_comm_w_m/kotor1_n_commm_comm_w_m_validation.json",
+      "meshes": 11,
+      "nodes": 113,
+      "triangles": 1978,
+      "jointCountBySkin": [
+        23,
+        55
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commm_n_dorakh.glb",
+      "source": "appearance.2da:423",
+      "sourceKind": "DERIVED",
+      "sha256": "9a3757fc5396c13279038c76d523e70913ffcb14ad81d6e0e904bc6ecaf509b3",
+      "bytes": 869176,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commm_n_dorakh/kotor1_n_commm_n_dorakh_validation.json",
+      "meshes": 11,
+      "nodes": 115,
+      "triangles": 2020,
+      "jointCountBySkin": [
+        24,
+        55
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commm_n_vrookh.glb",
+      "source": "appearance.2da:424",
+      "sourceKind": "DERIVED",
+      "sha256": "e10c8c072b6837b9c6ba49d6411fe6793987a527518fe61404fc59f2411a56f9",
+      "bytes": 866088,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commm_n_vrookh/kotor1_n_commm_n_vrookh_validation.json",
+      "meshes": 11,
+      "nodes": 113,
+      "triangles": 2040,
+      "jointCountBySkin": [
+        23,
+        55
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commm_n_zharh.glb",
+      "source": "appearance.2da:416",
+      "sourceKind": "DERIVED",
+      "sha256": "507d1308b676cf0b2fcb925adcdd0bbb25cc9976495df71fc72968e5f0ec1e0f",
+      "bytes": 883960,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commm_n_zharh/kotor1_n_commm_n_zharh_validation.json",
+      "meshes": 12,
+      "nodes": 114,
+      "triangles": 2268,
+      "jointCountBySkin": [
+        23,
+        55
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_commm_old_a_m.glb",
+      "source": "appearance.2da:192",
+      "sourceKind": "DERIVED",
+      "sha256": "60beecb7978758b9ffbf715ac2fb2ea66ae116579dd697f70ae8cdf2a362742d",
+      "bytes": 868244,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/n_commm_old_a_m/kotor1_n_commm_old_a_m_validation.json",
+      "meshes": 11,
+      "nodes": 113,
+      "triangles": 2023,
+      "jointCountBySkin": [
+        23,
+        55
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2c/kotor1_n_rodian_body.glb",
+      "source": "appearance.2da:258",
+      "sourceKind": "DERIVED",
+      "sha256": "2ba36b950af85aecf9377f6b63841491f0fe4d4a80dfa965c1dc218b347bedee",
+      "bytes": 1083208,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2c_jobs/rodian/rodian_validation.json",
+      "meshes": 66,
+      "nodes": 153,
+      "triangles": 3220,
+      "jointCountBySkin": [
+        73
+      ],
+      "animations": 5,
+      "animationNames": [
+        "pause1",
+        "tlknorm",
+        "listen",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2b/kotor1_n_twilekm_twilek_m.glb",
+      "source": "appearance.2da:48",
+      "sourceKind": "CERTIFIED_W238_0A2B",
+      "sha256": "8c4787e5cc776388ec0fa609b12132f5ad2b9c476f4ff2fe17dacf30dba2b152",
+      "bytes": 1162916,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2b_jobs/twilek_m/twilek_validation.json",
+      "meshes": 12,
+      "nodes": 142,
+      "triangles": 2276,
+      "jointCountBySkin": [
+        24,
+        79
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "talk",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    },
+    {
+      "path": "public/_lab/kotor/characters/w238_0a2b/kotor1_n_jedicounm_pmhc02.glb",
+      "source": "appearance.2da:214",
+      "sourceKind": "CERTIFIED_W238_0A2B",
+      "sha256": "a86a37b189ead0fc6184f1f03aa2065c7f1c0287f3bab941b11c909bd3b97358",
+      "bytes": 893212,
+      "structuralStatus": "PASS",
+      "structuralReport": "tools/_w238_0a2b_jobs/jedi_council/jedi_validation.json",
+      "meshes": 13,
+      "nodes": 121,
+      "triangles": 2130,
+      "jointCountBySkin": [
+        25,
+        56
+      ],
+      "animations": 7,
+      "animationNames": [
+        "run",
+        "pause1",
+        "die",
+        "g2r1",
+        "fblock",
+        "walk",
+        "talk"
+      ],
+      "requiredAnimations": {
+        "pause1": true,
+        "walk": true,
+        "run": true,
+        "talk": true,
+        "die": true,
+        "g2r1": true,
+        "fblock": true
+      },
+      "runtimeStatus": "NOT_BABYLON_VALIDATED_W238_0A2C"
+    }
+  ],
+  "coverageSummary": {
+    "rowsAttempted": 28,
+    "rowsStructurallyPass": 24,
+    "rowsOpen": 4
+  },
+  "protectedHashes": {
+    "danm13": {
+      "expectedSha256": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c",
+      "currentPaths": [
+        "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm13_kotor1.glb"
+      ],
+      "match": true
+    },
+    "danm14aaCandidateV2": {
+      "expectedSha256": "6a804c12471ae85d16d3dab2b39ad9e288e7bf04eaa2803c30fefca906a750d9",
+      "currentPaths": [
+        "public/_lab/kotor/worlds/jedi_enclave/jedi_enclave_danm14aa_kotor1_candidate_v2.glb"
+      ],
+      "match": true
+    },
+    "arenBase": {
+      "expectedSha256": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58",
+      "currentPaths": [
+        "public/_lab/jka/characters/aren/aren_native_jka_v1.glb"
+      ],
+      "match": true
+    },
+    "arenCombo": {
+      "expectedSha256": "6e921a5e8fd0c20a0e18009f712468bf1b5925adfacd7b366882297af8545cdc",
+      "currentPaths": [
+        "public/_lab/jka/characters/aren/aren_native_jka_v1_combo_v3.glb"
+      ],
+      "match": true
+    },
+    "arenDefenseV1": {
+      "expectedSha256": "26145739f58c11402b97987bfbf235b4f8118f98373e945eb197f1fe78deb66b",
+      "currentPaths": [
+        "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v1.glb"
+      ],
+      "match": true
+    },
+    "arenDefenseV2": {
+      "expectedSha256": "f27d77b930a1facc3af4d5ac849cc0621a680c9d3fb1461f0cd4858a7d84dfb3",
+      "currentPaths": [
+        "public/_lab/jka/characters/aren/aren_native_jka_v1_defense_v2.glb"
+      ],
+      "match": true
+    },
+    "naraOriginal": {
+      "expectedSha256": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a",
+      "currentPaths": [
+        "public/_lab/jka/characters/nara/nara_native_jka_v1.glb"
+      ],
+      "match": true
+    },
+    "naraCombat": {
+      "expectedSha256": "3b887077dade1a00d1b681c4847d0760e8efdaee0831ac91ba66759e99c80148",
+      "currentPaths": [
+        "public/_lab/jka/characters/nara/nara_native_jka_v1_combat_v1.glb"
+      ],
+      "match": true
+    },
+    "nativeSaber": {
+      "expectedSha256": "b6dd4dea8d3e054f6932efa066c1840e45f10aafde04da0d860a3ba92357b677",
+      "currentPaths": [
+        "public/_lab/jka/weapons/saber/jka_native_single_saber_v1.glb"
+      ],
+      "match": true
+    },
+    "jolee": {
+      "expectedSha256": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f",
+      "currentPaths": [
+        "public/_lab/kotor/characters/jolee/jolee_bindo_kotor1.glb",
+        "public/_lab/kotor/characters/jolee/jolee_bindo_kotor1_w231_4b_candidate.glb"
+      ],
+      "match": true
+    },
+    "rodianBaseline": {
+      "expectedSha256": "f084310ebcbc52015e2abca6921cf1eec39150a032a913f247881a97b9c4df42",
+      "currentPaths": [
+        "public/_lab/jka/characters/enemies/rodian/hostile_mercenary_jka_v1.glb"
+      ],
+      "match": true
+    },
+    "rodianBlaster": {
+      "expectedSha256": "237fc2ea7b77f1fb30bb914f2581027867299c6591482d0ca79035b51dab05d2",
+      "currentPaths": [
+        "public/_lab/jka/weapons/blaster/jka_rodian_blaster_v1.glb"
+      ],
+      "match": true
+    },
+    "belayaExactRuntime": {
+      "expectedSha256": "b28a1fbc113fb76a66454b3adfa0ac7c327108b15d6ba3b28590103a32e580d5",
+      "currentPaths": [
+        "public/_lab/kotor/characters/belaya/belaya_kotor1_donor.glb"
+      ],
+      "match": true
+    }
+  },
+  "sourceReadOnly": true,
+  "typecheck": "PASS",
+  "build": "PASS",
+  "normalTatooine": "PASS_READY_tatooineSpaceport",
+  "runtime": {
+    "academyCandidate": "PASS_READY_BELAYA_ONLY_NEW_ASSETS_NOT_PROMOTED",
+    "tatooine": "PASS_READY_tatooineSpaceport",
+    "browserConsoleErrors": 0,
+    "galleryRoute": "?kotorCharacterGallery=1",
+    "galleryProfiles": {
+      "public/_lab/kotor/characters/w238_0a2c/kotor1_n_jedicounm_pmhb05.glb": {
+        "category": "HUMANOID_JEDI",
+        "meshes": 12,
+        "transformNodes": 113,
+        "skeletons": [
+          25,
+          57
+        ],
+        "groups": 7
+      },
+      "public/_lab/kotor/characters/w238_0a2c/kotor1_n_rodian_body.glb": {
+        "category": "ALIEN_HUMANOID",
+        "meshes": 66,
+        "transformNodes": 91,
+        "skeletons": [
+          74
+        ],
+        "groups": 5
+      },
+      "public/_lab/kotor/characters/w238_0a2c/kotor1_n_duros_body.glb": {
+        "category": "ALIEN_HUMANOID",
+        "meshes": 58,
+        "transformNodes": 86,
+        "skeletons": [
+          68
+        ],
+        "groups": 4
+      },
+      "public/_lab/kotor/characters/w238_0a2c/kotor1_c_drdprot_body.glb": {
+        "category": "DROID",
+        "meshes": 48,
+        "transformNodes": 10,
+        "skeletons": [],
+        "groups": 5
+      },
+      "public/_lab/kotor/characters/w238_0a2c/kotor1_c_khounda_body.glb": {
+        "category": "CREATURE",
+        "meshes": 35,
+        "transformNodes": 47,
+        "skeletons": [
+          39
+        ],
+        "groups": 6
+      }
+    }
+  },
+  "gates": {
+    "source": "PASS",
+    "batchPipeline": "PASS",
+    "humanoid": "PARTIAL",
+    "alien": "PARTIAL",
+    "droid": "PASS_STRUCTURAL",
+    "creature": "PARTIAL",
+    "animation": "PASS_REPRESENTATIVE_RUNTIME_PARTIAL",
+    "babylonRuntime": "PASS_REPRESENTATIVE_GALLERY_PARTIAL_COVERAGE",
+    "population": "PASS_POLICY_PRESERVED",
+    "lifecycle": "PARTIAL_GALLERY_10_CYCLES_ACADEMY_NOT_RUN",
+    "regression": "PASS_TYPECHECK_BUILD_NORMAL_TATOOINE",
+    "final": "PARTIAL"
+  },
+  "blockers": [
+    "Yoda glTF export emits non-finite values",
+    "C_KhoundB glTF export emits non-finite values",
+    "N_TwilekMB exact texture override is not yet supported",
+    "N_CommM + twilek_m02 export emits non-finite values",
+    "Representative Babylon gallery passed, but every exact row is not yet runtime-validated",
+    "Row 269 exact N_TwilekMB texture variant is not exported",
+    "C_KhoundB and Yoda-family exports fail Blender glTF JSON finite-value validation"
+  ],
+  "readiness": {
+    "readyForScriptedSpawnForensics": "YES",
+    "readyForAcademyDialogueRuntime": "NO",
+    "readyForAcademyTutorialAuthoring": "NO"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "W238_0A1C_PARTY_MATRIX_V1",
+  "party": ["AREN_NATIVE_JKA_V1", "NARA_NATIVE_JKA_V1"],
+  "partySize": 2,
+  "joleeInRoute": false,
+  "danm13": { "aren": "VISIBLE_GROUNDED_CONTROLLED", "nara": "VISIBLE_FOLLOWER", "separationM": 2.0842, "room": "m13aa_04a", "animation": "JKA_WALK_FORWARD" },
+  "danm13Pth": { "arenFinalRoom": "m13aa_12a", "naraFinalRoom": "m13aa_12a", "naraFinalFace": 4, "maxSeparationM": 2.8629, "roomLag": 0, "stuck": 0, "teleports": 0 },
+  "danm14aa": { "aren": "VISIBLE_GROUNDED_CONTROLLED", "nara": "VISIBLE_FOLLOWER_AT_SOURCE_ENTRY", "room": "m14aa_01c", "face": 4 },
+  "nativeAnimationOwnership": { "aren": "JKA_IDLE_OR_JKA_WALK_FORWARD", "nara": "JKA_IDLE_OR_JKA_WALK_FORWARD", "staleGroups": 0 },
+  "gate": "PASS"
+}

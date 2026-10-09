@@ -1,0 +1,38 @@
+{
+  "milestone": "W237.2D",
+  "date": "2026-10-04",
+  "leader": "AREN_JKA_PROTOTYPE_V0",
+  "world": "jedi_enclave_danm13",
+  "saberSocket": "rhang_tag_bone",
+  "saberCount": 1,
+  "bladeSource": "WeaponAttachment.getBladeSegment(): visual bladeAnchor origin to local +Z extension transformed into world space after scene.render",
+  "bladeLengthM": 0.98,
+  "controller": "src/combat/SaberTraceController.ts",
+  "trainingTarget": "src/combat/SaberTrainingTarget.ts",
+  "orchestrator": "src/dev/kotor/JediAcademyPartyLab.ts",
+  "traceMethod": "Seven equally spaced blade points swept previous to current frame against explicit torso sphere; current and previous blade segments also tested",
+  "bladeSamples": 7,
+  "maxTraceCallsPerFrame": 9,
+  "traceEpsilonM": 0.035,
+  "observedMaximumTipDeltaPerFrameM": 0.8809310544516673,
+  "activeDamageStates": ["ATTACK"],
+  "inactiveDamageStates": ["READY", "START", "RETURN"],
+  "attackInstanceFormat": "jka_fast_t2b_0001",
+  "deduplication": "Set<TargetId> reset for each attackInstanceId",
+  "dummy": {
+    "targetId": "ACADEMY_TRAINING_DUMMY_01",
+    "collider": "sphere at floor +1.02 m, radius 0.45 m",
+    "initialHealth": 100,
+    "devDamagePerHit": 10,
+    "placement": "dry attack blade path projected to walkable WOK face m13aa_04a:23",
+    "finalHealthAfterTwoValidAttacks": 80
+  },
+  "openJkReference": {
+    "path": "E:/OpenJK-master/code/game/wp_saber.cpp",
+    "bladeHistory": "WP_SaberUpdateOldBladeData, lines 1042-1075",
+    "sweep": "WP_SaberDamageTrace, lines 4499-5006",
+    "damageWindow": "WP_SaberDamageTrace, lines 4687-4720",
+    "contactAggregation": "WP_SaberDamageAdd, lines 1713-1773; victim list is reset within WP_SaberDamageTrace, so whole-swing dedup is a Nerathis policy"
+  },
+  "protectedAssetEdits": 0
+}

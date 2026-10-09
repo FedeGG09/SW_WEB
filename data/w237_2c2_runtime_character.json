@@ -1,0 +1,24 @@
+{
+  "id": "AREN_JKA_PROTOTYPE_V0",
+  "sourceCharacter": "JKA standard Jedi player donor",
+  "sourceGame": "JEDI_ACADEMY",
+  "role": "AREN_LEADER",
+  "prototype": true,
+  "combatProfile": "JKA_LEADER_V0",
+  "followerProfile": "NOT_REQUIRED_YET",
+  "assetPath": "/_lab/jka/characters/aren/aren_jka_prototype_v0.glb",
+  "assetSha256": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca",
+  "skeletonType": "JKA_HUMANOID",
+  "jointCount": 53,
+  "animationProfile": "JKA_NATIVE_LEADER_V0",
+  "explorationAndCombatLocomotion": {
+    "idle": "JKA_IDLE",
+    "walk": "JKA_WALK_FORWARD",
+    "run": "JKA_RUN_FORWARD",
+    "backward": "JKA_WALK_BACKWARD",
+    "strafeLeft": "JKA_STRAFE_LEFT",
+    "strafeRight": "JKA_STRAFE_RIGHT"
+  },
+  "attackPreviewSequence": ["JKA_ATTACK_START", "JKA_ATTACK", "JKA_ATTACK_RETURN", "JKA_SABER_READY"],
+  "attackEffects": { "damage": false, "bladeTrace": false, "hitbox": false, "combo": false, "parry": false }
+}

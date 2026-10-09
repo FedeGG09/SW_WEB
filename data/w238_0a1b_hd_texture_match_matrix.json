@@ -1,0 +1,180 @@
+{
+  "schema": "W238_0A1B_HD_TEXTURE_MATCH_MATRIX_V1",
+  "status": "AUDIT_ONLY_LOCAL_EXACT_STEM_MATCHES",
+  "vanillaTextureRefs": {
+    "danm13": [
+      "lda_bark04",
+      "lda_ehawk01",
+      "lda_ehawk01a",
+      "lda_flr11",
+      "lda_flr12",
+      "lda_grass07",
+      "lda_grate01",
+      "lda_ivy01",
+      "lda_leaf02",
+      "lda_lite01",
+      "lda_rock06",
+      "lda_trim01",
+      "lda_trim02",
+      "lda_trim03",
+      "lda_trim04",
+      "lda_unwal07",
+      "lda_wall02",
+      "lda_wall03",
+      "lda_wall04",
+      "lda_window01",
+      "lmi_bed01",
+      "plc_chair1",
+      "plc_comppnl",
+      "plc_datapad",
+      "plc_footlker",
+      "plc_reptab2"
+    ],
+    "danm14aa": [
+      "lda_bark02",
+      "lda_bark04",
+      "lda_blast2",
+      "lda_flr01",
+      "lda_flr02",
+      "lda_grass07",
+      "lda_grate01",
+      "lda_ivy01",
+      "lda_leaf02",
+      "lda_riverbed01",
+      "lda_rock04",
+      "lda_rock06",
+      "lda_stone02",
+      "lda_trim01",
+      "lda_unwal05",
+      "lda_wall01",
+      "lda_wall02",
+      "lda_water03",
+      "lza_lit01",
+      "lza_wall04"
+    ]
+  },
+  "exactStemMatches": [
+    {
+      "source": "lda_bark02",
+      "matches": [
+        "LDA_bark02.tpc"
+      ]
+    },
+    {
+      "source": "lda_bark04",
+      "matches": [
+        "LDA_bark04.tpc"
+      ]
+    },
+    {
+      "source": "lda_blast2",
+      "matches": []
+    },
+    {
+      "source": "lda_flr01",
+      "matches": [
+        "LDA_flr01.tpc"
+      ]
+    },
+    {
+      "source": "lda_flr02",
+      "matches": [
+        "LDA_flr02.tpc"
+      ]
+    },
+    {
+      "source": "lda_grass07",
+      "matches": [
+        "LDA_grass07.tpc"
+      ]
+    },
+    {
+      "source": "lda_grate01",
+      "matches": [
+        "LDA_grate01.tpc"
+      ]
+    },
+    {
+      "source": "lda_ivy01",
+      "matches": [
+        "LDA_ivy01.tga"
+      ]
+    },
+    {
+      "source": "lda_leaf02",
+      "matches": [
+        "LDA_leaf02.tga"
+      ]
+    },
+    {
+      "source": "lda_riverbed01",
+      "matches": [
+        "LDA_riverbed01.tpc"
+      ]
+    },
+    {
+      "source": "lda_rock04",
+      "matches": [
+        "LDA_rock04.tpc"
+      ]
+    },
+    {
+      "source": "lda_rock06",
+      "matches": [
+        "LDA_rock06.tpc"
+      ]
+    },
+    {
+      "source": "lda_stone02",
+      "matches": [
+        "LDA_stone02.tpc"
+      ]
+    },
+    {
+      "source": "lda_trim01",
+      "matches": [
+        "LDA_trim01.tpc"
+      ]
+    },
+    {
+      "source": "lda_unwal05",
+      "matches": [
+        "LDA_unwal05.tpc"
+      ]
+    },
+    {
+      "source": "lda_wall01",
+      "matches": [
+        "LDA_wall01.tpc"
+      ]
+    },
+    {
+      "source": "lda_wall02",
+      "matches": [
+        "LDA_wall02.tpc"
+      ]
+    },
+    {
+      "source": "lda_water03",
+      "matches": [
+        "LDA_water03.tpc"
+      ]
+    },
+    {
+      "source": "lza_lit01",
+      "matches": []
+    },
+    {
+      "source": "lza_wall04",
+      "matches": []
+    }
+  ],
+  "exactStemMatchCount": 17,
+  "unmatchedDanm14aa": [
+    "lda_blast2",
+    "lza_lit01",
+    "lza_wall04"
+  ],
+  "substitutionsMade": [],
+  "rule": "Do not substitute HD textures before vanilla material and source-camera validation."
+}

@@ -1,0 +1,62 @@
+{
+  "README_W218_NARA_VOSS_PATCH.txt": {
+    "sha256": "d95cbe4de26cac12e4d380014d06550b26e603e090356d2a91be8ba9c7d4b3fa",
+    "size": 6412
+  },
+  "docs/NARA_TWILEK_ASSET_ATTRIBUTION.md": {
+    "sha256": "6548d47b11b1b17d058868f1392f6a57dc832f834850e66947fdf7bbee14b826",
+    "size": 550
+  },
+  "public/assets/characters/nara/_donors/twilek_standard_walk_source.glb": {
+    "sha256": "ae5eda7b2721e562c3b68331fc1ffe738d05cb3dd845054e26a17960c155cc74",
+    "size": 18630876
+  },
+  "public/assets/characters/nara/nara_voss_twilek_v1.glb": {
+    "sha256": "44c017c51b685606f0e3b70162dfec1b8650425399b71fcc5c367fcc15f2f42b",
+    "size": 18692316
+  },
+  "src/data/w1AssetCatalog.ts": {
+    "sha256": "aeda0591774299f893d448e28639593674a23ba1c3de24a520af2d619b6ae5c4",
+    "size": 7212
+  },
+  "src/dialogue/DialogueSystem.ts": {
+    "sha256": "1a20b25fd60412248c717b8c1b41228060fc66b8714eb4bf411f233a8fa1c38a",
+    "size": 7863
+  },
+  "src/game/Game.ts": {
+    "sha256": "5b8ac4f9a87e5be59dd055e1b25e748d490aeeae83db5dacc169691f6b3b47ae",
+    "size": 31779
+  },
+  "src/game/SceneManager.ts": {
+    "sha256": "43912621b7b93356726571f91f7d26929bda1c173da1c7bd40355979411caec1",
+    "size": 89169
+  },
+  "src/party/NaraJediController.ts": {
+    "sha256": "2d979f12e11359ff5f6b048b83078ea25bcd1f747f7ceb519a8dd1d3c309b300",
+    "size": 11063
+  },
+  "src/party/NaraSaberAttachment.ts": {
+    "sha256": "f719a2006d88a97169071ed774e99ad56544ff1aea93e6c2113ddfc828f8544e",
+    "size": 11346
+  },
+  "src/party/PartyController.ts": {
+    "sha256": "7f1ddba342a770c81f5f4a84995b649eb1e2368c56234c4e5e73028fe37a40b7",
+    "size": 24338
+  },
+  "src/party/PartyPauseMenu.ts": {
+    "sha256": "d7d0748df115201abb6c58578d70a6dc46ed59066ffd6a8f1c86d936d6844e14",
+    "size": 12005
+  },
+  "src/party/PartyRoster.ts": {
+    "sha256": "1f341b8fffeaef94e5448a1d364c1c7eaf961728afa21a62b704aaad4346ec41",
+    "size": 2608
+  },
+  "src/player/LightsaberController.ts": {
+    "sha256": "4e49d6c03e140a99d4c1fa3c5618ea68ed04c2923aca2e2c32ad69a63d8f1b54",
+    "size": 3796
+  },
+  "tools/w218_build_nara_twilek.py": {
+    "sha256": "bcfe51b9e65d5d157310f934670f9a4e72bc4d88255a288dae4ef9148f7c1fa9",
+    "size": 17914
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "W238.0A.2B.lifecycle_stress.v1",
+  "cycles": 0,
+  "status": "NOT_RUN",
+  "reason": "No new runtime asset was promoted; existing W238.0A.2 one-Belaya loader evidence remains historical"
+}

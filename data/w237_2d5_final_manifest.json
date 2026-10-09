@@ -1,0 +1,26 @@
+{
+  "milestone": "W237.2D.5",
+  "projectRoot": "E:\\NerathisWeb",
+  "activeLeader": { "id": "AREN_NATIVE_JKA_V1", "asset": "public/_lab/jka/characters/aren/aren_native_jka_v1.glb", "sha256": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58", "joints": 53, "profile": "JKA_NATIVE_LEADER", "groundOffsetM": 0.676 },
+  "activeNara": { "id": "NARA_NATIVE_JKA_V1", "asset": "public/_lab/jka/characters/nara/nara_native_jka_v1.glb", "sha256": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a", "joints": 53, "authority": "TACTICAL_COMPANION_FOLLOWER", "groundOffsetM": 0.652 },
+  "party": { "size": 2, "members": ["AREN_NATIVE_JKA_V1", "NARA_NATIVE_JKA_V1"], "joleeRole": "ACADEMY_NPC", "joleePartyMember": false, "arenSaberCount": 1, "naraVisualSaberCount": 1, "joleeSaberCount": 0, "joleeInteraction": "not exercised in this pass" },
+  "combat": { "weaponAttachmentChanged": false, "saberTraceChanged": false, "ready": "JKA_SABER_READY", "attackStart": "JKA_ATTACK_START", "attack": "JKA_ATTACK", "attackReturn": "JKA_ATTACK_RETURN", "physicalHitMatrix": "PASS", "attackOneDamage": 1, "sameAttackExtraDamage": 0, "missDamage": 0, "secondAttackDamage": 1, "lowFpsSweep": "PASS" },
+  "grip": { "socket": "rhang_tag_bone", "instanceCount": 1, "socketLocalTranslationM": [0, 0, 0], "socketLocalRotationEulerDeg": [0, 0, 0], "bladeLengthM": 0.98, "gate": "PARTIAL" },
+  "academySmoke": { "helperPass": false, "partialReason": "helper walk quota was 50 m; measured walk was 36.998 m", "distanceM": 139.8282750170535, "walkDistanceM": 36.99805410619527, "runDistanceM": 102.83022091085803, "targetRoomsReached": 3, "roomsVisited": 5, "naraMaxSeparationM": 5.105, "naraMeanSeparationM": 2.634, "naraRoomLag": 0, "naraStuck": 0, "naraTeleports": 0, "visFallbacks": 0, "wokRejects": 0, "gate": "PARTIAL" },
+  "build": "PASS",
+  "typecheck": "PASS",
+  "normalGame": "PASS: ?world=tatooine reached READY tatooineSpaceport",
+  "protectedHashes": {
+    "status": "PASS",
+    "arenNativeJkaV1": "8b5c958621d6050ce268accc08f15d664dd6e398ffdcf1dd61486925329b9b58",
+    "naraNativeJkaV1": "3a17a64fbac6f20ce73c04110f670af160372e6c727ade7c24ad218c686be56a",
+    "goldenControl": "c6b3766d8bbb01a182b918c2161b64a0a3e0ddefb35249dc8118fb1eb6f97bca",
+    "originalAren": "79073f978c889e268e77800dbf7a2d609ec40a2bb314100447ce458f8d8a7ba4",
+    "joleeNpc": "a72417003d8c6aa694ef63d20fd63b352b2448a2b750e32fb56bec202d284d7f",
+    "academyWorld": "cf2a1fba73951eadfa53aa1e4d3f8a5530fdda1cda16738577fa20969d43449c"
+  },
+  "consoleErrors": [],
+  "gates": { "promotion": "PASS", "grip": "PARTIAL", "attackVisual": "PARTIAL", "physicalHit": "PASS", "partyRegression": "PARTIAL", "final": "PARTIAL" },
+  "readyForW237_2ECombo": "NO",
+  "readyForW237_2FParry": "NO"
+}
