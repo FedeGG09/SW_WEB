@@ -1,0 +1,11 @@
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0a131b;font-family:system-ui,Arial,sans-serif;color:#f0e7d4}
+#renderCanvas{width:100%;height:100%;display:block;outline:0;touch-action:none}
+#hud{position:fixed;z-index:30;top:14px;left:14px;width:min(390px,calc(100vw - 28px));box-sizing:border-box;background:#101923e9;border:1px solid #738899;border-radius:10px;padding:14px;max-height:75vh;overflow:auto;font-size:12px;box-shadow:0 12px 36px #0008}
+h1{font-size:16px;color:#eac991;letter-spacing:.08em;margin:0 0 8px}
+#status{margin:8px 0;border-top:1px solid #43596a;padding-top:8px;color:#b5dae6}
+.actions{display:flex;gap:6px;flex-wrap:wrap}
+button{color:#f0e7d4;background:#203547;border:1px solid #728ba4;border-radius:5px;padding:8px 10px;font:inherit;cursor:pointer}
+button:disabled{opacity:.4;cursor:not-allowed}
+button:hover:not(:disabled){background:#365067}
+#diagnostics{white-space:pre-wrap;word-break:break-word;font-size:11px;line-height:1.5;color:#a8c6da}
+#interactionPrompt{position:fixed;z-index:32;bottom:25px;left:50%;transform:translateX(-50%);background:#101923ed;border:1px solid #c5a46a;border-radius:7px;padding:11px 16px;display:none}
